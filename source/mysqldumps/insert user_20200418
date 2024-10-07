@@ -1,0 +1,8 @@
+INSERT INTO `user` (`usr_id`, `usr_username`, `usr_password`, `usr_oldpassword`, `usr_name`, `usr_phoneno`, `usr_email`, `usr_partnerid`, `usr_type`, `usr_passwordmodifiedon`, `usr_createdon`, `usr_createdby`, `usr_modifiedon`, `usr_modifiedby`, `usr_status`, `usr_expire`, `usr_lastlogin`, `usr_lastloginip`) VALUES 
+('2', 'System', 'ASDFSADFSAF123125657657UJJKHMhgfghlkjkljgdfr1', 'ASDFSADFSAF123125657657UJJKHMhgfghlkjkljgdfr1', 'System', '', '', '0', 'Operator', NOW(), NOW(), '2', NOW(), '2', '1', '2200-01-01 00:00:00', NOW(), 'localhost');
+
+INSERT INTO `user` (`usr_id`, `usr_username`, `usr_password`, `usr_oldpassword`, `usr_name`, `usr_phoneno`, `usr_email`, `usr_partnerid`, `usr_type`, `usr_passwordmodifiedon`, `usr_createdon`, `usr_createdby`, `usr_modifiedon`, `usr_modifiedby`, `usr_status`, `usr_expire`, `usr_lastlogin`, `usr_lastloginip`) VALUES 
+('3', 'System_Job', 'ASDFSADFSAF123125657657UJJKHMhgfghlkjkljgdfr1', 'ASDFSADFSAF123125657657UJJKHMhgfghlkjkljgdfr1', 'Background Job', '', '', '0', 'Operator', NOW(), NOW(), '2', NOW(), '2', '1', '2200-01-01 00:00:00', NOW(), 'localhost');
+
+INSERT INTO `user` (`usr_id`, `usr_username`, `usr_password`, `usr_oldpassword`, `usr_name`, `usr_phoneno`, `usr_email`, `usr_partnerid`, `usr_type`, `usr_passwordmodifiedon`, `usr_createdon`, `usr_createdby`, `usr_modifiedon`, `usr_modifiedby`, `usr_status`, `usr_expire`, `usr_lastlogin`, `usr_lastloginip`) VALUES 
+('4', 'Api_Request', 'ASDFSADFSAF123125657657UJJKHMhgfghlkjkljgdfr1', 'ASDFSADFSAF123125657657UJJKHMhgfghlkjkljgdfr1', 'Api Request Entry', '', '', '0', 'Operator', NOW(), NOW(), '2', NOW(), '2', '1', '2200-01-01 00:00:00', NOW(), 'localhost');

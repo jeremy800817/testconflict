@@ -1,0 +1,60 @@
+######################################
+##  MYGTP EKYC Processing Job 
+##
+*/2 * * * * php /usr/local/nginx/html/mygtp/source/snaplib/cli.php -f /usr/local/nginx/html/mygtp/source/snaplib/job/Innov8tifEkycJob.php -c /usr/local/nginx/html/mygtp/source/snapapp/mygtp.ini -p "submitpending=1&checkresults=1"
+
+######################################
+##  MYGTP Price Alert Matching 
+##
+* * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -c /usr/local/nginx/html/mygtp/source/snapapp/mygtp.ini  -f /usr/local/nginx/html/mygtp/source/snaplib/job/ProcessMatchedPriceAlertJob.php -p "partner=PARTNERID"
+* * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -c /usr/local/nginx/html/mygtp/source/snapapp/mygtp.ini  -f /usr/local/nginx/html/mygtp/source/snaplib/job/PriceAlertMatchCheckJob.php -p "partner=PARTNERID"
+
+######################################
+##  MYGTP Historical Price collection
+##
+01 00 */1 * * php /usr/local/nginx/html/mygtp/source/snaplib/cli.php -c /usr/local/nginx/html/mygtp/source/snapapp/mygtp.ini  -f /usr/local/nginx/html/mygtp/source/snaplib/job/HistoricalPriceJob.php -p "collectall=1"
+
+######################################################
+##  MYGTP Fail Pending Gold Transactions & Conversion
+##
+*/5 * * * * php /usr/local/nginx/html/mygtp/source/snaplib/cli.php -c /usr/local/nginx/html/mygtp/source/snapapp/mygtp.ini  -f /usr/local/nginx/html/mygtp/source/snaplib/job/MyGtpPendingTransactionCheckJob.php -p "partnerids=partnerid1,partnerid2"
+*/5 * * * * php /usr/local/nginx/html/mygtp/source/snaplib/cli.php -c /usr/local/nginx/html/mygtp/source/snapapp/mygtp.ini  -f /usr/local/nginx/html/mygtp/source/snaplib/job/MyGtpPendingConversionCheckJob.php -p "partnerids=partnerid1,partnerid2"
+
+######################################################
+##  MYGTP SAP Gold Transaction Batch Job
+##
+0 * * * * php /usr/local/nginx/html/mygtp/source/snaplib/cli.php -c /usr/local/nginx/html/mygtp/source/snapapp/config.ini -f /usr/local/nginx/html/mygtp/source/snaplib/job/MyGtpProcessSapTransactionJob.php -p "partnerids=partnerid1,partnerid2"
+
+######################################################
+##  MYGTP AMLA Verification
+##  Quarterly
+##
+
+######################################################
+##  MYGTP Storage Fee Daily Calculation
+##
+1 0 * * * php /usr/local/nginx/html/mygtp/source/snaplib/cli.php -c /usr/local/nginx/html/mygtp/source/snapapp/mygtp.ini  -f /usr/local/nginx/html/mygtp/source/snaplib/job/MyGtpCalculateDailyStorageFeeJob.php -p "partner=PARTNERID"
+
+######################################################
+##  MYGTP Storage Fee Monthly Charge
+##
+1 0 1 * * php /usr/local/nginx/html/mygtp/source/snaplib/cli.php -c /usr/local/nginx/html/mygtp/source/snapapp/mygtp.ini  -f /usr/local/nginx/html/mygtp/source/snaplib/job/MyGtpChargeMonthlyStorageFeeJob.php -p "partner=PARTNERID"
+
+######################################################
+##  MYGTP Expired token archiving
+##
+*/5 * * * * php /usr/local/nginx/html/mygtp/source/snaplib/cli.php -c /usr/local/nginx/html/mygtp/source/snapapp/mygtp.ini  -f /usr/local/nginx/html/mygtp/source/snaplib/job/MyGtpArchiveTokenJob.php
+
+######################################################
+##  Bi-Weekly AMLA check
+##
+* * 1,14 * * php /usr/local/nginx/html/mygtp/source/snaplib/cli.php -c /usr/local/nginx/html/mygtp/source/snapapp/mygtp.ini  -f /usr/local/nginx/html/mygtp/source/snaplib/job/AmlaReverificationJob.php
+###* * 1-7,15-21 * 7 php /usr/local/nginx/html/mygtp/source/snaplib/cli.php -c /usr/local/nginx/html/mygtp/source/snapapp/mygtp.ini  -f /usr/local/nginx/html/mygtp/source/snaplib/job/AmlaReverificationJob.php
+
+######################################################
+##  MYGTP Dormant Account Deletion
+##
+
+######################################################
+##  MYGTP Incomplete Account Profile Notification
+##

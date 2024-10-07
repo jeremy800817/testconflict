@@ -1,0 +1,1630 @@
+
+// Border bottom for panel
+// .x-docked-top {
+//     border-bottom-width: 0 !important;
+// }
+
+// Add border dash below title
+// .x-panel-header-default-horizontal.x-header-noborder {
+//     border-bottom: 2px solid #BFBFBF !important;
+//     // width shorten it to 70% and center
+// }
+// End border below
+
+// .x-panel-header-default-horizontal.x-header-noborder:after {
+//     content: "";
+//     border-bottom: 2px solid #BFBFBF !important;
+//     border-bottom-width: 60% !important;
+//     display: block;
+//     margin: 0 auto;
+//     // width shorten it to 70% and center
+// }
+
+// .x-docked-top:after {
+//     content: "";
+//     border-bottom: 2px solid #BFBFBF !important;
+//     border-bottom-width: 60% !important;
+//     display: block;
+//     margin: 0 auto;
+// }
+
+
+// border line between title
+// .x-panel-default-outer-border-trl {
+//     border-top-color: #204a6d !important;
+//     border-top-width: 1px !important;
+//     border-right-color: #204a6d !important;
+//     border-right-width: 1px !important;
+//     border-left-color: #204a6d !important;
+//     border-left-width: 1px !important;
+//     border-top-color: red !important;
+//     border-top-width: 1px !important;
+//     border-bottom-color: red !important;
+//     border-bottom-width: 1px !important;
+// }
+// .x-panel-header-default-horizontal.x-header-noborder {
+//     border-bottom: 2px solid #BFBFBF !important;
+//     // width shorten it to 70% and center
+// }
+
+// .x-panel-header-default-horizontal.x-header-noborder:after {
+//     content: "";
+//     background: black;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     height: 50%;
+//     width: 1px;
+//     // width shorten it to 70% and center
+// }
+// .x-panel-header-default {
+//     // content: '';
+//     // border-bottom-color: solid 3px black !important;
+//     // // border-bottom-width: 60% !important;
+//     // border-bottom-width: 1px !important;
+//     // position: absolute;
+  
+ 
+// }
+
+// .x-panel-header-default:after {
+//     content: ""; /* This is necessary for the pseudo element to work. */ 
+//     display: block; /* This will put the pseudo element on its own line. */
+//     margin: auto; /* This will center the border. */
+//     width: 50%; /* Change this to whatever width you want. */
+//     // padding-top: 20px; /* This creates some space between the element and the border. */
+//     border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+
+// }
+
+
+// .x-docked-top:after {
+//     content: "";
+//     border-bottom: 2px solid #BFBFBF !important;
+// }
+// .x-panel-header-default:after {
+//     content: '';
+//     text-decoration: none;
+//     position: absolute;
+//     width: 50%;
+//     height: 100%;
+//     left: 0;
+//     margin-left: 25%;
+//     border-bottom: solid 3px black !important;
+//     border-bottom-width: 60% !important;
+// }
+
+.x-panel-default-outer-border-trl:after {
+    
+}
+// Not used higher line
+// .x-panel-header-default-horizontal.x-header-noborder:after {
+//     content: "";
+//     border-bottom: 2px solid #BFBFBF !important;
+//     border-bottom-width: 60% !important;
+//     display: block;
+//     margin: 0 auto;
+//     // width shorten it to 70% and center
+// }
+// .x-panel-default-outer-border-rl:after {d
+//     border-right-color: #204a6d !important;
+//     border-right-width: 1px !important;
+//     border-left-color: #204a6d !important;
+//     border-left-width: 1px !important;
+//     border-top-width: 1px !important;
+//     border-top-color: red !important;
+// }
+
+$title-text-color: #545454;
+$border-color: #f4f4f4;
+$otc-green: #14CB5E;
+$otc-red: #F64B4C;
+$partner-color: #009ABB; // BSN PARTNER COLOR
+// $partner-color: #1A2CF2; // POS PARTNER COLOR pos
+/*
+*   custom design for panel
+*/
+
+%otc-window {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0 0 0 0;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+%otc-window-default {
+    border-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 0 0 0 0;
+    -moz-border-radius: 0 0 0 0;
+    -ms-border-radius: 0 0 0 0;
+    -o-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+}
+
+%otc-window-header-default-top {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 10px 14px 10px 14px;
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    background-color: #fff;
+}
+
+%otc-window-header-title-default {
+    color: $title-text-color;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    line-height: 20px;
+}
+
+%otc-toolbar-footer {
+    padding: 2px 0 2px 8px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    background-image: none;
+    background-color: #fff;
+}
+
+.otc-main{
+    // Title text ( For form )
+    .x-panel-header-title-default > .x-title-text-default {
+        text-transform: none;
+        padding: 0;
+        color: $title-text-color;
+    }
+    // Title text ( For panel )
+    .x-panel-header-title-default-framed{
+        text-transform: none;
+        padding: 0;
+        color: $title-text-color;
+    }
+    
+    // Border css bottom bar ( show bottomleft and bottomright radius
+    // .x-panel-header-default-horizontal:after {
+    //     content: ""; /* This is necessary for the pseudo element to work. */ 
+    //         display: block; /* This will put the pseudo element on its own line. */
+    //         // margin: 0 auto; /* This will center the border. */
+    //         margin-left: auto; 
+    //         margin-right: auto; 
+    //         bottom: 0;
+    //         position: absolute;
+    //         width: 95%; /* Change this to whatever width you want. */
+    //         // padding-top: 20px; /* This creates some space between the element and the border. */
+    //         border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+    //     // width shorten it to 70% and center
+    // }
+    // Temporarily hide this module
+
+    // Border css top bar ( show topleft and topright radius 
+    .x-panel-header-default {
+        background-image: none;
+        background-color: #fff;
+        border-radius: 10px 10px 0 0;
+    }
+
+    // Border css bottom bar ( show bottomleft and bottomright radius
+    .x-panel-default-outer-border-rbl {
+        border-right-color: $border-color !important; // original color #204a6d
+        border-right-width: 1px !important;
+        border-bottom-color: $border-color !important;
+        border-bottom-width: 1px !important;
+        border-left-color: $border-color !important;
+        border-left-width: 1px !important;
+        border-radius: 0 0 10px 10px;
+    }
+    .x-panel-header{
+        background-image: none!important;
+        background-color: #fff!important;
+        border-radius: 10px 10px 0 0!important;
+    }
+    // Border css bottom bar ( show bottomleft and bottomright radius
+    .x-panel-header-default-framed-top {
+        border-right-color: $border-color !important;
+        border-right-width: 0px !important;
+        border-bottom-color: $border-color !important;
+        border-bottom-width: 0px !important; // remove the bottom border to use after effect
+        border-left-color: $border-color !important;
+        border-left-width: 0px !important;
+        border-top-width: 0px !important;
+        // border-radius: 0 0 10px 10px;
+    }
+    // Border bottom below title ( but not centered yet )
+    .x-panel-header-default-framed-top:after {
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+            display: block; /* This will put the pseudo element on its own line. */
+            // margin: 0 auto; /* This will center the border. */
+            margin-left: auto; 
+            margin-right: auto; 
+            bottom: 0;
+            position: absolute;
+            width: 95%; /* Change this to whatever width you want. */
+            // padding-top: 20px; /* This creates some space between the element and the border. */
+            border-bottom: 3px solid $border-color; /* This creates the border. Replace black with whatever color you want. */
+        // awidth shorten it to 70% and center
+    }
+
+    .x-docked-top {
+        border-bottom-width: 0 !important;
+    }
+
+    /*
+    * Outer frame this is called before items to override classes.
+    */
+    // Border radius for outer box
+    .x-panel-default-framed {
+        border-radius: 10px 10px 10px 10px;
+        // remove all border color to transparent
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+
+    // This class encapsulates container with forms 
+    // Eg: buy sell order page in dashboard
+    .x-panel-default-outer-border-trl {
+        border-top-color: transparent !important;
+        border-right-color: transparent !important;
+        border-left-color: transparent !important;
+    }
+    .x-panel-default-outer-border-rl {
+        border-right-color: transparent !important;
+        border-left-color: transparent !important;
+    }
+    // End outer form border
+
+    // modify tabpanel
+    // remove tabpanel header
+    .x-tab-bar-default {
+        background-color: transparent;
+    }
+    // active
+    .x-tab-inner-default {
+        font: 400 13px/20px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+        color: #929292;
+        max-width: 100%;
+        font-weight: 600;
+    }
+    // turn selected tab invisible
+    .x-tab.x-tab-active.x-tab-default {
+        border-color: #fff;
+        background-color: transparent;
+    }
+    .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+        color: $partner-color;
+        border-bottom: 2px solid $partner-color;
+    }
+    .x-tab-default {
+        border-color: transparent;
+        cursor: pointer;
+    }
+
+    // Modify OTC popup windows ( gridform view )
+    // .x-window {
+    //     @extend %otc-window;
+    // }
+
+    // .x-window-default {
+    //     @extend %otc-window-default;
+    //     border-radius: 10px;
+    // }
+
+    .x-window-header-default-top {
+        @extend %otc-window-header-default-top;
+        border: none;
+    }
+
+    .x-window-header-title-default {
+        @extend %otc-window-header-title-default;
+    }
+
+    .x-toolbar-footer {
+        @extend %otc-toolbar-footer    
+    }
+
+    .x-btn-default-small {
+        background-color: $partner-color;
+    }
+    
+}
+
+// otc main body
+.otc-main-body{
+    background-color: #F3F3F3;
+}
+
+// otc-main-body tabpanel for dashboard
+.otc-main-tabpanel-body {
+    background-color: #F3F3F3;
+}
+
+// otc main body
+// .otc-main-borderless{
+//     // Border css bottom bar ( show bottomleft and bottomright radius
+//     .x-panel-header-default-horizontal:after {
+       
+//         // padding-top: 20px; /* This creates some space between the element and the border. */
+//         border-bottom-color: transparent !important; /* This creates the border. Replace black with whatever color you want. */
+//         // width shorten it to 70% and center
+//     }
+// }
+
+
+// Custom class
+// Add custom base class to call from for center displays
+%base-form-display-field-default-center {
+    // min-height: 32px;
+    font: 300 13px/17px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    // color: #cdaa5e;
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0px; // this is to push field class above by a little
+    line-height: 35px;
+}
+
+// Add custom base class to call for price display order
+%base-form-display-field-default-center-order-buysell {
+    min-height: 32px;
+    font: 300 13px/17px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    // color: #cdaa5e;
+    margin-top: 8px;
+    font-size: 46px;
+    font-weight: bold;
+    /* margin-right: 15px; */
+    line-height: 55px;
+    text-align: center;
+    margin-top: 0px; // this is to push field class above by a little
+    
+}
+
+%base-form-display-field-default-center-displayfield-small {
+    min-height: 40px;
+    font: 300 13px/17px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    // color: #cdaa5e;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 0px; // this is to push field class above by a little
+    
+}
+
+// base for buy sell button text
+%base-btn-inner-default-toolbar-small {
+    font: 600 20px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    color: #fff;
+    padding: 0 5px;
+    max-width: 100%;
+}
+
+// Field for color box panels
+%base-form-display-field-default {
+    min-height: 32px;
+    font: 600 17px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    color: white;
+    margin-top: 8px;
+}
+
+.otc-main-center {
+    .x-panel-header-title-default > .x-title-text-default {
+        text-transform: none;
+        padding: 0;
+        color: $title-text-color;
+        text-align: center;
+    }
+    .x-form-display-field-default {
+        @extend %base-form-display-field-default-center;
+    }
+
+    
+    // As the main file draws a bottom border line, this code is to remove the bottom border
+    .x-panel-header-default-horizontal:after {
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+            display: block; /* This will put the pseudo element on its own line. */
+            // margin: 0 auto; /* This will center the border. */
+            margin-left: auto; 
+            margin-right: auto; 
+            bottom: 0;
+            position: absolute;
+            width: 95%; /* Change this to whatever width you want. */
+            // padding-top: 20px; /* This creates some space between the element and the border. */
+            border-bottom: 0px !important; /* This creates the border. Replace black with whatever color you want. */
+        // width shorten it to 70% and center
+    }
+
+    // Move components to the center
+    .x-panel-body-default {
+        // background: #fff;
+        // border-color: #d0d0d0;
+        // color: #404040;
+        // font-size: 13px;
+        // font-weight: 300;
+        // font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+        // border-width: 1px;
+        // border-style: solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    // Used in conversion modules ( gold slider )
+}
+
+.buysell_modal{
+    #orderdashboardfutureorderform-body{
+        height: 215px !important;
+    }
+    #orderdashboardspotorderform-body{
+        height: 215px !important;
+    }
+
+}
+
+.otc-displayfield-gold {
+    @extend %base-form-display-field-default-center;
+    color: #cdaa5e;
+}
+
+.otc-displayfield-green {
+    @extend %base-form-display-field-default-center;
+    color: #1ac69c;
+}
+
+.otc-displayfield-red {
+    @extend %base-form-display-field-default-center;
+    color: #FF4848;
+}
+
+// Price go up and down css 
+.otc-displayfield-order-buysell {
+    @extend %base-form-display-field-default-center-order-buysell;
+    height: 57px;
+    color: #808080;
+}
+
+// .otc-displayfield-order-buysell-up {
+//     @extend %base-form-display-field-default-center-order-buysell;
+//     color: $otc-green;
+// }
+
+.otc-displayfield-small-text {
+    @extend %base-form-display-field-default-center-displayfield-small;
+}
+
+// Price style override
+.otc-main-center-price-header{
+    .x-title-text{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .x-btn-inner-default-toolbar-small {
+        font: 400 12px/16px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+        color: #fff;
+        padding: 0 5px;
+        max-width: 100%;
+    }
+}
+
+// Modify buy sell button styles
+// Ace buy modules
+.otc-main-center-price-button-sell{
+    background-color: $otc-red;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .x-btn-default-toolbar-small {
+        border-color: transparent;
+        background-color: $otc-red;
+    }
+    .x-btn-default-toolbar-small:hover {
+        background-color: $otc-red;
+    }
+     // keyboard lift mode
+    .x-keyboard-mode .x-btn-focus.x-btn-default-toolbar-small.x-btn-default-toolbar-small-focus {
+        background-color: $otc-red !important;
+        box-shadow: none;
+    }
+    .x-focus.x-btn-default-toolbar-small-focus{
+        background-color: $otc-red !important;
+    }
+    .x-keyboard-mode  .x-focus.x-btn-default-toolbar-small-focus{
+        background-color: $otc-red !important;
+    }
+    .x-toolbar-default {
+        background-color: $otc-red;
+    }
+    .x-btn-inner-default-toolbar-small {
+        @extend %base-btn-inner-default-toolbar-small;
+    }
+}
+// Ace sell modules
+.otc-main-center-price-button-buy{
+    background-color: $otc-green;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .x-btn-default-toolbar-small {
+        border-color: transparent;
+        // background-color: $otc-green !important;
+        background-color: $otc-green
+    }
+    .x-btn-default-toolbar-small:hover {
+        background-color: $otc-green;
+    }
+    // keyboard lift mode
+    .x-keyboard-mode .x-btn-focus.x-btn-default-toolbar-small-focus {
+        background-color: $otc-green;
+        box-shadow: none;
+    }
+    .x-toolbar-default {
+        background-color: $otc-green;
+    }
+    .x-btn-inner-default-toolbar-small {
+        @extend %base-btn-inner-default-toolbar-small;
+    }
+}
+
+// Form button modules at the bottom ( next button )
+.otc-main-form-button-bottom{
+    // background-color: $otc-green;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .x-btn-default-toolbar-small {
+        border-color: transparent;
+        background-color: $partner-color;
+    }
+    .x-btn-default-toolbar-small:hover {
+        background-color: $partner-color;
+    }
+    // keyboard lift mode
+    .x-keyboard-mode .x-btn-focus.x-btn-default-toolbar-small {
+        background-color: $partner-color !important;
+        box-shadow: none;
+    }
+    .x-toolbar-default {
+        background-color: $partner-color;
+    }
+    .x-btn-inner-default-toolbar-small {
+        @extend %base-btn-inner-default-toolbar-small;
+    }
+    .x-btn-focus.x-btn-default-toolbar-small {
+        background-color: $partner-color;
+        opacity: 0.9;
+        transition: all 0.8s;
+        box-shadow: none;
+    }
+    // .x-btn-focus.x-btn-default-toolbar-small-focus {
+    //     background-color: $partner-color;
+    //     box-shadow: none;
+    // }
+}
+
+.otc-main-left {
+    .x-panel-header-title-default > .x-title-text-default {
+        text-transform: none;
+        padding: 0;
+        color: $title-text-color;
+        text-align: center;
+    }
+    .x-form-display-field-default {
+        @extend %base-form-display-field-default-center;
+        text-align: left;
+    }
+
+    // As the main file draws a bottom border line, this code is to remove the bottom border
+    .x-panel-header-default-horizontal:after {
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+            display: block; /* This will put the pseudo element on its own line. */
+            // margin: 0 auto; /* This will center the border. */
+            margin-left: auto; 
+            margin-right: auto; 
+            bottom: 0;
+            position: absolute;
+            width: 95%; /* Change this to whatever width you want. */
+            // padding-top: 20px; /* This creates some space between the element and the border. */
+            border-bottom: 0px !important; /* This creates the border. Replace black with whatever color you want. */
+        // width shorten it to 70% and center
+    }
+
+    // Move components to the center
+    .x-panel-body-default {
+        // background: #fff;
+        // border-color: #d0d0d0;
+        // color: #404040;
+        // font-size: 13px;
+        // font-weight: 300;
+        // font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+        // border-width: 1px;
+        // border-style: solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    // Used in conversion modules ( gold slider )
+}
+
+.conversion_overview{
+ text-align: center;
+
+}
+
+// Custom panel header for displays ( vault, etc to display info )
+.otc-panel-custom-header {
+    .x-panel-header-title-default > .x-title-text-default {
+        text-transform: none;
+        padding: 0;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+    }
+    .x-panel-header {
+        background-color: $partner-color!important;
+    }
+    .x-form-display-field-body{
+        font: 600 17px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+        text-align: center;
+    }
+}
+
+.otc-displayfield-medium-text-dashboard-left {
+    @extend %base-form-display-field-default-center-displayfield-small;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.otc-displayfield-large-text-dashboard-left {
+    @extend %base-form-display-field-default-center-order-buysell;
+    color: #545454;
+    text-align: left;
+}
+
+.otc-displayfield-large-text-dashboard-left-conversion {
+    color: #545454;
+    text-align: left;
+    font-size: 17px;
+}
+
+.otc-displayfield-small-text-dashboard-left {
+    @extend %base-form-display-field-default-center-displayfield-small;
+    text-align: left;
+}
+// Center
+.otc-displayfield-medium-text-dashboard-center {
+    @extend %base-form-display-field-default-center-displayfield-small;
+    // text-align: left;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.otc-displayfield-large-text-dashboard-center {
+    @extend %base-form-display-field-default-center-order-buysell;
+    color: #545454;
+    // text-align: left;
+}
+
+.otc-displayfield-small-text-dashboard-center {
+    @extend %base-form-display-field-default-center-displayfield-small;
+    // text-align: left;
+}
+
+// Custom color for vault props
+// Color modules
+.otc-color-block-green{
+    background: #0FCC87;
+    .x-form-display-field-default{
+        @extend %base-form-display-field-default;
+    }
+}
+.otc-color-block-blue{
+    background: #0D47A1;
+    .x-form-display-field-default{
+        @extend %base-form-display-field-default;
+    }
+}
+.otc-color-block-yellow{
+    background: #ffb91b;
+    .x-form-display-field-default{
+        @extend %base-form-display-field-default;
+    }
+}
+.otc-color-block-red{
+    background: #B71C1C;
+    .x-form-display-field-default{
+        @extend %base-form-display-field-default;
+    }
+}
+.otc-color-block-pink{
+    background: #fc4e70;
+    .x-form-display-field-default{
+        @extend %base-form-display-field-default;
+    }
+}
+// End color modules
+
+// Otc popup class
+.otc-main-popup{
+    background: #fc4e70;
+    .x-form-display-field-default{
+        @extend %base-form-display-field-default;
+    }
+}
+// Dashboard modules
+
+// Price style override
+.otc-main-left-dashboard-header{
+    .x-title-text{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .x-btn-inner-default-toolbar-small {
+        font: 400 12px/16px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+        color: #fff;
+        padding: 0 5px;
+        max-width: 100%;
+    }
+}
+
+
+// .x-keyboard-mode .x-btn-focus.x-btn-default-toolbar-small {
+//     // background-color: $otc-green;
+//     // color: #545454;
+//     color: #fff;
+//     box-shadow: none;
+//     background-color: $partner-color;
+// }
+
+// Change all buttons to match partner color for forms
+.x-btn-default-small {
+    border-color: $partner-color;
+    background-color: $partner-color;
+}
+.x-button-over.x-btn-default-small {
+    border-color: $partner-color !important;
+    background-color: $partner-color !important;
+}
+
+.x-message-box .x-window-header-default-top {
+    background-color: $partner-color;
+    border: none;
+}
+
+// Make modifications to pop up design for panels
+// Change panel color
+.x-window-header-default-top {
+    background-color: $partner-color;
+    border: none;
+}
+.x-box-item.x-button-over.x-btn-default-small {
+    background-color: $partner-color;
+    border: none;
+}
+.x-window-default {
+    border-color: $partner-color;
+    border-radius: 10px;
+}
+.x-btn-over.x-btn-header-small {
+    border-color: $partner-color;
+    background-image: none;
+    background-color: transparent;
+}
+// Popup button color
+.x-btn-over.x-btn-default-small {
+    border-color: $partner-color !important;
+    background-image: none;
+    background-color: $partner-color;
+    opacity: 0.9;
+    transition: all 0.8s;
+}
+.x-btn-focus.x-btn-default-small {
+    background-color: $partner-color !important;
+    box-shadow: none;
+}
+// Role selector
+.x-panel-header-default-framed-top {
+    background-color: $partner-color;
+}
+.x-tree-icon-leaf {
+    color: $partner-color;
+}
+.x-tree-icon-parent-expanded {
+    color: $partner-color;
+}
+.x-grid-tree-node-expanded .x-tree-elbow-plus, .x-grid-tree-node-expanded .x-tree-elbow-end-plus {
+    color: $partner-color;
+}
+.x-panel-default-framed {
+    border-color: $partner-color;
+}
+.x-panel-header-default-framed {
+    border: 2px solid $partner-color;
+}
+// End 
+
+// OVERRIDE ALL POPUP CLASSES *
+// .x-window-default {
+//     border-color: transparent;
+//     -webkit-border-radius: 0 0 0 0;
+//     -moz-border-radius: 0 0 0 0;
+//     -ms-border-radius: 0 0 0 0;
+//     -o-border-radius: 0 0 0 0;
+//     border-radius: 0 0 0 0;
+//     border-radius: 10px !important;
+// }
+// .x-window-header-title-default {
+//     color: #545454;
+// }
+// END OVERRIDE
+
+// End custom class
+
+// 3. general button classes
+// below are button classes to be used for standard coloring across modules
+// .btn-filter{
+//     border-radius: 5px;
+//     background-color: #2FB0E7;
+// }
+
+// .btn-filter:hover {
+//     background-color: #2FB0E7;
+// }
+
+// .x-btn-inner-default-toolbar-small{
+//     color:white;
+// }
+// .btn-clear{
+//     border-radius: 5px;
+//     background-color: #CF0F0F;
+// }
+
+// .btn-clear:hover {
+//     background-color: #CF0F0F;
+// }
+
+// .btn-download{
+//     border-radius: 5px;
+//     background-color: #0FCF8A;
+// }
+
+// .btn-download:hover {
+//     background-color: #0FCF8A;
+// }
+
+// .btn-print{
+//     border-radius: 5px;
+//     background-color: #FA9F4B;
+// }
+// .btn-print:hover {
+//     background-color: #FA9F4B;
+// }
+.removeButtonCls {
+    width: 26px;
+    height: 26px;
+    //  background-color: transparent !important;
+    background: url('src/resources/img/icon/icon-minus.svg') no-repeat;
+    background-size: contain !important;
+    border-style: none !important;
+    border-radius: 0px !important;
+    
+  }
+  
+  .removeButtonCls :hover {
+    width: 26px;
+    height: 26px;
+    //  background-color: transparent !important;
+    background: url('src/resources/img/icon/icon-minus.svg') no-repeat;
+    background-size: contain !important;
+    border-style: none !important;
+    border-radius: 0px !important;
+  }
+  
+  .removeButtonCls :active {
+    width: 26px;
+    height: 26px;
+    //  background-color: transparent !important;
+    background: url('src/resources/img/icon/icon-minus.svg') no-repeat;
+    background-size: contain !important;
+    border-style: none !important;
+    border-radius: 0px !important;
+  }
+
+  .ContactDetailsEditImage
+{
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  border-color: #d5d5d5;
+  border-style: dashed;
+  border-width: 2px;
+  width: 128px;
+  height: 128px;
+}
+
+.ContatDetailsEditImageOverlayLabel
+{
+  width: 128px;
+  line-height: 14px;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.30) !important;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+.conversion-plus-button
+{
+//  left: 0px !important;
+//  top: 0px !important;
+  width: 20px !important;
+  height: 20px !important;
+  //line-height: 40px !important;
+  background-image: url('../resources/img/icon/icon-plus.svg') !important;
+//   background-color: #ff8409 !important;
+  background-size: 100% !important;
+  border-style: none !important;
+  border-radius: 0px !important;
+  text-align: right;
+  //   left: 530px !important;
+  left: 90% !important;
+}
+
+.conversion-minus-button
+{
+//  left: 0px !important;
+//  top: 0px !important;
+  width: 20px !important;
+  height: 20px !important;
+  //line-height: 40px !important;
+  background-image: url('../resources/img/icon/icon-minus.svg') !important;
+//   background-color: #ff8409 !important;
+  background-size: 100% !important;
+  border-style: none !important;
+  border-radius: 0px !important;
+  
+}
+
+// end cls
+
+.conversion-text-box {
+
+    .x-form-trigger-wrap-default {
+        border-radius: 10px;
+        text-align: center;
+    }
+    .x-form-text-default {
+        background: none;
+        text-align: center;
+    }
+}
+
+/* Owl Carousel Styles */
+.owl-carousel .owl-stage {
+    display: flex;
+}
+
+.owl-carousel .owl-item img {
+    width: 100%;
+    height: 100%;
+}
+
+// Arrow position
+.owl-theme .owl-nav {
+    // margin-top: 10px;
+    position: absolute;
+    top: 80%;
+    width: 200%;
+}
+
+.owl-prev i, .owl-next i {
+    transform: scale(2, 5);
+    /* color: rgba(23, 103, 239, 0.85); */
+    color: #545454;
+}
+
+owl-carousel-o {
+    position: relative;
+}
+
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    // background: rgba(23, 103, 239, 0.85);
+    color: #545454;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #F0F0F0;
+}
+
+//Buy and sell modal
+.buypopout{
+    border:0px solid;
+    border-radius: 10px !important;
+    
+    .x-panel-default-outer-border-trbl {
+        // border-color: #204a6d !important;
+        border-width: 0px !important;
+    }
+    
+    .x-title-text{
+        text-align: center;
+        font-size: 32px;
+        color: #14CB5E;
+        line-height: 40px;
+    }
+
+    .x-toolbar{
+        left: -45px !important;
+        top: 545px !important;
+    }
+    .x-tool-tool-el {
+        color: #204a6d;
+    }
+}
+
+
+
+.sellpopout{
+    border:0px solid;
+    border-radius: 10px !important;
+    
+    .x-panel-default-outer-border-trbl {
+        // border-color: #204a6d !important;
+        border-width: 0px !important;
+    }
+    
+    .x-title-text{
+        text-align: center;
+        font-size: 32px;
+        color: #F64B4C;
+        line-height: 40px;
+    }
+
+    .x-toolbar{
+        left: -45px !important;
+        top: 495px !important;
+    }
+    .x-tool-tool-el {
+        color: #204a6d;
+    }
+}
+
+//Convert modal
+.convpopout {
+    border: 0px solid;
+    border-radius: 10px !important;
+
+    .x-panel-default-outer-border-trbl {
+        // border-color: #204a6d !important;
+        border-width: 0px !important;
+    }
+
+    .x-title-text {
+        text-align: center;
+        font-size: 32px;
+        color: #14CB5E;
+        line-height: 40px;
+    }
+
+    .x-toolbar {
+        left: -45px !important;
+        top: 550px !important;
+    }
+
+    .x-tool-tool-el {
+        color: #204a6d;
+    }
+}
+
+.orderpopout_sub_title{
+    background-color: #F5F5F7;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 7px;
+    margin-top:10px;
+}
+
+.orderpopout_error_title{
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 7px;
+    margin-top:10px;
+    .x-form-display-field-default {
+        min-height: 1em;
+        font-size: 12px;
+        color: #ff0000;
+        font-weight: 600;
+        margin: 2px 0px 0px;
+    }
+}
+
+
+.orderpopout_box{
+    border:2px solid #D3D3D3;
+    background-color: #fff;
+    border-radius: 7px;
+    text-align: center;
+
+    .x-box-target{
+        // width: 50% !important;
+        width: 224% !important;
+    }
+}
+
+.orderpopout_box_content_one{
+    text-align: center;
+    width: 36% !important;
+    // width: 161% !important;
+}
+
+.orderpopout_box_content_one_text1{
+    .x-form-display-field{
+        font-size: 14px;
+        color: #939598;
+    }
+}
+
+.orderpopout_box_content_one_text2{
+    // for textfield
+    .x-form-text-default{
+        font-size: 40px;
+        color: #939598;
+        text-align: center;
+    }
+
+    .x-form-display-field{
+        font-size: 40px;
+        color: #939598;
+    }
+}
+
+.orderpopout_box_content_one_text3{
+    // for textfield
+    .x-form-text-default{
+        font-size: 28px;
+        color: #939598;
+        text-align: center;
+    }
+    .x-form-display-field{
+        font-size: 28px;
+        color: #939598;
+    }
+}
+
+
+.orderpopout_box_two{
+    border:2px solid #14CB5E;
+    background-color: #14CB5E;
+    // padding-top: 7px;
+    // padding-left: 10px;
+    // padding-right: 7px;
+    padding: 7px 7px 0px 10px;
+    border-radius: 7px;
+    margin-top:7px;
+}
+
+.orderpopout_box_two_sell{
+    border:2px solid #F64B4C;
+    background-color: #F64B4C;
+    // padding-top: 7px;
+    // padding-left: 10px;
+    // padding-right: 7px;
+    padding: 7px 7px 0px 10px;
+    border-radius: 7px;
+    margin-top:7px;
+}
+
+.orderpopout_boxtwo_content_one{
+    .x-form-display-field{
+        font-size: 16px;
+        color: #fff;
+        text-align: left;
+    }
+}
+
+.orderpopout_boxtwo_content_two{
+    .x-form-display-field{
+        font-size: 22px;
+        color: #fff;
+        text-align: right;
+    }
+}
+
+//sell aqad
+.sellpopout_aqad{
+    border:0px solid;
+    border-radius: 10px !important;
+    
+    .x-panel-default-outer-border-trbl {
+        // border-color: #204a6d !important;
+        border-width: 0px !important;
+    }
+    
+    .x-title-text{
+        text-align: center;
+        font-size: 28px;
+        color: #F64B4C;
+        line-height: 40px;
+    }
+
+    .x-toolbar{
+        left: -45px !important;
+        top: 620px !important;
+    }
+    .x-tool-tool-el {
+        color: #204a6d;
+    }
+}
+
+.orderpopoutaqad_text_sell{
+    border:0px solid #F64B4C;
+    background-color: #fff;
+    // padding-top: 7px;
+    // padding-left: 10px;
+    // padding-right: 7px;
+    padding: 7px 7px 0px 10px;
+    margin-top:7px;
+}
+
+.orderpopoutaqad_text_sell_one{
+    .x-form-display-field{
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+.orderpopoutaqad_text_sell_two{
+    .x-form-display-field{
+        font-size: 16px;
+        font-weight: bold;
+        text-align: right;
+    }
+}
+
+.orderpopoutaqad_text_sell_subTitle{
+    .x-form-display-field{
+        font-size: 16px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.orderpopoutaqad_text_sell_finalTotal{
+    .x-form-display-field{
+        font-size: 38px;
+        text-align: center;
+        color: #F64B4C;
+    }
+}
+
+.orderpopoutaqad_text_sell_four{
+    .x-form-display-field{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+//Buy Aqad
+.buypopout_aqad{
+    border:0px solid;
+    border-radius: 10px !important;
+    
+    .x-panel-default-outer-border-trbl {
+        // border-color: #204a6d !important;
+        border-width: 0px !important;
+    }
+    
+    .x-title-text{
+        text-align: center;
+        font-size: 28px;
+        color: #14CB5E;
+        line-height: 40px;
+    }
+
+    .x-toolbar{
+        left: -45px !important;
+        top: 620px !important;
+    }
+    .x-tool-tool-el {
+        color: #204a6d;
+    }
+}
+
+.orderpopoutaqad_text_buy_finalTotal{
+    .x-form-display-field{
+        font-size:38px;
+        text-align: center;
+        color: #14CB5E;
+    }
+}
+
+//Common aqad
+.orderpopoutaqad_timmer_text{
+    .x-form-display-field{
+        font-size: 14px;
+        color: #fff;
+        text-align: left;
+    }
+}
+
+.orderpopoutaqad_timmer{
+    .x-form-display-field{
+        font-size: 28px;
+        color: #fff;
+        text-align: right;
+    }
+}
+
+.orderpopoutaqad_campaign{
+    .x-form-trigger-wrap{
+        height:40px;
+    }
+    
+}
+
+.security_pin_panel{
+
+    .x-box-inner{
+        height: 70px;
+        width: 50%;
+    }
+
+    .x-field.x-form-item{
+        width: 60px !important;
+    }
+
+    .x-form-trigger-wrap{
+        height: 50px;
+    }
+
+    .x-form-field{
+        text-align: center;
+    }
+
+}
+
+//Conversion
+.conversion_details_one{
+    .x-form-display-field{
+        font-size: 13px;
+        text-align: left;
+    }
+}
+.conversion_details_two{
+    width: 275px !important;
+
+    .x-form-display-field{
+        font-size: 21px;
+        font-weight: bold;
+        text-align: right;
+    }
+}
+
+.conversion_details{
+    border:0px solid #F64B4C;
+    background-color: #fff;
+    padding: 7px 7px 0px 10px;
+    margin-top:10px !important;
+    width: 550px !important;
+
+    .x-box-inner{
+        width: 550px !important;
+    }
+}
+
+.convert_section{
+    .x-box-inner{
+        height:500px;
+    }
+}
+
+.owl-carousel{
+    .owl-stage-outer{
+        // left:70px;
+        margin-bottom: 30px;
+    }
+}
+
+.convert_slider{
+    @media only screen and (max-width: 1530px) {
+        // .x-box-inner{
+        //     // width: 400px !important;
+        // }
+    
+        .owl-nav{
+            // width: 380px;
+            // width: 23%;
+            width: 100%;
+            top: 75%;
+        }
+    
+        .owl-dots{
+            width: 400px;
+        }
+    }
+    
+    @media only screen and (min-width: 1531px) {
+
+        // .x-box-inner{
+        //     width: 400px !important;
+        // }
+    
+        .owl-nav{
+            // width: 380px;
+            width: 100%;
+            top: 50%;
+        }
+    
+        .owl-dots{
+            width: 400px;
+        }
+    }
+}
+
+//Convert Aqad
+.convertpopout_aqad{
+    border:0px solid;
+    border-radius: 10px !important;
+    
+    .x-panel-default-outer-border-trbl {
+        // border-color: #204a6d !important;
+        border-width: 0px !important;
+    }
+    
+    .x-title-text{
+        text-align: center;
+        font-size: 28px;
+        color: $partner-color;
+        line-height: 40px;
+    }
+
+    .x-toolbar{
+        left: -45px !important;
+        top: 620px !important;
+    }
+
+    .x-window-header-default .x-tool-img{
+        color:#204a6d;
+    }
+}
+
+.orderpopoutaqad_text_convert_finalTotal{
+    .x-form-display-field{
+        font-size: 38px;
+        text-align: center;
+        color: $partner-color;
+    }
+}
+
+//search bar
+.search_bar{
+    .x-box-inner{
+        height: 70px !important;
+    }
+    
+    .x-panel{
+        width: 100% !important;
+        height: 70px !important;
+    }
+
+    .x-panel-body{
+        height: 60px !important;
+        //width: 870px !important;
+        padding-left: 25px;
+    }
+
+    .datebox{
+        top: 20px !important;
+    }
+
+    .x-title-text{
+        text-align: left !important;
+    }
+    // .x-field.x-form-item{
+    //     width: 860px;
+    // } 
+}
+
+.search_btn{
+    top:20px !important;
+    // left:1045px !important;
+    width: 120px !important;
+}
+
+.select_btn{
+    top: 20px !important;
+    left: 770px !important;
+    width: 225px !important;
+}
+
+.combo_box{
+    // left: 765px !important;
+    top: 20px !important;
+
+    .x-form-text-default{
+        color: #fff;
+        background-color: $partner-color;
+    } 
+
+    .x-form-trigger-default{
+        color: #fff;
+        background-color: $partner-color;
+    }
+}
+
+// .test{
+
+// }
+// OTC Register
+.mini_error_text{
+    .x-form-display-field-default {
+        min-height: 32px;
+        font: 300 13px/17px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+        color: #F64B4C;
+        margin-top: 8px;
+    }
+}
+
+// cif sTYLE CHANGE
+.x-tab-bar-default {
+    background-color: $partner-color;
+}
+
+.x-tab-bar-default {
+    background-color: $partner-color;
+}
+
+.x-panel-header-default {
+    background-image: none;
+    background-color: $partner-color;
+}
+
+.x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+    color: $partner-color;
+}
+
+.x-panel-default-outer-border-rbl {
+    border-right-color: $partner-color!important;
+    border-right-width: 1px !important;
+    border-bottom-color: $partner-color!important;
+    border-bottom-width: 1px !important;
+    border-left-color: $partner-color !important;
+    border-left-width: 1px !important;
+}
+
+// Navbar highlight color
+.x-treelist-navigation .x-treelist-item-selected > .x-treelist-row:before {
+    background-color: $partner-color !important;;
+}
+
+.x-treelist-navigation .x-treelist-item-expander {
+    color: $partner-color !important;
+}

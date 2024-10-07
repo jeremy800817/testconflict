@@ -1,0 +1,20 @@
+.main-logo{
+    background-color: #00be00!important;
+}
+
+.loginbody{
+    /* background-color: #00be00!important; */
+    background-color: #25aaa6!important;
+}
+
+.x-treelist-navigation .x-treelist-item-expanded {
+    background-color: #10660b!important;
+}
+
+.x-treelist-navigation {
+    background-color: #094a01!important;
+}
+
+.x-treelist-navigation .x-treelist-item-text {
+    color: #ffffff!important;
+}

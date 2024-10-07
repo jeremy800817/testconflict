@@ -1,0 +1,1 @@
+alter table `partner` add `par_vaultrestockthreshold` float(5) DEFAULT NULL AFTER `par_senderemail`

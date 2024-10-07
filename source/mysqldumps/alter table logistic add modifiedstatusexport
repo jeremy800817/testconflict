@@ -1,0 +1,20 @@
+Alter table `logistic`
+ADD `lgs_modifiedstatusexport` smallint(2) NOT NULL AFTER lgs_attemps
+
+//please run vw_logistic again to update latest table structure
+DROP VIEW  IF EXISTS `vw_logistic`;
+CREATE VIEW `vw_logistic` AS  select `logistic`.*,
+ `tag`.`tag_value` AS `lgs_vendorvalue`,
+ `tag`.`tag_description` AS `lgs_vendorname`,
+ `senderid`.`usr_name` AS `lgs_sendername`,
+ `sentby`.`usr_name` AS `lgs_sentbyname`,
+ `deliveredby`.`usr_name` AS `lgs_deliveredbyname`,
+ `createdby`.`usr_name` AS `lgs_createdbyname`,
+ `modifiedby`.`usr_name` AS `lgs_modifiedbyname`
+from `logistic`
+left join `tag` on (`tag`.`tag_id` = `logistic`.`lgs_vendorid`)
+left join `user` AS senderid on (senderid.usr_id = `logistic`.`lgs_senderid`)
+left join `user` AS sentby on (sentby.usr_id = `logistic`.`lgs_sentby`)
+left join `user` AS deliveredby on (deliveredby.usr_id = `logistic`.`lgs_deliveredby`)
+left join `user` AS createdby on (createdby.usr_id = `logistic`.`lgs_createdby`)
+left join `user` AS modifiedby on (modifiedby.usr_id = `logistic`.`lgs_modifiedby`);

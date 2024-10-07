@@ -1,0 +1,16 @@
+ALTER TABLE `redemption` CHANGE `rdm_type` `rdm_type`
+ENUM('Branch','Delivery','SpecialDelivery','Appointment') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+
+
+DROP VIEW  IF EXISTS `vw_redemption`;
+CREATE VIEW `vw_redemption` AS 
+select `redemption`.*,
+(select `partner`.`par_name` from `partner` where (`partner`.`par_id` = `redemption`.`rdm_partnerid`)) AS `rdm_partnername`,
+(select `partner`.`par_code` from `partner` where (`partner`.`par_id` = `redemption`.`rdm_partnerid`)) AS `rdm_partnercode`,
+(select `partnerbranchmap`.`pbm_name` from `partnerbranchmap` where (`partnerbranchmap`.`pbm_id` = `redemption`.`rdm_branchid`)) AS `rdm_branchname`,
+(select `partnerbranchmap`.`pbm_code` from `partnerbranchmap` where (`partnerbranchmap`.`pbm_id` = `redemption`.`rdm_branchid`)) AS `rdm_branchcode`,
+(select `partnerbranchmap`.`pbm_sapcode` from `partnerbranchmap` where (`partnerbranchmap`.`pbm_id` = `redemption`.`rdm_branchid`)) AS `rdm_branchsapcode`,
+(select `user`.`usr_name` from `user` where (`user`.`usr_id` = `redemption`.`rdm_salespersonid`)) AS `rdm_salespersonname`,
+(select `user`.`usr_name` from `user` where (`user`.`usr_id` = `redemption`.`rdm_createdby`)) AS `rdm_createdbyname`,
+(select `user`.`usr_name` from `user` where (`user`.`usr_id` = `redemption`.`rdm_modifiedby`)) AS `rdm_modifiedbyname` 
+from `redemption` ;

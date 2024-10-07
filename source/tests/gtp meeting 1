@@ -1,0 +1,29 @@
+Try to put in observer
+- Handler -> Returns data
+- Logic -> keep in managers
+- Event -> Listen on the order, it will fire Event (Order)
+- Everyone have their own ( if we desire similar output, we can share )
+- Observer (Is in manager, create events inside the manager)
+- Observer & Observervation
+    - Observer IObserver (notification in Camis- orderstatus = event name) = everything in manager
+    -
+- Everything use try catch
+    - On every save function to database
+        - Try catch $app->getDbHandle->commit();
+- SQL Transaction.
+        - $app->getDbHandle()->beginTransaction(); // Wont commit if there is error
+          $app->getDbHandle()->commit() //
+          $app->getDbHandle()->rollback(); // Rollback in sql to prevent data disruption
+- When it is unable to get child store
+        - $appointmentTask = $appointmentStore->getRelatedStore('appointmentTask') // child (store) and parent
+              ->searchTable....
+
+
+- Object
+          // Doing check in status
+          public function isCheckout() {
+            return $this0>members['status'] == self::STATUS_CHECKOUT;
+          }
+-
+-
+-

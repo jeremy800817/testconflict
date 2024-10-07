@@ -1,0 +1,3 @@
+ALTER TABLE `partnerservice` DROP `pas_pricesourcetypeid`;
+ALTER TABLE `partnerBranchMap` DROP `pbm_partnercode`;
+ALTER TABLE `partnerBranchMap` CHANGE `pbm_branchcode` `pbm_code` VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

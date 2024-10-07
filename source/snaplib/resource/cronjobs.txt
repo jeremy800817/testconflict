@@ -1,0 +1,71 @@
+##################################################
+##  Accurev Sync
+##################################################
+*/3 * * * * [ `hostname` = xpayserver ] && sh /home/siteadm/bin/syncaccurev.sh
+
+#################################################################################################
+##### Balance Update Schedule - Updates balances of merchant / gateway based on set schedule ####
+#################################################################################################
+* * * * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/processbalance.php -c /usr/local/nginx/html/ttpayapp/config.ini > /dev/null 2>&1
+
+##################################
+## Merchant Verification Resend ##
+##################################
+* * * * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/sendstatus.inc.php -c /usr/local/nginx/html/ttpayapp/config.ini  -p "action=runmain" >> /tmp/merchant_verify.log
+
+#################################
+#### Announcement Notification ###
+##################################
+*/5 * * * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/announcementcheck.inc.php -c /usr/local/nginx/html/ttpayapp/config.ini
+
+##################################
+## Accounts fees checking non 0 ##
+##################################
+0 16 */2 * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/accountfeescheck.inc.php -c /usr/local/nginx/html/ttpayapp/config.ini
+
+###############################################################################
+## Gateway funnel recalculation - Repopulate the gateway funnel data from DB ##
+###############################################################################
+*/5 * * * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/processgatewayfunnel.inc.php -c /usr/local/nginx/html/ttpayapp/config.ini
+
+
+##################################
+### Rebate calculation & update ## -- for backup only
+##################################
+##Calculate the rebates and send email to admin to verify
+0 19 2 * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/processgatewayfunnel.inc.php -c /usr/local/nginx/html/ttpayapp/config.ini -p "calcrebate=1"
+
+##Actually do the crediting of rebates back to merchant account
+0 19 4 * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/processgatewayfunnel.inc.php -c /usr/local/nginx/html/ttpayapp/config.ini -p "updateRebateToLedger=1"
+
+####################################################################
+## Reset the fundin cache data  - Funnel monitor statistics reset ##
+####################################################################
+59 * * * * /usr/bin/wget -O - "http://127.0.0.1/payment.php?resetfundinstats=now" >/dev/null 2>&1
+
+#########################################################
+## Schedule Fund out conversion of API unknown to Fail  #
+#########################################################
+* * * * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/fundoutautoconvertapifailjob.inc.php  -c /usr/local/nginx/html/ttpayapp/config.ini
+
+################################################
+## Fund out merchant notification resend       #
+################################################
+* * * * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/fundoutmerchantnotifyjob.inc.php  -c /usr/local/nginx/html/ttpayapp/config.ini
+
+#####################################################
+###  Data Archiving For Import & Export Facility
+#####################################################
+##--- XPay Data Export Cron all start at 5am each day [start] ---##
+# Balance
+0 5 * * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/preparebalanceexportdata.php -c /usr/local/nginx/html/ttpayapp/config.ini > /dev/null 2>&1
+
+# Fund In
+0 5 * * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/preparefundinexportdata.php -c /usr/local/nginx/html/ttpayapp/config.ini > /dev/null 2>&1
+
+# Fund Out
+0 5 * * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/preparefundoutexportdata.php -c /usr/local/nginx/html/ttpayapp/config.ini > /dev/null 2>&1
+
+# Settlement
+0 5 * * * /usr/local/bin/php -q /usr/local/nginx/html/ttpaylib/cli.php -f /usr/local/nginx/html/ttpaylib/job/preparesettlementexportdata.php -c /usr/local/nginx/html/ttpayapp/config.ini > /dev/null 2>&1
+

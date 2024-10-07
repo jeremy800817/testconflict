@@ -1,0 +1,1 @@
+ALTER TABLE `logistic` ADD COLUMN `lgs_vendorrefno` VARCHAR(20) AFTER `lgs_senderid`

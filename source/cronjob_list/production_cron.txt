@@ -1,0 +1,235 @@
+######################################
+##  Maybank Import Schedule .txt
+##
+##  PHYCOURIER - daily / 4-6am
+##  DAILYGPPRICE - daily / 4-6am
+##  PHYREP - on 5th & 20th / 4-6am
+##  SPCDLV - daily / 4-6am
+######################################
+##  Maybank Excel Schedule .xlxs
+##
+##  PHYINV - daily / 4-6am
+##  PHYRTN - daily / 4-6am
+##  DAILYDVG - daily / 4-6am
+##  FODLYREC - daily / 4-6am
+##  DAILYTRN - daily / 4-6am
+######################################
+##  SAP Reconcile Schedule
+##
+##  RECONCILESAP - daily / 4-6am
+######################################
+######################################
+##   NOTE
+##   Description for PHYREP
+##   for test purpose,please add "&date=YYYY-MM-DD 02:00:00". change YYYY-MM-DD to test date. must be either 5th or 20th. If current date is already 5th or 20th, no need to add this.
+##   when manually want to generate PHYREP,
+##   1st, go to job folder (cd /usr/local/nginx/html/gtp/source/snaplib/job)
+##   2nd, copy and paste (php ../cli.php -f ProcessFtpJob.php -c ../../snapapp/config.ini -p "type=output&filename=phyrep&date=YYYY-MM-DD 02:00:00")
+##   PHYREP will be save at folder path (/home/siteadm/sftpinternet.maybank.com/out)
+##
+##   however, time is not confirm yet. it will be between 4-6am. 
+##   current - 6am
+######################################
+
+
+######################################
+##  serverA
+######################################
+######################################
+##  GTP PriceCollectionJob checkalive all 
+##
+*/2 * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/PriceCollectionJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "keepalivecheck=1" &> /dev/null
+
+######################################
+##  GTP FutureOrderPriceMatchCheckJob mode all - To actually match prices incoming with FO 
+##
+*/2 * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/FutureOrderPriceMatchCheckJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "mode=ALL"
+
+######################################
+##  GTP FutureOrderScheduledMatchingJob 
+##
+*/2 * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/FutureOrderScheduledMatchingJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "mode=ALL"
+
+######################################
+##  GTP ProcessMatchedFutureOrderJob 
+##
+*/2 * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessMatchedFutureOrderJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "mode=loop&alivetime=60"
+
+######################################
+##  GTP ProcessOrderExpireJob 
+##  daily / 12am
+##
+0 16 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessOrderExpireJob.php -c source/snapapp/config.ini -p ""
+
+######################################
+##  GTP ProcessFutureOrderExpireJob
+##  daily / 12am
+##
+0 16 * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFutureOrderExpireJob.php -c source/snapapp/config.ini -p ""
+
+######################################
+##  GTP System RunProcessorJob
+##
+*/2 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/runprocessorjob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p ""
+
+######################################
+##  Maybank Physical Courier Booking detail 
+##  PHYCOURIER - daily / 4-6am
+##
+0 22 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=output&filename=phycourier"
+
+######################################
+##  Maybank Special Delivery &amp; Pre-appointment 
+##  SPCDELV - daily / 4-6am
+##
+0 22 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=output&filename=spcdelv"
+
+######################################
+##  Maybank Physical replenish Reply (5 th , 20th) 
+##  PHYREP - 5th & 20th / 4-6am
+##
+0 22 4,19 * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=output&filename=phyrep"
+
+######################################
+##  Maybank Daily GP General Price history 
+##  DAILYGPPRICE - daily / 4-6am
+##
+0 22 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=output&filename=dailygpprice"
+
+######################################
+##  Maybank Branch daily Physical inventory  
+##  PHYINV - daily / 4-6am
+##
+#0 22 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=input&filename=phyinv"
+
+######################################
+##  Maybank Return Phycal Gold bar
+##  PHYRTN - daily / 4-6am
+##
+#0 22 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=input&filename=phyrtn"
+
+######################################
+##  Maybank Future order daily Recon 
+##  FODLYREC - daily / 4-6am
+##
+#0 22 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=input&filename=fodlyrec"
+
+######################################
+##  Maybank daily 
+##  DAILYTRN - daily / 4-6am
+##
+#0 22 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=input&filename=dailytrn"
+
+######################################
+##  Maybank Buy/sell, spot order, redemption, buyback daily recon 
+##  DAILYDVG - daily / 4-6am
+##
+#0 22 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=input&filename=dailydvg"
+
+######################################
+##  SAP Reconsile
+##  RECONCILESAP - daily / 4-6am
+##
+0 22 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessReconcileSAP.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m"
+
+
+
+######################################
+##  serverB
+######################################
+######################################
+##  GTP PriceCollectionJob checkalive all 
+##
+1-59/2 * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/PriceCollectionJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "keepalivecheck=1" &> /dev/null
+
+######################################
+##  GTP FutureOrderPriceMatchCheckJob mode all - To actually match prices incoming with FO 
+##
+1-59/2 * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/FutureOrderPriceMatchCheckJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "mode=ALL"
+
+######################################
+##  GTP FutureOrderScheduledMatchingJob 
+##
+1-59/2 * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/FutureOrderScheduledMatchingJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "mode=ALL"
+
+######################################
+##  GTP ProcessMatchedFutureOrderJob 
+##
+1-59/2 * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessMatchedFutureOrderJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "mode=loop&alivetime=60"
+
+######################################
+##  GTP ProcessOrderExpireJob 
+##  daily / 12am
+##
+#0 16 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessOrderExpireJob.php -c source/snapapp/config.ini -p ""
+
+######################################
+##  GTP ProcessFutureOrderExpireJob
+##  daily / 12am
+##
+#0 16 * * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFutureOrderExpireJob.php -c source/snapapp/config.ini -p ""
+
+######################################
+##  GTP System RunProcessorJob
+##
+1-59/2 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/runprocessorjob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p ""
+
+######################################
+##  Maybank Physical Courier Booking detail 
+##  PHYCOURIER - daily / 4-6am
+##
+#0 23 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=output&filename=phycourier"
+
+######################################
+##  Maybank Special Delivery &amp; Pre-appointment 
+##  SPCDELV - daily / 4-6am
+##
+#0 23 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=output&filename=spcdelv"
+
+######################################
+##  Maybank Physical replenish Reply (5 th , 20th) 
+##  PHYREP - 5th & 20th / 4-6am
+##
+#0 23 4,19 * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=output&filename=phyrep"
+
+######################################
+##  Maybank Daily GP General Price history 
+##  DAILYGPPRICE - daily / 4-6am
+##
+#0 23 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=output&filename=dailygpprice"
+
+######################################
+##  Maybank Branch daily Physical inventory  
+##  PHYINV - daily / 4-6am
+##
+#0 23 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=input&filename=phyinv"
+
+######################################
+##  Maybank Return Phycal Gold bar
+##  PHYRTN - daily / 4-6am
+##
+#0 23 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=input&filename=phyrtn"
+
+######################################
+##  Maybank Future order daily Recon 
+##  FODLYREC - daily / 4-6am
+##
+#0 23 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=input&filename=fodlyrec"
+
+######################################
+##  Maybank daily 
+##  DAILYTRN - daily / 4-6am
+##
+#0 23 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=input&filename=dailytrn"
+
+######################################
+##  Maybank Buy/sell, spot order, redemption, buyback daily recon 
+##  DAILYDVG - daily / 4-6am
+##
+#0 23 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessFtpJob.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m&type=input&filename=dailydvg"
+
+######################################
+##  SAP Reconsile
+##  RECONCILESAP - daily / 4-6am
+##
+#0 23 * * * php /usr/local/nginx/html/gtp/source/snaplib/cli.php -f /usr/local/nginx/html/gtp/source/snaplib/job/ProcessReconcileSAP.php -c /usr/local/nginx/html/gtp/source/snapapp/config.ini -p "partner=MBISMY@SIT&version=1.0m"

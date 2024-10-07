@@ -1,0 +1,3 @@
+alter table exportlogs add column `exg_sendtoemail` varchar(255) DEFAULT NULL after `exg_outputcount`;
+alter table exportlogs add column `exg_remarks` varchar(255) DEFAULT NULL after `exg_sendtoemail`;
+alter table exportlogs add column `exg_actionby` smallint(6) DEFAULT NULL after `exg_remarks`;

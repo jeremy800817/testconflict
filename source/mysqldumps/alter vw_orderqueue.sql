@@ -1,0 +1,15 @@
+CREATE OR REPLACE VIEW `vw_orderqueue`  AS  select `orderqueue`.*,
+	`partner`.`par_name` AS `orq_partnername`,
+	`partner`.`par_code` AS `orq_partnercode`,
+	`buyerid`.`usr_name` AS `orq_buyername`,
+	`salespersonid`.`usr_name` AS `orq_salespersonname`,
+	`partner`.`par_pricesourceid` AS `orq_pricesourceid`,
+	`product`.`pdt_name` AS `orq_productname`,
+	`product`.`pdt_code` AS `orq_productcode`,
+	`pricestream`.`pst_companybuyppg` AS `orq_companybuyppg`,
+	`pricestream`.`pst_companysellppg` AS `orq_companysellppg`,
+	`cancelby`.`usr_name` AS `orq_cancelbyname`,
+	`reconciledby`.`usr_name` AS `orq_reconciledbyname`,
+	`createdby`.`usr_name` AS `orq_createdbyname`,
+	`modifiedby`.`usr_name` AS `orq_modifiedbyname` 
+	from (((((((((`orderqueue` left join `partner` on((`partner`.`par_id` = `orderqueue`.`orq_partnerid`))) left join `user` `buyerid` on((`buyerid`.`usr_id` = `orderqueue`.`orq_buyerid`))) left join `user` `salespersonid` on((`salespersonid`.`usr_id` = `orderqueue`.`orq_salespersonid`))) left join `product` on((`product`.`pdt_id` = `orderqueue`.`orq_productid`))) left join `pricestream` on((`pricestream`.`pst_id` = `orderqueue`.`orq_matchpriceid`))) left join `user` `cancelby` on((`cancelby`.`usr_id` = `orderqueue`.`orq_cancelby`))) left join `user` `reconciledby` on((`reconciledby`.`usr_id` = `orderqueue`.`orq_reconciledby`))) left join `user` `createdby` on((`createdby`.`usr_id` = `orderqueue`.`orq_createdby`))) left join `user` `modifiedby` on((`modifiedby`.`usr_id` = `orderqueue`.`orq_modifiedby`))) ;

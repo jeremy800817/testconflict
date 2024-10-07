@@ -1,0 +1,285 @@
+.gogold {
+	background-color: #ECECEC;
+}
+a {
+	color: #0DB14B;
+}
+.nice-select:after {
+	border-color: #0DB14B;
+}
+.gogold .header {
+	background-image: none;
+	padding-top: 40px;
+	/* background-color: #0DB14B; */
+	background: transparent url(../img/bg/bg-header-mcash.png) center center/contain ;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.gogold .header .hero {
+	background-image: none;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+.gogold .header .hero .client-logo {
+	width: 147px;
+	height: 100%;
+	/* background: transparent url(../img/icon/icon-logo-mcash.png) center center/contain no-repeat; */
+}
+.gogold .header .hero .main-logo {
+	width: 180px;
+	height: 100%;
+	/* background: transparent url(../img/icon/icon-logo-mgold-white.png) center center/contain no-repeat; */
+}
+.gogold .header .hero {
+    background-image: none;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background: transparent url(../img/icon/icon-logo-mgold-white.png) center center/contain no-repeat;
+	background-position-y: -20px;
+}
+.language-switcher,
+.language-switcher ul li a,
+.language-switcher ul li.active a {
+	color: #ffffff;
+}
+.faq-switcher,
+.faq-switcher ul li a,
+.faq-switcher ul li.active a {
+	color: #ffffff;
+}
+#faq-switcher-small .fa {
+	color: #ffffff;
+}
+.signup-navi > .step.active .num {
+	background-color: #0DB14B;
+}
+.form-row .btn,
+.form-row input.btn {
+	border-radius: 6px;
+	background-color: #0DB14B;
+}
+.form-row .btn.primary,
+.form-row input.btn.primary {
+	background-color: #0DB14B;
+}
+.form-row input.btn.secondary {
+	background-color: #222222;
+}
+.table-row.total .value,
+.table-row .value.highlight {
+	color: #0DB14B;
+}
+.page-action input.btn {
+	border-radius: 6px;
+	background-color: #0DB14B;
+}
+.wait-counter {
+	border-radius: 6px;
+	background-color: #EEEEEE;
+	color: #0DB14B;
+}
+.trans-navi > .step.active .num {
+	background-color: #0DB14B;
+}
+.swal2-styled.swal2-confirm {
+	background-color: #0DB14B !important;
+}
+.page-content-form,
+.universal-widget,
+.main-widget,
+.box-listing,
+.icon-actions .col {
+	border: 0px;
+	background: #FFFFFF;
+	border: 0px;
+	border-radius: 6px;
+}
+.select-weight-row a {
+	border-radius: 6px;
+}
+.signup-navi > .step .num,
+.trans-navi > .step .num,
+.box-listing-rows .box-listing-row .col.icon .badge,
+.box-listing-rows.ranking .box-listing-row .col.rank-status .badge {
+	background-color: #D2D2D2;
+}
+.table-row,
+.signup-navi:before,
+.form-row textarea,
+.form-row input[type=text],
+.form-row input[type=email],
+.form-row input[type=password],
+.form-row input[type=number],
+.balance-row,
+.buy-sell-row .col:last-of-type,
+.alert-input input[type=number],
+.box-listing,
+.table-row,
+.select-weight-row a,
+.trans-navi:before,
+.box-listing-rows .box-listing-row .col,
+.universal-btn,
+.box-content-row {
+	border-color: #D2D2D2;
+}
+.box-listing .box-listing-tabs a.active {
+	color: #0DB14B;
+	border-color: #0DB14B;
+}
+.buy-sell-row .col .current-value.down {
+	color: #ff0000;
+}
+.buy-sell-row .col.selected {
+	background-color: #E8FFF8;
+}
+@media only screen and (max-width: 680px) {	
+	.balance-row2 label,
+	.balance-row2 .col {
+		border-color: #D2D2D2;
+	}
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #0DB14B;
+}
+
+.verify-box input {
+    text-align: center;
+    width: 3em!important;
+    color: #0DB14B;
+}
+
+.select-weight-row a.selected {
+    border-color: #0a893a;
+    background-color: #0DB14B;
+    color: #fff;
+}
+
+/* Invite friend Css */
+.header-inside .inside-left {
+	font-weight: bold;
+	font-size: 18px;
+	color: #222222;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	text-align: left;
+  }
+  
+.inside-content {
+	font-weight: bold;
+	font-size: 12px;
+	color: #5C5C5C;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.text-left {
+	position: absolute;
+	left: 0;
+}
+
+.friend-invite-bottom
+{
+  padding: 5px 0 5px 0;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+
+.text-right-clip {
+  position: absolute;
+  right: 15%;
+  color: #6F7677;
+  font-size: 9px;
+}
+
+.icon-button-click {
+  position: absolute;
+  right: 0;
+  background: transparent;
+  border: none;
+}
+
+.icon-button-share {
+  /* position: absolute; */
+  /* right: 0; */
+  background: #F9F7F8;
+  /* border: none; */
+  background-color:#fff;
+  border:1px solid #D5D5D5;    
+  height:70px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:70px;
+  margin: 4%;
+}
+
+.icon-text-share {
+  /* position: absolute; */
+  /* right: 0; */
+
+  margin: 8%;
+}
+
+.link-button-row {
+  display: flex;
+  justify-content: center;
+}
+
+.link-button-row .col,
+.link-button-row .col .title{
+
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.page-content-form-shaded {
+  border: 1px solid #D8D8D8;
+  padding: 22px 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin: 24px;
+  box-shadow: 2px 4px #888888;
+}
+/* End Friend Invite Css */
+
+/* Friend Invite */
+@media only screen and (min-width: 881px){
+	#invitefriendbtn, #cancelinvitefriendbtn, #gobacktopreviouspage, #btnconfirmtransfer, #btnsendtransfer {
+		border: 0;
+		background: #0DB14B;
+		min-width: 160px;
+		margin-top: 5px;
+		width: 85%;
+	}
+}
+
+@media only screen and (min-width: 661px) and (max-width: 880px){
+	#invitefriendbtn, #cancelinvitefriendbtn, #gobacktopreviouspage, #btnconfirmtransfer, #btnsendtransfer {
+		border: 0;
+		background: #0DB14B;
+		min-width: 160px;
+		margin-top: 5px;
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 660px){
+	#invitefriendbtn, #cancelinvitefriendbtn, #gobacktopreviouspage, #btnconfirmtransfer, #btnsendtransfer {
+		border: 0;
+		background: #0DB14B;
+		min-width: 160px;
+		margin-top: 5px;
+		width: 85%;
+	}
+}
+/* End Friend Invite */

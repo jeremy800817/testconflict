@@ -1,0 +1,10 @@
+Alter table `partnerservice` 
+ADD `pas_specialpricetype`  enum('NONE','AMOUNT', 'GRAM') DEFAULT 'NONE' AFTER `pas_dailyselllimitxau`,
+ADD `pas_specialpricecondition` decimal(20,6) NOT NULL AFTER `pas_specialpricetype`,
+ADD `pas_specialpricecompanybuyoffset` decimal(20,6) NOT NULL AFTER `pas_specialpricecondition`,
+ADD `pas_specialpricecompanyselloffset` decimal(20,6) NOT NULL AFTER `pas_specialpricecompanybuyoffset`;
+
+
+
+
+

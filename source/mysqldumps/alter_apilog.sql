@@ -1,0 +1,3 @@
+ALTER TABLE `api_logs` ADD `api_refobject` VARCHAR(40) NOT NULL AFTER `api_systeminitiate`, ADD `api_refobjectid` BIGINT(20) NOT NULL AFTER `api_refobject`;
+
+ALTER TABLE `api_logs` CHANGE `api_type` `api_type` ENUM('NewPriceStream','SapOrder','SapCancelOrder','SapGenerateGrn','SapGoldSerialRequest','ApiAllocateXau','ApiGetPrice','ApiNewBooking','ApiConfirmBooking','ApiCancelBooking','ApiRedemption') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

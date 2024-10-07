@@ -1,0 +1,13 @@
+
+ALTER TABLE `api_logs` CHANGE `api_type` `api_type` ENUM('NewPriceStream','NewPriceValidation','SapOrder','SapCancelOrder','SapGenerateGrn','SapGoldSerialRequest','ApiAllocateXau','ApiGetPrice','ApiNewBooking','ApiConfirmBooking','ApiCancelBooking','ApiRedemption') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+ALTER TABLE `priceprovider` CHANGE `prp_pricesoureid` `prp_pricesourceid` BIGINT(20) NOT NULL;
+
+ALTER TABLE `pricevalidation` CHANGE `pva_validityref` `pva_uuid` CHAR(36) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'Price ID to send back to partner';
+
+ALTER TABLE `pricevalidation` DROP `pva_apilogid`;
+
+ALTER TABLE `partner` ADD `par_calculatormode` ENUM('GTP', 'MBB') NOT NULL COMMENT 'alculation mode to use for price' AFTER `par_ordercancelallowance`;
+
+ALTER TABLE `pricevalidation` ADD `pva_price` DECIMAL(20, 6) NOT NULL COMMENT 'Price ordered for this particular merchant' AFTER `pva_refineryfee`;
+

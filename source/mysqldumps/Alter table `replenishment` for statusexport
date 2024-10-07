@@ -1,0 +1,3 @@
+Alter table `replenishment`
+ADD `rpm_statusexport` smallint(2) NOT NULL COMMENT 'this is for ftp. Will change to 1 when successfully generate to ftp' AFTER rpm_status,
+ADD `rpm_statusexporton` datetime DEFAULT NULL COMMENT 'date manage to export' AFTER rpm_statusexport;

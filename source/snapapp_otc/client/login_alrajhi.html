@@ -1,0 +1,319 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>##TITLE##</title>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.85">
+		<!-- <link rel="shortcut icon" href="favicon_bsn.ico" /> -->
+		<link rel="shortcut icon" href="favicon_alrajhi.ico" />
+	</head>
+	<style>
+		.loginbody {
+			background-color: #204A6D;
+			color: #FFF;
+		}
+		.main_container {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			display: table;
+		}
+		.login_container {
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.login_box {
+			margin: 0 auto;
+			width: 400px;
+			/* border: 3px solid white; */
+			border-radius: 20px;
+			text-align: center;
+
+			border: 3px solid rgba(255,255,255,0.25);
+  			border-radius: 26px;
+		}
+		.inner_login_box {
+			margin: auto;
+			text-align: center;
+		}
+		.login_margin_top {
+			margin-top: 50px;
+		}
+		.login_logo {
+			margin-bottom: 20px;
+		}
+		.login_user_logo {
+			margin-bottom: 30px;
+		}
+		.login_input {
+			width: 200px;
+			padding: 12px 20px;
+			margin: 6px 0;
+			border: 0px solid white;
+			box-sizing: border-box;
+			border-radius: 20px;
+			text-align: center;
+			border-radius: 8px;
+		}
+		.g-recaptcha {
+			margin: 6px 0;
+			cursor: pointer;
+		}
+		.login_submit {
+			width: 200px;
+			padding: 12px 20px;
+			margin-top: 20px;
+			border: 0px solid white;
+			box-sizing: border-box;
+			border-radius: 20px;
+			text-align: center;
+			cursor: pointer;
+			background-color: #FCCF48;
+			color: #FFF;
+			border-radius: 8px;
+		}
+		.login_forgotpasswd {
+			margin-top: 10px;
+		}
+		.login_forgotpasswd_link {
+			color: #FFF;
+			text-decoration: none;
+		}
+		.footer {
+			text-align: center;
+			padding-top: 10px;
+		}
+		.loginbody{
+			background: linear-gradient(271deg,rgba(23, 103, 239, 0.85), rgba(20, 196, 251, 0.85));
+			background: -webkit-linear-gradient(271deg, rgb(23, 103, 239), rgb(20, 196, 251) 80%)!important;
+			background: -webkit-linear-gradient(271deg, rgb(5 65 164), rgb(0 189 248) 90%)!important;
+			background: -webkit-linear-gradient(271deg, rgb(5 65 164), rgb(0 177 232)  90%)!important;
+			background: -webkit-linear-gradient(271deg, rgb(0 189 248), rgb(0 189 248) 80%)!important;
+			background: -webkit-linear-gradient(271deg, rgb(27 66 151), rgb(27 66 151) 80%)!important;
+			font-family: system-ui;
+			}
+		.login_box{
+			background: rgba(255,255,255,0.2)!important;
+			background: -webkit-linear-gradient(91deg, rgba(23, 103, 239, 0.85), rgba(20, 196, 251, 0.85) 80%)!important;
+			background: -webkit-linear-gradient(91deg, rgb(65 122 216), rgb(62 190 230) 80%)!important;
+			background: -webkit-linear-gradient(41deg, rgba(255,255,255,0.35), rgba(255,255,255,0.1) 90%)!important;
+			background: -webkit-linear-gradient(320deg, rgba(255,255,255,0.35), rgb(255 255 255 / 5%) 48%)!important;
+			box-shadow: 2px 5px 8px 2px rgb(20 0 0 / 10%)
+			}
+		.login_submit{
+			background-color: #eeff64!important;
+			color: #000!important;
+		}
+
+		/* Extra CSS Settings */
+		.login_forgotpasswd { cursor: pointer; }
+		#abc {
+			width:100%;
+			height:100%;
+			opacity:.95;
+			top:0;
+			left:0;
+			display:none;
+			position:fixed;
+			background-color:#989898;
+			overflow:auto
+		}
+		img#close {
+			position:absolute;
+			right:-14px;
+			top:-14px;
+			cursor:pointer
+		}
+		div#popupContact {
+			position:absolute;
+			left:50%;
+			top:17%;
+			margin-left:-202px;
+			/*font-family:'Raleway',sans-serif*/
+			font-family: system-ui;
+		}
+		#popupform {
+			max-width:300px;
+			min-width:250px;
+			padding:10px 50px;
+			border:2px solid gray;
+			border-radius:10px;
+			font-family:raleway;
+			background-color:#fff;
+			background: linear-gradient(271deg,rgba(23, 103, 239, 0.85), rgba(20, 196, 251, 0.85));
+			background: -webkit-linear-gradient(271deg, rgb(23, 103, 239), rgb(20, 196, 251) 80%)!important;
+			background: -webkit-linear-gradient(271deg, rgb(5 65 164), rgb(0 189 248) 90%)!important;
+			background: -webkit-linear-gradient(271deg, rgb(5 65 164), rgb(0 177 232)  90%)!important;
+		}
+		p {
+		margin-top:30px
+		}
+		h2 {
+		/*background-color:#FEFFED;*/
+		background: -webkit-linear-gradient(320deg, rgba(255,255,255,0.35), rgb(255 255 255 / 5%) 48%)!important;
+		padding:20px 35px;
+		margin:-10px -50px;
+		text-align:center;
+		border-radius:10px 10px 0 0;
+		font-family: helvetica neue,Helvetica,Roboto,Arial,sans-serif;
+		}
+		h3{
+			/*font-family:'Raleway',sans-serif*/
+			font-size: .95rem!important;
+    		line-height: 1.725em!important;
+			font-family: system-ui;
+		}
+		hr {
+		margin:10px -50px;
+		border:0;
+		border-top:1px solid #ccc
+		}
+		#email {
+			width:82%;
+			padding:10px;
+			margin-top:30px;
+			border:1px solid #ccc;
+			padding-left:40px;
+			font-size:16px;
+			/*font-family:'Raleway',sans-serif*/
+			background-image:url(https://www.bursamarketplace.com/assets/bmp/reskin_v2/header/cd-icon-email.svg);
+			background-repeat:no-repeat;
+			background-position:5px 11px;
+			margin-bottom: 30px;
+			font-family: system-ui;
+		}
+		#submit {
+			text-decoration:none;
+			width:100%;
+			text-align:center;
+			display:block;
+			background-color: #eeff64!important;
+			color:#0a0a0a;
+			border:1px solid #FFCB00;
+			padding:10px 0;
+			font-size:20px;
+			cursor:pointer;
+			border-radius:5px
+		}
+		span {
+			color:red;
+			font-weight:700
+		}
+		button {
+			width:10%;
+			height:45px;
+			border-radius:3px;
+			background-color:#cd853f;
+			color:#fff;
+			font-family: helvetica neue,Helvetica,Roboto,Arial,sans-serif;
+			/*font-family:'Raleway',sans-serif*/
+			font-family: system-ui;
+			font-size:18px;
+			cursor:pointer
+		}
+		#submit:hover{
+			background-color:#edfc78;
+			color:#0a0a0a;
+		}
+	</style>
+	##DEVCSS##
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script>
+function des(_1,_2,_3,_4,iv,_6){var _7=new Array(16843776,0,65536,16843780,16842756,66564,4,65536,1024,16843776,16843780,1024,16778244,16842756,16777216,4,1028,16778240,16778240,66560,66560,16842752,16842752,16778244,65540,16777220,16777220,65540,0,1028,66564,16777216,65536,16843780,4,16842752,16843776,16777216,16777216,1024,16842756,65536,66560,16777220,1024,4,16778244,66564,16843780,65540,16842752,16778244,16777220,1028,66564,16843776,1028,16778240,16778240,0,65540,66560,0,16842756);var _8=new Array(-2146402272,-2147450880,32768,1081376,1048576,32,-2146435040,-2147450848,-2147483616,-2146402272,-2146402304,-2147483648,-2147450880,1048576,32,-2146435040,1081344,1048608,-2147450848,0,-2147483648,32768,1081376,-2146435072,1048608,-2147483616,0,1081344,32800,-2146402304,-2146435072,32800,0,1081376,-2146435040,1048576,-2147450848,-2146435072,-2146402304,32768,-2146435072,-2147450880,32,-2146402272,1081376,32,32768,-2147483648,32800,-2146402304,1048576,-2147483616,1048608,-2147450848,-2147483616,1048608,1081344,0,-2147450880,32800,-2147483648,-2146435040,-2146402272,1081344);var _9=new Array(520,134349312,0,134348808,134218240,0,131592,134218240,131080,134217736,134217736,131072,134349320,131080,134348800,520,134217728,8,134349312,512,131584,134348800,134348808,131592,134218248,131584,131072,134218248,8,134349320,512,134217728,134349312,134217728,131080,520,131072,134349312,134218240,0,512,131080,134349320,134218240,134217736,512,0,134348808,134218248,131072,134217728,134349320,8,131592,131584,134217736,134348800,134218248,520,134348800,131592,8,134348808,131584);var _a=new Array(8396801,8321,8321,128,8396928,8388737,8388609,8193,0,8396800,8396800,8396929,129,0,8388736,8388609,1,8192,8388608,8396801,128,8388608,8193,8320,8388737,1,8320,8388736,8192,8396928,8396929,129,8388736,8388609,8396800,8396929,129,0,0,8396800,8320,8388736,8388737,1,8396801,8321,8321,128,8396929,129,1,8192,8388609,8193,8396928,8388737,8193,8320,8388608,8396801,128,8388608,8192,8396928);var _b=new Array(256,34078976,34078720,1107296512,524288,256,1073741824,34078720,1074266368,524288,33554688,1074266368,1107296512,1107820544,524544,1073741824,33554432,1074266112,1074266112,0,1073742080,1107820800,1107820800,33554688,1107820544,1073742080,0,1107296256,34078976,33554432,1107296256,524544,524288,1107296512,256,33554432,1073741824,34078720,1107296512,1074266368,33554688,1073741824,1107820544,34078976,1074266368,256,33554432,1107820544,1107820800,524544,1107296256,1107820800,34078720,0,1074266112,1107296256,524544,33554688,1073742080,524288,0,1074266112,34078976,1073742080);var _c=new Array(536870928,541065216,16384,541081616,541065216,16,541081616,4194304,536887296,4210704,4194304,536870928,4194320,536887296,536870912,16400,0,4194320,536887312,16384,4210688,536887312,16,541065232,541065232,0,4210704,541081600,16400,4210688,541081600,536870912,536887296,16,541065232,4210688,541081616,4194304,16400,536870928,4194304,536887296,536870912,16400,536870928,541081616,4210688,541065216,4210704,541081600,0,541065232,16,16384,541065216,4210704,16384,4194320,536887312,0,541081600,536870912,4194320,536887312);var _d=new Array(2097152,69206018,67110914,0,2048,67110914,2099202,69208064,69208066,2097152,0,67108866,2,67108864,69206018,2050,67110912,2099202,2097154,67110912,67108866,69206016,69208064,2097154,69206016,2048,2050,69208066,2099200,2,67108864,2099200,67108864,2099200,2097152,67110914,67110914,69206018,69206018,2,2097154,67108864,67110912,2097152,69208064,2050,2099202,69208064,2050,67108866,69208066,69206016,2099200,0,2,69208066,0,2099202,69206016,2048,67108866,67110912,2048,2097154);var _e=new Array(268439616,4096,262144,268701760,268435456,268439616,64,268435456,262208,268697600,268701760,266240,268701696,266304,4096,64,268697600,268435520,268439552,4160,266240,262208,268697664,268701696,4160,0,0,268697664,268435520,268439552,266304,262144,266304,262144,268701696,4096,64,268697664,4096,266304,268439552,64,268435520,268697600,268697664,268435456,262144,268439616,0,268701760,262208,268435520,268697600,268439552,268439616,0,268701760,266240,266240,4160,4160,262208,268435456,268701696);var _f=des_createKeys(_1);var m=0,i,j,_13,_14,_15,_16,_17,_18,_19;var _1a,_1b,_1c,_1d;var _1e,_1f;var len=_2.length;var _21=0;var _22=_f.length==32?3:9;if(_22==3){_19=_3?new Array(0,32,2):new Array(30,-2,-2)}else{_19=_3?new Array(0,32,2,62,30,-2,64,96,2):new Array(94,62,-2,32,64,2,30,-2,-2)}
+if(_6==2){_2+="        "}else{if(_6==1){_13=8-(len%8);_2+=String.fromCharCode(_13,_13,_13,_13,_13,_13,_13,_13);if(_13==8){len+=8}}else{if(!_6){_2+=String.fromCharCode(0,0,0,0,0,0,0,0)}}}
+result="";tempresult="";if(_4==1){_1a=(iv.charCodeAt(m++)<<24)|(iv.charCodeAt(m++)<<16)|(iv.charCodeAt(m++)<<8)|iv.charCodeAt(m++);_1c=(iv.charCodeAt(m++)<<24)|(iv.charCodeAt(m++)<<16)|(iv.charCodeAt(m++)<<8)|iv.charCodeAt(m++);m=0}
+while(m<len){_17=(_2.charCodeAt(m++)<<24)|(_2.charCodeAt(m++)<<16)|(_2.charCodeAt(m++)<<8)|_2.charCodeAt(m++);_18=(_2.charCodeAt(m++)<<24)|(_2.charCodeAt(m++)<<16)|(_2.charCodeAt(m++)<<8)|_2.charCodeAt(m++);if(_4==1){if(_3){_17^=_1a;_18^=_1c}else{_1b=_1a;_1d=_1c;_1a=_17;_1c=_18}}
+_13=((_17>>>4)^_18)&252645135;_18^=_13;_17^=(_13<<4);_13=((_17>>>16)^_18)&65535;_18^=_13;_17^=(_13<<16);_13=((_18>>>2)^_17)&858993459;_17^=_13;_18^=(_13<<2);_13=((_18>>>8)^_17)&16711935;_17^=_13;_18^=(_13<<8);_13=((_17>>>1)^_18)&1431655765;_18^=_13;_17^=(_13<<1);_17=((_17<<1)|(_17>>>31));_18=((_18<<1)|(_18>>>31));for(j=0;j<_22;j+=3){_1e=_19[j+1];_1f=_19[j+2];for(i=_19[j];i!=_1e;i+=_1f){_15=_18^_f[i];_16=((_18>>>4)|(_18<<28))^_f[i+1];_13=_17;_17=_18;_18=_13^(_8[(_15>>>24)&63]|_a[(_15>>>16)&63]|_c[(_15>>>8)&63]|_e[_15&63]|_7[(_16>>>24)&63]|_9[(_16>>>16)&63]|_b[(_16>>>8)&63]|_d[_16&63])}
+_13=_17;_17=_18;_18=_13}
+_17=((_17>>>1)|(_17<<31));_18=((_18>>>1)|(_18<<31));_13=((_17>>>1)^_18)&1431655765;_18^=_13;_17^=(_13<<1);_13=((_18>>>8)^_17)&16711935;_17^=_13;_18^=(_13<<8);_13=((_18>>>2)^_17)&858993459;_17^=_13;_18^=(_13<<2);_13=((_17>>>16)^_18)&65535;_18^=_13;_17^=(_13<<16);_13=((_17>>>4)^_18)&252645135;_18^=_13;_17^=(_13<<4);if(_4==1){if(_3){_1a=_17;_1c=_18}else{_17^=_1b;_18^=_1d}}
+tempresult+=String.fromCharCode((_17>>>24),((_17>>>16)&255),((_17>>>8)&255),(_17&255),(_18>>>24),((_18>>>16)&255),((_18>>>8)&255),(_18&255));_21+=8;if(_21==512){result+=tempresult;tempresult="";_21=0}}
+return result+tempresult}
+function des_createKeys(key){pc2bytes0=new Array(0,4,536870912,536870916,65536,65540,536936448,536936452,512,516,536871424,536871428,66048,66052,536936960,536936964);pc2bytes1=new Array(0,1,1048576,1048577,67108864,67108865,68157440,68157441,256,257,1048832,1048833,67109120,67109121,68157696,68157697);pc2bytes2=new Array(0,8,2048,2056,16777216,16777224,16779264,16779272,0,8,2048,2056,16777216,16777224,16779264,16779272);pc2bytes3=new Array(0,2097152,134217728,136314880,8192,2105344,134225920,136323072,131072,2228224,134348800,136445952,139264,2236416,134356992,136454144);pc2bytes4=new Array(0,262144,16,262160,0,262144,16,262160,4096,266240,4112,266256,4096,266240,4112,266256);pc2bytes5=new Array(0,1024,32,1056,0,1024,32,1056,33554432,33555456,33554464,33555488,33554432,33555456,33554464,33555488);pc2bytes6=new Array(0,268435456,524288,268959744,2,268435458,524290,268959746,0,268435456,524288,268959744,2,268435458,524290,268959746);pc2bytes7=new Array(0,65536,2048,67584,536870912,536936448,536872960,536938496,131072,196608,133120,198656,537001984,537067520,537004032,537069568);pc2bytes8=new Array(0,262144,0,262144,2,262146,2,262146,33554432,33816576,33554432,33816576,33554434,33816578,33554434,33816578);pc2bytes9=new Array(0,268435456,8,268435464,0,268435456,8,268435464,1024,268436480,1032,268436488,1024,268436480,1032,268436488);pc2bytes10=new Array(0,32,0,32,1048576,1048608,1048576,1048608,8192,8224,8192,8224,1056768,1056800,1056768,1056800);pc2bytes11=new Array(0,16777216,512,16777728,2097152,18874368,2097664,18874880,67108864,83886080,67109376,83886592,69206016,85983232,69206528,85983744);pc2bytes12=new Array(0,4096,134217728,134221824,524288,528384,134742016,134746112,16,4112,134217744,134221840,524304,528400,134742032,134746128);pc2bytes13=new Array(0,4,256,260,0,4,256,260,1,5,257,261,1,5,257,261);var _24=key.length>8?3:1;var _25=new Array(32*_24);var _26=new Array(0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0);var _27,_28,m=0,n=0,_2b;for(var j=0;j<_24;j++){left=(key.charCodeAt(m++)<<24)|(key.charCodeAt(m++)<<16)|(key.charCodeAt(m++)<<8)|key.charCodeAt(m++);right=(key.charCodeAt(m++)<<24)|(key.charCodeAt(m++)<<16)|(key.charCodeAt(m++)<<8)|key.charCodeAt(m++);_2b=((left>>>4)^right)&252645135;right^=_2b;left^=(_2b<<4);_2b=((right>>>-16)^left)&65535;left^=_2b;right^=(_2b<<-16);_2b=((left>>>2)^right)&858993459;right^=_2b;left^=(_2b<<2);_2b=((right>>>-16)^left)&65535;left^=_2b;right^=(_2b<<-16);_2b=((left>>>1)^right)&1431655765;right^=_2b;left^=(_2b<<1);_2b=((right>>>8)^left)&16711935;left^=_2b;right^=(_2b<<8);_2b=((left>>>1)^right)&1431655765;right^=_2b;left^=(_2b<<1);_2b=(left<<8)|((right>>>20)&240);left=(right<<24)|((right<<8)&16711680)|((right>>>8)&65280)|((right>>>24)&240);right=_2b;for(i=0;i<_26.length;i++){if(_26[i]){left=(left<<2)|(left>>>26);right=(right<<2)|(right>>>26)}else{left=(left<<1)|(left>>>27);right=(right<<1)|(right>>>27)}
+left&=-15;right&=-15;_27=pc2bytes0[left>>>28]|pc2bytes1[(left>>>24)&15]|pc2bytes2[(left>>>20)&15]|pc2bytes3[(left>>>16)&15]|pc2bytes4[(left>>>12)&15]|pc2bytes5[(left>>>8)&15]|pc2bytes6[(left>>>4)&15];_28=pc2bytes7[right>>>28]|pc2bytes8[(right>>>24)&15]|pc2bytes9[(right>>>20)&15]|pc2bytes10[(right>>>16)&15]|pc2bytes11[(right>>>12)&15]|pc2bytes12[(right>>>8)&15]|pc2bytes13[(right>>>4)&15];_2b=((_28>>>16)^_27)&65535;_25[n++]=_27^_2b;_25[n++]=_28^(_2b<<16)}}
+return _25}
+function stringToHex(s){var r="";var _2f=new Array("0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f");for(var i=0;i<s.length;i++){r+=_2f[s.charCodeAt(i)>>4]+_2f[s.charCodeAt(i)&15]}
+return r}
+
+function doLogin() {
+	result = stringToHex(des(document.getElementById('salt').value, document.getElementById('pass').value, 1, 0));
+	document.getElementById('pass').value = result;
+	document.getElementById('tzoffset').value = new Date().getTimezoneOffset();
+}
+
+function check_empty() {
+	if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+		alert("Fill All Fields !");
+	} else {
+		document.getElementById('form').submit();
+		alert("Form Submitted Successfully...");
+	}
+}
+
+//Function To Display Popup
+function div_show() {
+	document.getElementById('abc').style.display = "block";
+}
+//Function to Hide Popup
+function div_hide(){
+	document.getElementById('abc').style.display = "none";
+}
+
+function doReset() {
+	result = stringToHex(des(document.getElementById('salt').value, document.getElementById('user').value, 1, 0));
+	document.getElementById('email').value = result;
+	document.getElementById('tzoffset').value = new Date().getTimezoneOffset();
+}
+	</script>
+
+	<body class="loginbody">
+		<div class="main_container">
+			<div class="login_container">
+				<div class="login_box">
+					<div class="inner_login_box">
+						<div class="login_margin_top"></div>
+						<!-- <div class="login_logo"><img src="/src/resources/images/BSN-logo.svg" style="width:250px"></div> -->
+						<div class="login_logo"><img src="/src/resources/images/ALRAJHI-logo.png" style="width:100px"></div>
+						<div class="login_user_logo"><img src="/src/resources/images/people.png"></div>
+						<div id="abc">
+							<!-- Popup Div Starts Here -->
+							<div id="popupContact">
+							<!-- Contact Us Form -->
+							<form action="##PHPSELF##" id="popupform" method="post" name="form">
+								<input id="action" type="hidden" name="action" value="submitreset">
+								<img id="close" src="https://web.archive.org/web/20110126035650/http://digitalsbykobke.com/images/close.png" onclick ="div_hide()">
+								<h2>Forgot Password?</h2>
+								<hr>
+								<!--<input id="name" name="name" placeholder="Name" type="text">-->
+								<h3>Lost your password? Please enter your email address. You will receive a link to create a new password.</h2>
+								<input id="email" type="text" name="resetemail" placeholder="##FORMEMAIL##"  pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required class="reset_input">
+								<!--<textarea id="msg" name="message" placeholder="Message"></textarea>-->
+								<div><input type="submit" id='submit' onclick="doReset()" value="##REQUESTBUTTON##" class="reset_submit"></div>
+							</form>
+							</div>
+							<!-- Popup Div Ends Here -->
+							</div>
+						<form method="post" id="form1" action="##PHPSELF##">
+							<input id="salt" type="hidden" name="salt" value="##SALT##">
+							<input id="tzoffset" type="hidden" name="tzoffset" value="	">
+							<div class="login_form">
+								<center>
+									<div>##ERRORMESSAGE##</div>
+									<div><input type="text" name="username" value="" placeholder="##USERNAME##" class="login_input"></div>
+									<div><input id=pass type="password" name="password" value="" placeholder="##PASSWORD##" class="login_input"></div>
+									<!-- <div class="g-recaptcha" data-sitekey="6LdCLRoUAAAAAMl_tsT6vTBVy9ZLJ0G0dsHVRqpc"></div> -->
+									<div><input type="submit" onclick="doLogin()" value="##SUBMIT##" class="login_submit"></div>
+									<!--<div class="login_forgotpasswd"><a href="##FORGOTPASSWORDLINK##" class="login_forgotpasswd_link">##FORGOTPASSWORD##</a></div>-->
+									<div class="login_forgotpasswd"  onclick="div_show()">##FORGOTPASSWORD##</a></div>
+								</center>
+							</div>
+						</form>
+						<div class="login_margin_top"></div>
+					</div>
+				</div>
+				<div class="footer">##FOOTER##</div>
+			</div>
+		</div>
+	</body>
+</html>

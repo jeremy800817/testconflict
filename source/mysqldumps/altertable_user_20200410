@@ -1,0 +1,5 @@
+ALTER TABLE user
+    ADD COLUMN usr_lastlogin datetime,
+    ADD COLUMN usr_lastloginip char(32),
+    ADD COLUMN usr_expire datetime
+    AFTER usr_status

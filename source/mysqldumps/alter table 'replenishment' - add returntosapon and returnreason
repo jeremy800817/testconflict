@@ -1,0 +1,7 @@
+Alter table `replenishment`
+ADD `rpm_returntosapon` datetime DEFAULT NULL COMMENT 'date return by phyrtn' AFTER rpm_sapresponseon,
+ADD `rpm_returnreason` varchar(255) NOT NULL COMMENT 'reason from phyrtn' AFTER rpm_returntosapon;
+
+/*update view table*/
+DROP VIEW  IF EXISTS `vw_replenishment`;
+CREATE VIEW `vw_replenishment`  AS  select `replenishment`.*,`partner`.`par_name` AS `rpm_partnername`,`partner`.`par_code` AS `rpm_partnercode`,`partnerbranchmap`.`pbm_name` AS `rpm_branchname`,`partnerbranchmap`.`pbm_code` AS `rpm_branchcode`,`partnerbranchmap`.`pbm_sapcode` AS `rpm_branchsapcode`,`createdby`.`usr_name` AS `rpm_createdbyname`,`modifiedby`.`usr_name` AS `rpm_modifiedbyname`,`product`.`pdt_name` AS `rpm_productname`,`salesname`.`usr_name` AS `rpm_salesman` from ((((((`replenishment` left join `partner` on((`partner`.`par_id` = `replenishment`.`rpm_partnerid`))) left join `product` on((`product`.`pdt_id` = `replenishment`.`rpm_productid`))) left join `partnerbranchmap` on((`partnerbranchmap`.`pbm_id` = `replenishment`.`rpm_branchid`))) left join `user` `createdby` on((`createdby`.`usr_id` = `replenishment`.`rpm_createdby`))) left join `user` `modifiedby` on((`modifiedby`.`usr_id` = `replenishment`.`rpm_modifiedby`))) left join `user` `salesname` on((`salesname`.`usr_id` = `replenishment`.`rpm_salespersonid`))) ;

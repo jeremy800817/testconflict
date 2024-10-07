@@ -1,0 +1,30 @@
+Ext.define('snap.model.PriceAdjuster', {
+    extend: 'snap.model.Base',
+    fields: [
+        { type: 'int', name: 'id' },
+        { type: 'int', name: 'priceproviderid' },
+        { type: 'string', name: 'fxbuypremium' },
+        { type: 'string', name: 'fxsellpremium' },
+        { type: 'string', name: 'buymargin' },
+        { type: 'string', name: 'sellmargin' },
+        { type: 'string', name: 'refinefee' },
+        { type: 'string', name: 'supplierpremium' },
+        { type: 'string', name: 'buyspread' },
+        { type: 'string', name: 'sellspread' },
+        { type: 'date', name: 'effectiveon' },
+        { type: 'date', name: 'effectiveendon' },
+        { type: 'int', name: 'tier' },
+        { type: 'int', name: 'usepercent' },
+        { type: 'float', name: 'buypercent' },
+        { type: 'float', name: 'sellpercent' },
+        { type: 'int', name: 'usespreadcopy' },
+        { type: 'float', name: 'buyspreadoriginal' },
+        { type: 'float', name: 'sellspreadoriginal' },
+        { type: 'date', name: 'createdon' },
+        { type: 'string', name: 'createdby' },
+
+        { type: 'string', name: 'priceprovidername' },
+        { type: 'string', name: 'createdbyname' },
+        { type: 'string', name: 'modifiedbyname' },
+    ]
+});

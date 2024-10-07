@@ -1,0 +1,2219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-03 14:13+0800\n"
+"PO-Revision-Date: 2021-08-03 14:30+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ms_MY\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:271
+msgid "Email sent successfully"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:580
+msgid "Account registration success"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:643
+msgid "Password reset code sent to the phone number."
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:644
+msgid "Password reset code sent to the email address."
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:689
+msgid "Password has been reset successfully."
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:738
+msgid "Pin has been reset successfully."
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:810
+msgid "Successfully updated pin"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:826
+msgid "Successfully updated password"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:861
+msgid "Successfully updated profile"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:878
+msgid "Successfully updated bank account information"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:895
+msgid "Successfully changed the language"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:913
+msgid "Successfully uploaded images"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:929
+msgid "Successfully logged out"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:1303
+#: ../handler/myvaultitemhandler.php:105
+msgid "Unable to get partner vault"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:1539 ../object/LogisticLog.php:69
+#: ../object/Logistic.php:171 ../object/Logistic.php:232
+#: ../object/MyAccountClosure.php:99 ../object/MyAccountHolder.php:315
+#: ../object/MyAccountHolder.php:350 ../object/MyAccountHolder.php:359
+#: ../object/MyConversion.php:174 ../object/MyGoldTransaction.php:193
+##### Do not translate statuses by request from App team (July 2021)
+msgid "Pending"
+msgstr ""
+
+#: ../app.php:256
+#, php-format
+msgid "Failed to open configure file at %s"
+msgstr "Gagal membuka fail konfigurasi di %s"
+
+#: ../app.php:690
+#, php-format
+msgid "Failed to create log path directory %s"
+msgstr "Gagal membuat direktori log %s"
+
+#: ../controller.php:257
+msgid "System management module"
+msgstr "Modul pengurusan sistem"
+
+#: ../controller.php:258
+msgid "User management module"
+msgstr "Modul pengurusan pengguna"
+
+#: ../controller.php:259
+msgid "View user"
+msgstr "Lihat pengguna"
+
+#: ../controller.php:260
+msgid "Add user"
+msgstr "Tambah pengguna"
+
+#: ../controller.php:261
+msgid "Edit user"
+msgstr "Sunting pengguna"
+
+#: ../controller.php:262
+msgid "Reset password for all"
+msgstr "Tetapkan semula kata laluan untuk semua"
+
+#: ../controller.php:263
+msgid "Suspend user"
+msgstr "Gantung pengguna"
+
+#: ../controller.php:264
+msgid "Role management module"
+msgstr "Modul pengurusan peranan"
+
+#: ../controller.php:265
+msgid "View role"
+msgstr "Lihat peranan"
+
+#: ../controller.php:266
+msgid "Add role"
+msgstr "Tambah peranan"
+
+#: ../controller.php:267
+msgid "Edit role"
+msgstr "Sunting peranan"
+
+#: ../controller.php:268
+msgid "Delete role"
+msgstr "Padamkan peranan"
+
+#: ../controller.php:269
+msgid "IP restriction module"
+msgstr "Modul sekatan IP"
+
+#: ../controller.php:270
+msgid "View IP restriction"
+msgstr "Lihat sekatan IP"
+
+#: ../controller.php:271
+msgid "Add IP restriction"
+msgstr "Tambahkan sekatan IP"
+
+#: ../controller.php:272
+msgid "Update IP restriction"
+msgstr "Kemas kini sekatan IP"
+
+#: ../controller.php:273
+msgid "Delete IP restriction"
+msgstr "Padamkan sekatan IP"
+
+#: ../controller.php:274
+msgid "Event logs"
+msgstr "Log peristiwa"
+
+#: ../controller.php:275 ../gtpcontroller.php:359
+msgid "Event Subscription"
+msgstr "Langganan peristiwa"
+
+#: ../controller.php:276 ../gtpcontroller.php:354
+msgid "Event Message"
+msgstr "Mesej Peristiwa"
+
+#: ../controller.php:277
+msgid "Event trigger"
+msgstr "Pencetus peristiwa"
+
+#: ../gtpcontroller.php:175
+msgid "Developer access only modules"
+msgstr "Modul Pembangun"
+
+#: ../gtpcontroller.php:176
+msgid "Tag Editing access only modules"
+msgstr "Modul Penyunting Tag"
+
+#: ../gtpcontroller.php:177
+msgid "Operator special access modules"
+msgstr "Modul khas operator"
+
+#: ../gtpcontroller.php:179
+msgid "GTP Modules"
+msgstr "Modul GTP"
+
+#: ../gtpcontroller.php:180
+msgid "MIB Modules"
+msgstr "Modul MIB"
+
+#: ../gtpcontroller.php:181
+msgid "Order management for GTP"
+msgstr "Pengurusan pesanan untuk GTP"
+
+#: ../gtpcontroller.php:182
+msgid "View order for GTP"
+msgstr "Lihat pesanan untuk GTP"
+
+#: ../gtpcontroller.php:183
+msgid "Add order for GTP"
+msgstr "Tambahkan pesanan untuk GTP"
+
+#: ../gtpcontroller.php:184
+msgid "Edit order for GTP"
+msgstr "Sunting pesanan untuk GTP"
+
+#: ../gtpcontroller.php:185
+msgid "Cancel order for GTP"
+msgstr "Batalkan pesanan untuk GTP"
+
+#: ../gtpcontroller.php:186
+msgid "Confirm order for GTP"
+msgstr "Sahkan pesanan untuk GTP"
+
+#: ../gtpcontroller.php:187
+msgid "Order management for MBB"
+msgstr "Pengurusan pesanan untuk MBB"
+
+#: ../gtpcontroller.php:188
+msgid "View order for MBB"
+msgstr "Lihat pesanan untuk MBB"
+
+#: ../gtpcontroller.php:189
+msgid "Add order for MBB"
+msgstr "Tambah pesanan untuk MBB"
+
+#: ../gtpcontroller.php:190
+msgid "Edit order for MBB"
+msgstr "Sunting pesanan untuk MBB"
+
+#: ../gtpcontroller.php:191
+msgid "Cancel order for MBB"
+msgstr "Batalkan pesanan untuk MBB"
+
+#: ../gtpcontroller.php:192
+msgid "Confirm order for MBB"
+msgstr "Sahkan pesanan untuk MBB"
+
+#: ../gtpcontroller.php:193
+msgid "Export order for MBB"
+msgstr "Eksport pesanan untuk MBB"
+
+#: ../gtpcontroller.php:194
+msgid "Future order management for GTP"
+msgstr "Pengurusan pesanan masa depan untuk GTP"
+
+#: ../gtpcontroller.php:195
+msgid "View future order for GTP"
+msgstr "Lihat pesanan masa depan untuk GTP"
+
+#: ../gtpcontroller.php:196
+msgid "Add future order for GTP"
+msgstr "Tambahkan pesanan masa depan untuk GTP"
+
+#: ../gtpcontroller.php:197
+msgid "Edit future order for GTP"
+msgstr "Sunting pesanan masa depan untuk GTP"
+
+#: ../gtpcontroller.php:198
+msgid "Cancel future order for GTP"
+msgstr "Batalkan pesanan masa depan untuk GTP"
+
+#: ../gtpcontroller.php:199
+msgid "Confirm future order for GTP"
+msgstr "Sahkan pesanan masa depan untuk GTP"
+
+#. "/root/gtp/ftrordercancel" => gettext("Cancelled future order management for GTP"),
+#. "/root/gtp/ftrordercancel/list" => gettext("View cancelled future order for GTP"),
+#: ../gtpcontroller.php:202
+msgid "Future order management for MBB"
+msgstr "Pengurusan pesanan masa depan untuk MBB"
+
+#: ../gtpcontroller.php:203
+msgid "View future order for MBB"
+msgstr "Lihat pesanan masa depan untuk MBB"
+
+#: ../gtpcontroller.php:204
+msgid "Add future order for MBB"
+msgstr "Tambahkan pesanan masa depan untuk MBB"
+
+#: ../gtpcontroller.php:205
+msgid "Edit future order for MBB"
+msgstr "Sunting pesanan masa depan untuk MBB"
+
+#: ../gtpcontroller.php:206
+msgid "Cancel future order for MBB"
+msgstr "Batalkan pesanan masa depan untuk MBB"
+
+#: ../gtpcontroller.php:207
+msgid "Confirm future order for MBB"
+msgstr "Sahkan pesanan masa depan untuk MBB"
+
+#: ../gtpcontroller.php:208
+msgid "Export future order for MBB"
+msgstr ""
+
+#. "/root/mbb/ftrordercancel" => gettext("Cancelled future order management for MBB"),
+#. "/root/mbb/ftrordercancel/list" => gettext("View cancelled future order for MBB"),
+#: ../gtpcontroller.php:212
+msgid "Daily Limit for partner"
+msgstr "Had harian untuk rakan kongsi"
+
+#: ../gtpcontroller.php:214
+msgid "Salesman Trading"
+msgstr "Perdagangan Jurujual"
+
+#. "/root/gtp/sale/trade" => gettext("Sales Trade"),
+#. "/root/gtp/sale/list" => gettext("View sales trade"),
+#. "/root/gtp/sale/edit" => gettext("Edit sales trade"),
+#. "/root/gtp/sale/confirm" => gettext("Confirm sales trade"),
+#: ../gtpcontroller.php:220
+msgid "Customer Trading"
+msgstr "Perdagangan Pelanggan"
+
+#. "/root/gtp/cust/trade" => gettext("Customer Trade"),
+#. "/root/gtp/cust/list" => gettext("View Customer Trade"),
+#. "/root/gtp/cust/edit" => gettext("Edit Customer Trade"),
+#. "/root/gtp/cust/confirm" => gettext("Confirm Customer Trade"),
+#: ../gtpcontroller.php:226
+msgid "Collection"
+msgstr "Kutipan"
+
+#: ../gtpcontroller.php:227
+msgid "View Collection"
+msgstr "Lihat Kutipan"
+
+#: ../gtpcontroller.php:228
+msgid "Add Collection"
+msgstr "Tambah Kutipan"
+
+#: ../gtpcontroller.php:229
+msgid "Edit Collection"
+msgstr "Sunting Kutipan"
+
+#: ../gtpcontroller.php:230
+msgid "Confirm Collection"
+msgstr "Sahkan Kutipan"
+
+#: ../gtpcontroller.php:232
+msgid "Unfulfilled PO"
+msgstr "PO yang tidak dipenuhi"
+
+#. "/root/gtp/unfulfilledorder/list" => gettext("View Unfulfilled Order"),
+#. "/root/gtp/unfulfilledorder/edit" => gettext("Edit unfulfilled order"),
+#. "/root/gtp/unfulfilledorder/confirm" => gettext("Confirm unfulfilled order"),
+#. "/root/gtp/salescommission" => gettext("Sales commission management"),
+#. "/root/gtp/salescommission/list" => gettext("View sales commission"),
+#: ../gtpcontroller.php:240
+msgid "Logistics management for GTP"
+msgstr "Pengurusan logistik untuk GTP"
+
+#: ../gtpcontroller.php:241
+msgid "View logistics information for GTP"
+msgstr "Lihat maklumat logistik untuk GTP"
+
+#: ../gtpcontroller.php:242
+msgid "Add logistics for GTP"
+msgstr "Tambahkan logistik untuk GTP"
+
+#: ../gtpcontroller.php:243
+msgid "Edit logistics for GTP"
+msgstr "Sunting logistik untuk GTP"
+
+#: ../gtpcontroller.php:244
+msgid "Delete logistics for GTP"
+msgstr "Padamkan logistik untuk GTP"
+
+#: ../gtpcontroller.php:245
+msgid "Complete logistics for GTP"
+msgstr "Selesai logistik untuk GTP"
+
+#: ../gtpcontroller.php:247
+msgid "Buyback management for Mib"
+msgstr "Pengurusan pembelian balik untuk Mib"
+
+#: ../gtpcontroller.php:248
+msgid "View buyback for Mib"
+msgstr "Lihat pembelian balik untuk Mib"
+
+#: ../gtpcontroller.php:249
+msgid "Add buyback for Mib"
+msgstr "Tambahkan pembelian balik untuk Mib"
+
+#: ../gtpcontroller.php:250
+msgid "Edit buyback for Mib"
+msgstr "Sunting pembelian balik untuk Mib"
+
+#: ../gtpcontroller.php:251
+msgid "Complete buyback for Mib"
+msgstr "Selesai pembelian balik untuk Mib"
+
+#: ../gtpcontroller.php:252
+msgid "Export buyback for Mib"
+msgstr "Pembelian balik eksport untuk Mib"
+
+#: ../gtpcontroller.php:255
+msgid "Redemption management for Mib"
+msgstr "Pengurusan penebusan untuk Mib"
+
+#: ../gtpcontroller.php:256
+msgid "View redemption for Mib"
+msgstr "Lihat penebusan untuk Mib"
+
+#: ../gtpcontroller.php:257
+msgid "Add redemption for Mib"
+msgstr "Tambahkan penebusan untuk Mib"
+
+#: ../gtpcontroller.php:258
+msgid "Edit redemption for Mib"
+msgstr "Sunting penebusan untuk Mib"
+
+#: ../gtpcontroller.php:259
+msgid "Complete redemption for Mib"
+msgstr "Selesai penebusan untuk Mib"
+
+#: ../gtpcontroller.php:260
+msgid "Export redemption for Mib"
+msgstr "Eksport penebusan untuk Mib"
+
+#: ../gtpcontroller.php:261
+msgid "Replenishment management for Mib"
+msgstr "Pengurusan pengisian semula untuk Mib"
+
+#: ../gtpcontroller.php:262
+msgid "View replenishment for Mib"
+msgstr "Lihat pengisian semula untuk Mib"
+
+#: ../gtpcontroller.php:263
+msgid "Add replenishment for Mib"
+msgstr "Tambah pengisian semula untuk Mib"
+
+#: ../gtpcontroller.php:264
+msgid "Edit replenishment for Mib"
+msgstr "Sunting pengisian semula untuk Mib"
+
+#: ../gtpcontroller.php:265
+msgid "Complete replenishment for Mib"
+msgstr "Selesai pengisian semula untuk Mib"
+
+#: ../gtpcontroller.php:266
+msgid "Export replenishment for Mib"
+msgstr "Eksport pengisian semula untuk Mib"
+
+#: ../gtpcontroller.php:268
+msgid "Logistics management for Mib"
+msgstr "Pengurusan logistik untuk Mib"
+
+#: ../gtpcontroller.php:269
+msgid "View logistics information for Mib"
+msgstr "Lihat maklumat logistik untuk Mib"
+
+#: ../gtpcontroller.php:270
+msgid "Add logistics for Mib"
+msgstr "Tambahkan logistik untuk Mib"
+
+#: ../gtpcontroller.php:271
+msgid "Edit logistics for Mib"
+msgstr "Sunting logistik untuk Mib"
+
+#: ../gtpcontroller.php:272
+msgid "Delete logistics for Mib"
+msgstr "Padamkan logistik untuk Mib"
+
+#: ../gtpcontroller.php:273
+msgid "Complete logistics for Mib"
+msgstr "Selesai logistik untuk Mib"
+
+#: ../gtpcontroller.php:275
+msgid "Bank vault management"
+msgstr "Pengurusan peti besi bank"
+
+#: ../gtpcontroller.php:276
+msgid "View item"
+msgstr "Lihat item"
+
+#: ../gtpcontroller.php:277
+msgid "Add item"
+msgstr "Tambah item"
+
+#: ../gtpcontroller.php:278
+msgid "Edit item"
+msgstr "Edit item"
+
+#: ../gtpcontroller.php:279 ../mygtpcontroller.php:283
+#: ../mygtpcontroller.php:353 ../mygtpcontroller.php:423
+msgid "Return item"
+msgstr "Pulangkan item"
+
+#: ../gtpcontroller.php:280 ../mygtpcontroller.php:284
+#: ../mygtpcontroller.php:354 ../mygtpcontroller.php:424
+msgid "Transfer item"
+msgstr "Pindahkan item"
+
+#: ../gtpcontroller.php:282
+msgid "A&P Pool"
+msgstr "Kumpulan A&P"
+
+#: ../gtpcontroller.php:283
+msgid "View A&P Pool"
+msgstr "Lihat Kumpulan A&P"
+
+#: ../gtpcontroller.php:284
+msgid "Export A&P Pool"
+msgstr "Eksport Kumpulan A&P"
+
+#: ../gtpcontroller.php:286
+msgid "Gold Bar Status"
+msgstr "Status Bar Emas"
+
+#: ../gtpcontroller.php:287
+msgid "View Gold Bar Status"
+msgstr "Lihat Status Bar Emas"
+
+#: ../gtpcontroller.php:289
+msgid "Buyback management for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:290
+msgid "View buyback for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:291
+msgid "Add buyback for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:292
+msgid "Edit buyback for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:293
+msgid "Complete buyback for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:294
+msgid "Export buyback for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:295
+msgid "Tender management for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:296
+msgid "View tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:297
+msgid "Add tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:298
+msgid "Edit tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:299
+msgid "Complete tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:300
+msgid "Export tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:301
+msgid "Import tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:302
+msgid "Collection management for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:303
+msgid "View collection for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:304
+msgid "Add collection for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:305
+msgid "Edit collection for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:306
+msgid "Complete collection for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:307
+msgid "Export collection for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:309
+msgid "System  setup related modules"
+msgstr "Modul berkaitan pemasangan sistem"
+
+#: ../gtpcontroller.php:310
+msgid "Partner management"
+msgstr "Pengurusan rakan kongsi"
+
+#: ../gtpcontroller.php:311
+msgid "View partner information"
+msgstr "Lihat maklumat rakan kongsi"
+
+#: ../gtpcontroller.php:312
+msgid "Add partner"
+msgstr "Tambah rakan kongsi"
+
+#: ../gtpcontroller.php:313
+msgid "Edit partner"
+msgstr "Sunting rakan kongsi"
+
+#: ../gtpcontroller.php:314
+msgid "Delete partner"
+msgstr "Padamkan rakan kongsi"
+
+#: ../gtpcontroller.php:315
+msgid "Product management"
+msgstr "Pengurusan produk"
+
+#: ../gtpcontroller.php:316
+msgid "View product information"
+msgstr "Lihat maklumat produk"
+
+#: ../gtpcontroller.php:317
+msgid "Add product"
+msgstr "Tambah produk"
+
+#: ../gtpcontroller.php:318
+msgid "Edit product"
+msgstr "Sunting produk"
+
+#: ../gtpcontroller.php:319
+msgid "Delete product"
+msgstr "Padamkan produk"
+
+#: ../gtpcontroller.php:320
+msgid "Price source management"
+msgstr "Pengurusan sumber harga"
+
+#: ../gtpcontroller.php:321
+msgid "View price source"
+msgstr "Lihat sumber harga"
+
+#: ../gtpcontroller.php:322
+msgid "Add price source"
+msgstr "Tambahkan sumber harga"
+
+#: ../gtpcontroller.php:323
+msgid "Edit price source"
+msgstr "Sunting sumber harga"
+
+#: ../gtpcontroller.php:324
+msgid "Delete asset type"
+msgstr "Padamkan jenis aset"
+
+#: ../gtpcontroller.php:325
+msgid "Trading schedule management"
+msgstr "Pengurusan jadual perdagangan"
+
+#: ../gtpcontroller.php:326
+msgid "View trading schedule"
+msgstr "Lihat jadual perdagangan"
+
+#: ../gtpcontroller.php:327
+msgid "Add trading schedule"
+msgstr "Tambahkan jadual perdagangan"
+
+#: ../gtpcontroller.php:328
+msgid "Edit trading schedule"
+msgstr "Sunting jadual perdagangan"
+
+#: ../gtpcontroller.php:329
+msgid "Delete inventory type"
+msgstr "Padamkan jenis inventori"
+
+#: ../gtpcontroller.php:331
+msgid "Trader management"
+msgstr "Pengurusan peniaga"
+
+#: ../gtpcontroller.php:332
+msgid "View trader management"
+msgstr "Lihat pengurusan peniaga"
+
+#: ../gtpcontroller.php:333
+msgid "Add trader management"
+msgstr "Pengurusan tambah peniaga"
+
+#: ../gtpcontroller.php:334
+msgid "Edit trader management"
+msgstr "Pengurusan sunting peniaga"
+
+#: ../gtpcontroller.php:335
+msgid "Cancel trader management"
+msgstr "Pengurusan batalkan peniaga"
+
+#: ../gtpcontroller.php:336
+msgid "Confirm trader management"
+msgstr "Pengurusan sahkan peniaga"
+
+#: ../gtpcontroller.php:338
+msgid "Priceadjuster management"
+msgstr "Pengurusan Priceadjuster"
+
+#: ../gtpcontroller.php:339
+msgid "View priceadjuster management"
+msgstr "Lihat pengurusan penyesuaian harga"
+
+#: ../gtpcontroller.php:340
+msgid "Add priceadjuster management"
+msgstr "Tambahkan penyesuaian harga"
+
+#: ../gtpcontroller.php:341
+msgid "Edit priceadjuster management"
+msgstr "Sunting penyesuaian harga"
+
+#: ../gtpcontroller.php:342
+msgid "Cancel priceadjuster management"
+msgstr "Batalkan penyesuaian harga"
+
+#: ../gtpcontroller.php:343
+msgid "Confirm priceadjuster management"
+msgstr "Sahkan penyesuaian harga"
+
+#: ../gtpcontroller.php:345 ../mygtpcontroller.php:444
+msgid "Announcement management"
+msgstr "Pengurusan pengumuman"
+
+#: ../gtpcontroller.php:346 ../mygtpcontroller.php:445
+msgid "View announcement management"
+msgstr "Lihat pengurusan pengumuman"
+
+#: ../gtpcontroller.php:347
+msgid "Add announcement management"
+msgstr "Tambahkan pengumuman"
+
+#: ../gtpcontroller.php:348
+msgid "Edit announcement management"
+msgstr "Sunting pengumuman"
+
+#: ../gtpcontroller.php:349
+msgid "Cancel announcement management"
+msgstr "Batalkan pengumuman"
+
+#: ../gtpcontroller.php:350
+msgid "Confirm announcement management"
+msgstr "Sahkan pengumuman"
+
+#: ../gtpcontroller.php:351
+msgid "Delete announcement"
+msgstr "Padamkan pengumuman"
+
+#: ../gtpcontroller.php:352
+msgid "Api Logs management"
+msgstr "Pengurusan Log Api"
+
+#: ../gtpcontroller.php:353
+msgid "View Api logs"
+msgstr "Lihat log Api"
+
+#: ../gtpcontroller.php:355
+msgid "View Event Message"
+msgstr "Lihat Mesej Peristiwa"
+
+#: ../gtpcontroller.php:356
+msgid "Add Event Message"
+msgstr "Tambahkan Mesej Peristiwa"
+
+#: ../gtpcontroller.php:357
+msgid "Edit Event Message"
+msgstr "Sunting Mesej Peristiwa"
+
+#: ../gtpcontroller.php:358
+msgid "Delete Event Message"
+msgstr "Padamkan Mesej Peristiwa"
+
+#: ../gtpcontroller.php:360
+msgid "View Event Subscription"
+msgstr "Lihat Langganan Acara"
+
+#: ../gtpcontroller.php:361
+msgid "Add Event Subscription"
+msgstr "Tambah Langganan Acara"
+
+#: ../gtpcontroller.php:362
+msgid "Edit Event Subscription"
+msgstr "Edit Langganan Acara"
+
+#: ../gtpcontroller.php:363
+msgid "Delete Event Subscription"
+msgstr "Padamkan Langganan Acara"
+
+#: ../gtpcontroller.php:364
+msgid "Event Log"
+msgstr "Log Acara"
+
+#: ../gtpcontroller.php:365
+msgid "View Event Log"
+msgstr "Lihat Log Peristiwa"
+
+#: ../gtpcontroller.php:366
+msgid "Audit Trail for GTP"
+msgstr "Jejak Audit untuk GTP"
+
+#: ../gtpcontroller.php:367
+msgid "View Audit Trail for GTP"
+msgstr "Lihat Jejak Audit untuk GTP"
+
+#: ../gtpcontroller.php:369
+msgid "Price stream management"
+msgstr "Pengurusan aliran harga"
+
+#: ../gtpcontroller.php:370
+msgid "View price streams"
+msgstr "Lihat aliran harga"
+
+#: ../gtpcontroller.php:371
+msgid "Add price streams"
+msgstr "Tambahkan aliran harga"
+
+#: ../gtpcontroller.php:372
+msgid "Price validation management"
+msgstr "Pengurusan pengesahan harga"
+
+#: ../gtpcontroller.php:373
+msgid "View price validations"
+msgstr "Lihat pengesahan harga"
+
+#: ../gtpcontroller.php:374
+msgid "Add price validations"
+msgstr "Tambahkan pengesahan harga"
+
+#: ../gtpcontroller.php:375
+msgid "Sales commission management"
+msgstr "Pengurusan komisen jualan"
+
+#: ../gtpcontroller.php:376
+msgid "View sales commission"
+msgstr "Lihat komisen penjualan"
+
+#: ../gtpcontroller.php:377
+msgid "Add sales commission"
+msgstr "Tambahkan komisen jualan"
+
+#: ../gtpcontroller.php:378
+msgid "Edit sales commission"
+msgstr "Sunting komisen penjualan"
+
+#: ../gtpcontroller.php:379
+msgid "Delete sales commission"
+msgstr "Padamkan komisen penjualan"
+
+#: ../gtpcontroller.php:380
+msgid "MBB AP Fund pool management"
+msgstr "Pengurusan kumpulan Dana AP MBB"
+
+#: ../gtpcontroller.php:381
+msgid "View MBB AP Fund pool management"
+msgstr "Lihat pengurusan kumpulan Dana AP MBB"
+
+#: ../gtpcontroller.php:383
+msgid "Redemption management"
+msgstr "Pengurusan penebusan"
+
+#: ../gtpcontroller.php:384
+msgid "View redemption"
+msgstr "Lihat penebusan"
+
+#: ../gtpcontroller.php:385
+msgid "Add redemption"
+msgstr "Tambahkan penebusan"
+
+#: ../gtpcontroller.php:386
+msgid "Edit redemption"
+msgstr "Sunting penebusan"
+
+#: ../gtpcontroller.php:387
+msgid "Replenishment management"
+msgstr "Pengurusan penambahan semula"
+
+#: ../gtpcontroller.php:388
+msgid "View replenishment"
+msgstr "Lihat penambahan semula"
+
+#: ../gtpcontroller.php:389
+msgid "Add replenishment"
+msgstr "Tambah penambahan semula"
+
+#: ../gtpcontroller.php:390
+msgid "Edit replenishment"
+msgstr "Sunting penambahan semula"
+
+#: ../handler/buybackhandler.php:273 ../handler/redemptionhandler.php:308
+#: ../handler/replenishmenthandler.php:184
+msgid "sorry, no permission"
+msgstr "maaf, tiada kebenaran"
+
+#: ../handler/defaultloginhandler.php:44 ../handlerext7/gtploginhandler.php:72
+#: ../handler/gtploginhandler.php:72
+msgid "Invalid username or password"
+msgstr "Nama pengguna atau kata laluan tidak sah"
+
+#: ../handler/defaultloginhandler.php:47 ../handlerext7/gtploginhandler.php:97
+#: ../handlerext7/gtploginhandler.php:123
+#: ../handlerext7/gtploginhandler.php:124
+#: ../handlerext7/gtploginhandler.php:125
+#: ../handlerext7/gtploginhandler.php:126
+#: ../handlerext7/gtploginhandler.php:127
+#: ../handlerext7/gtploginhandler.php:128 ../handler/gtploginhandler.php:97
+#: ../handler/gtploginhandler.php:123 ../handler/gtploginhandler.php:124
+#: ../handler/gtploginhandler.php:125 ../handler/gtploginhandler.php:126
+#: ../handler/gtploginhandler.php:127 ../handler/gtploginhandler.php:128
+msgid "Username"
+msgstr "Nama pengguna"
+
+#: ../handler/defaultloginhandler.php:47 ../handlerext7/gtploginhandler.php:97
+#: ../handlerext7/gtploginhandler.php:123
+#: ../handlerext7/gtploginhandler.php:124
+#: ../handlerext7/gtploginhandler.php:125
+#: ../handlerext7/gtploginhandler.php:126
+#: ../handlerext7/gtploginhandler.php:127
+#: ../handlerext7/gtploginhandler.php:128 ../handler/gtploginhandler.php:97
+#: ../handler/gtploginhandler.php:123 ../handler/gtploginhandler.php:124
+#: ../handler/gtploginhandler.php:125 ../handler/gtploginhandler.php:126
+#: ../handler/gtploginhandler.php:127 ../handler/gtploginhandler.php:128
+msgid "Password"
+msgstr "Kata Laluan"
+
+#: ../handler/defaultloginhandler.php:47 ../handlerext7/gtploginhandler.php:97
+#: ../handler/gtploginhandler.php:97
+msgid "Login"
+msgstr "Log masuk"
+
+#: ../handler/defaultloginhandler.php:47
+msgid "Forgot Password ?"
+msgstr "Lupa kata laluan ?"
+
+#: ../handlerext7/gtploginhandler.php:96 ../handler/gtploginhandler.php:96
+msgid "Signing-in, please wait..."
+msgstr "Log masuk, sila tunggu ..."
+
+#: ../handlerext7/gtploginhandler.php:97 ../handler/gtploginhandler.php:97
+msgid "Captcha"
+msgstr "Captcha"
+
+#: ../handlerext7/gtploginhandler.php:98 ../handlerext7/gtploginhandler.php:125
+#: ../handlerext7/gtploginhandler.php:126
+#: ../handlerext7/gtploginhandler.php:127
+#: ../handlerext7/gtploginhandler.php:128 ../handler/gtploginhandler.php:98
+#: ../handler/gtploginhandler.php:125 ../handler/gtploginhandler.php:126
+#: ../handler/gtploginhandler.php:127 ../handler/gtploginhandler.php:128
+msgid "Code"
+msgstr "Kod"
+
+#: ../handlerext7/gtploginhandler.php:99 ../handler/gtploginhandler.php:99
+msgid "Partner Login"
+msgstr "Log Masuk Rakan Kongsi"
+
+#: ../handlerext7/gtploginhandler.php:101 ../handler/gtploginhandler.php:101
+msgid "Online Payment Made Simple"
+msgstr "Pembayaran Dalam Talian Mudah"
+
+#: ../handlerext7/gtploginhandler.php:153 ../handler/gtploginhandler.php:153
+msgid "Operator"
+msgstr "Pengendali"
+
+#: ../handlerext7/gtploginhandler.php:154 ../handler/gtploginhandler.php:154
+msgid "Gateway"
+msgstr "Gerbang"
+
+#: ../handlerext7/gtploginhandler.php:155
+#: ../handlerext7/gtploginhandler.php:156
+#: ../handlerext7/gtploginhandler.php:168 ../handler/gtploginhandler.php:155
+#: ../handler/gtploginhandler.php:156 ../handler/gtploginhandler.php:168
+msgid "Merchant"
+msgstr "Pedagang"
+
+#: ../handlerext7/gtploginhandler.php:157 ../handler/gtploginhandler.php:157
+msgid "Referral"
+msgstr "Rujukan"
+
+#: ../handlerext7/gtploginhandler.php:158 ../handler/gtploginhandler.php:158
+msgid "Agent"
+msgstr "Ejen"
+
+#: ../handlerext7/mainhandler.php:101 ../handler/mainhandler.php:101
+msgid "Loading, please wait..."
+msgstr "Sedang dimuatkan, sila tunggu..."
+
+#: ../handler/mycifhandler.php:77
+msgid "Yes"
+msgstr "Ya"
+
+#: ../handler/mycifhandler.php:77
+msgid "No"
+msgstr "Tidak"
+
+#: ../handler/mydocumentationhandler.php:129
+msgid "Content of uploaded file is not valid"
+msgstr "Kandungan fail yang dimuat naik tidak sah"
+
+#: ../handler/mypepsearchresulthandler.php:166
+msgid "Remarks is required for rejection"
+msgstr "Catatan diperlukan untuk penolakan"
+
+#: ../handler/orderdashboardhandler.php:800
+#: ../handler/orderdashboardhandler.php:819 ../handler/partnerhandler.php:360
+#: ../handler/partnerhandler.php:379
+msgid "Sorry, no permission"
+msgstr "Maaf, tiada kebenaran"
+
+#: ../manager/MyGtpAccountManager.php:605
+msgid "Sub category field is empty"
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:610
+#: ../manager/MyGtpAccountManager.php:1434
+msgid "Main category does not match with the main category of sub occupation."
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:619
+#: ../manager/MyGtpAccountManager.php:1442
+msgid "This main category selected does not contain sub category."
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:1455
+msgid "Not allowed to update sales person code."
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:1534
+#: ../manager/MyGtpTransactionManager.php:980
+msgid "Account name/number not set"
+msgstr "Nama / nombor akaun tidak ditetapkan"
+
+#: ../manager/MyGtpAccountManager.php:1558
+msgid "Account is not active"
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:1664
+#: ../manager/MyGtpAccountManager.php:1737
+msgid "Unable to perform requested action due to invalid status"
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:2012
+#: ../manager/MyGtpAccountManager.php:2051
+msgid "Unable to perform requested action due to invalid account holder status"
+msgstr ""
+
+#: ../manager/MyGtpAnnouncementManager.php:338
+msgid "No announcement at the moment"
+msgstr "Tiada pengumuman buat masa ini"
+
+#: ../manager/MyGtpConversionManager.php:216
+msgid "Unable to create conversion, please contact customer service."
+msgstr ""
+
+#: ../manager/MyGtpConversionManager.php:744
+#: ../manager/MyGtpTransactionManager.php:998
+msgid "Please complete or cancel existing FPX transactions before proceeding."
+msgstr ""
+
+#: ../manager/MyGtpPriceAlertManager.php:91
+#: ../manager/MyGtpTransactionManager.php:549
+msgid "Product not found"
+msgstr "Produk tidak dijumpai"
+
+#: ../manager/MyGtpStatementManager.php:359
+msgid "No record at the moment"
+msgstr "Tiada rekod buat masa ini"
+
+#: ../manager/MyGtpTokenManager.php:307
+msgid "Unable to generate access token."
+msgstr "Tidak dapat menghasilkan token akses."
+
+#: ../manager/MyGtpTransactionManager.php:707
+msgid "Partner Payment Provider API not found."
+msgstr ""
+
+#: ../manager/MyGtpTransactionManager.php:934
+msgid "No valid settlement method was provided"
+msgstr "Tiada kaedah pembayaran yang sah diberikan"
+
+#: ../manager/MyGtpTransactionManager.php:964
+#, php-format
+msgid "Minimum initial investment of %s grams not met."
+msgstr "Pelaburan awal minimum %s gram tidak dipenuhi."
+
+#: ../manager/PriceManager.php:162 ../manager/PriceManager.php:208
+msgid "Unable to connect to price engine to update the adjusted price"
+msgstr ""
+"Tidak dapat menyambung ke enjin harga untuk mengemas kini harga yang diubah"
+
+#: ../mygtpcontroller.php:211
+msgid "BMMB Modules"
+msgstr ""
+
+#: ../mygtpcontroller.php:212
+msgid "GO Modules"
+msgstr ""
+
+#: ../mygtpcontroller.php:213
+msgid "ONE Modules"
+msgstr ""
+
+#: ../mygtpcontroller.php:215
+msgid "Push notification management"
+msgstr "Pengurusan pemberitahuan tolak"
+
+#: ../mygtpcontroller.php:216
+msgid "View push notification management"
+msgstr "Lihat pengurusan pemberitahuan tolak"
+
+#: ../mygtpcontroller.php:217
+msgid "Add push notification management"
+msgstr "Tambahkan pengurusan pemberitahuan tolak"
+
+#: ../mygtpcontroller.php:218
+msgid "Edit push notification management"
+msgstr "Sunting pengurusan pemberitahuan tolak"
+
+#. "/root/bmmb/pushnotification/cancel" => gettext("Cancel push notification"),
+#. "/root/bmmb/pushnotification/confirm" => gettext("Confirm push notification"),
+#: ../mygtpcontroller.php:221
+msgid "Delete push notification"
+msgstr "Padamkan pemberitahuan tolak"
+
+#. GO permissions
+#. End GO permissions
+#. One Permissions
+#: ../mygtpcontroller.php:223 ../mygtpcontroller.php:302
+#: ../mygtpcontroller.php:372
+msgid "Conversion management"
+msgstr "Pengurusan penukaran"
+
+#: ../mygtpcontroller.php:224 ../mygtpcontroller.php:303
+#: ../mygtpcontroller.php:373
+msgid "View conversion"
+msgstr "Lihat penukaran"
+
+#: ../mygtpcontroller.php:225 ../mygtpcontroller.php:304
+#: ../mygtpcontroller.php:374
+msgid "Add conversion"
+msgstr "Tambahkan penukaran"
+
+#: ../mygtpcontroller.php:226 ../mygtpcontroller.php:305
+#: ../mygtpcontroller.php:375
+msgid "Edit conversion"
+msgstr "Sunting penukaran"
+
+#: ../mygtpcontroller.php:227 ../mygtpcontroller.php:306
+#: ../mygtpcontroller.php:376
+msgid "Export conversion"
+msgstr "Penukaran eksport"
+
+#: ../mygtpcontroller.php:229
+msgid "Logistics management for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:230
+msgid "View logistics information for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:231
+msgid "Add logistics for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:232
+msgid "Edit logistics for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:233
+msgid "Delete logistics for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:234
+msgid "Complete logistics for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:236 ../mygtpcontroller.php:315
+#: ../mygtpcontroller.php:385
+msgid "Disbursement management"
+msgstr "Pengurusan pengeluaran"
+
+#: ../mygtpcontroller.php:237 ../mygtpcontroller.php:316
+#: ../mygtpcontroller.php:386
+msgid "View disbursement"
+msgstr "Lihat pengeluaran"
+
+#: ../mygtpcontroller.php:238 ../mygtpcontroller.php:317
+#: ../mygtpcontroller.php:387
+msgid "Add disbursement"
+msgstr "Tambah pengeluaran"
+
+#: ../mygtpcontroller.php:239 ../mygtpcontroller.php:318
+#: ../mygtpcontroller.php:388
+msgid "Edit disbursement"
+msgstr "Sunting pengeluaran"
+
+#: ../mygtpcontroller.php:241
+msgid "Documentation management"
+msgstr "Pengurusan dokumentasi"
+
+#: ../mygtpcontroller.php:242
+msgid "View documentation"
+msgstr "Lihat dokumentasi"
+
+#: ../mygtpcontroller.php:243
+msgid "Add documentation"
+msgstr "Tambahkan dokumentasi"
+
+#: ../mygtpcontroller.php:244
+msgid "Edit documentation"
+msgstr "Sunting dokumentasi"
+
+#: ../mygtpcontroller.php:246 ../mygtpcontroller.php:320
+#: ../mygtpcontroller.php:390
+msgid "Account holder profile management"
+msgstr "Pengurusan profil pemegang akaun"
+
+#: ../mygtpcontroller.php:247 ../mygtpcontroller.php:321
+#: ../mygtpcontroller.php:391
+msgid "View user profile"
+msgstr "Lihat profil pengguna"
+
+#: ../mygtpcontroller.php:248 ../mygtpcontroller.php:322
+#: ../mygtpcontroller.php:392
+msgid "Add user profile"
+msgstr "Tambahkan profil pengguna"
+
+#: ../mygtpcontroller.php:249 ../mygtpcontroller.php:323
+#: ../mygtpcontroller.php:393
+msgid "Edit user profile"
+msgstr "Sunting profil pengguna"
+
+#: ../mygtpcontroller.php:250 ../mygtpcontroller.php:324
+#: ../mygtpcontroller.php:394
+msgid "Suspend account holder"
+msgstr ""
+
+#: ../mygtpcontroller.php:251 ../mygtpcontroller.php:325
+#: ../mygtpcontroller.php:395
+msgid "Unsuspend account holder"
+msgstr ""
+
+#: ../mygtpcontroller.php:253 ../mygtpcontroller.php:327
+#: ../mygtpcontroller.php:397
+msgid "PEP approval management"
+msgstr "Pengurusan kelulusan PEP"
+
+#: ../mygtpcontroller.php:254 ../mygtpcontroller.php:328
+#: ../mygtpcontroller.php:398
+msgid "View PEP"
+msgstr "Lihat PEP"
+
+#: ../mygtpcontroller.php:255 ../mygtpcontroller.php:329
+#: ../mygtpcontroller.php:399
+msgid "Approve or reject PEP"
+msgstr ""
+
+#: ../mygtpcontroller.php:257 ../mygtpcontroller.php:331
+#: ../mygtpcontroller.php:401
+msgid "FPX management"
+msgstr "Pengurusan FPX"
+
+#: ../mygtpcontroller.php:258 ../mygtpcontroller.php:332
+#: ../mygtpcontroller.php:402
+msgid "View FPX"
+msgstr "Lihat FPX"
+
+#: ../mygtpcontroller.php:260 ../mygtpcontroller.php:334
+#: ../mygtpcontroller.php:404
+msgid "eKYC management"
+msgstr "pengurusan eKYC"
+
+#: ../mygtpcontroller.php:261 ../mygtpcontroller.php:335
+#: ../mygtpcontroller.php:405
+msgid "View eKYC"
+msgstr "Lihat eKYC"
+
+#: ../mygtpcontroller.php:263
+msgid "AMLA management"
+msgstr "Pengurusan AMLA"
+
+#: ../mygtpcontroller.php:264
+msgid "View amla"
+msgstr "Lihat AMLA"
+
+#: ../mygtpcontroller.php:265
+msgid "Permission to import amla"
+msgstr "Kebenaran untuk mengimport AMLA"
+
+#: ../mygtpcontroller.php:267 ../mygtpcontroller.php:337
+#: ../mygtpcontroller.php:407
+msgid "Gold transaction management"
+msgstr "Pengurusan urus niaga emas"
+
+#: ../mygtpcontroller.php:268 ../mygtpcontroller.php:338
+#: ../mygtpcontroller.php:408
+msgid "View gold transaction"
+msgstr "Lihat urus niaga emas"
+
+#: ../mygtpcontroller.php:269 ../mygtpcontroller.php:339
+#: ../mygtpcontroller.php:409
+msgid "Export gold transaction statement"
+msgstr "Exksport penyata urus niaga emas"
+
+#: ../mygtpcontroller.php:271 ../mygtpcontroller.php:341
+#: ../mygtpcontroller.php:411
+msgid "Storage Fee management"
+msgstr "Pengurusan Yuran Storan"
+
+#: ../mygtpcontroller.php:272 ../mygtpcontroller.php:342
+#: ../mygtpcontroller.php:412
+msgid "View storage fee"
+msgstr "Lihat yuran storan"
+
+#: ../mygtpcontroller.php:273 ../mygtpcontroller.php:343
+#: ../mygtpcontroller.php:413
+msgid "Fee management"
+msgstr "Pengurusan yuran"
+
+#: ../mygtpcontroller.php:274 ../mygtpcontroller.php:344
+#: ../mygtpcontroller.php:414
+msgid "View fee management"
+msgstr "Lihat pengurusan yuran"
+
+#: ../mygtpcontroller.php:275 ../mygtpcontroller.php:345
+#: ../mygtpcontroller.php:415
+msgid "Add fee"
+msgstr "Tambah yuran"
+
+#: ../mygtpcontroller.php:276 ../mygtpcontroller.php:346
+#: ../mygtpcontroller.php:416
+msgid "Edit fee"
+msgstr "Sunting yuran"
+
+#: ../mygtpcontroller.php:279 ../mygtpcontroller.php:349
+#: ../mygtpcontroller.php:419
+msgid "Inventory management"
+msgstr "Pengurusan inventori"
+
+#: ../mygtpcontroller.php:280 ../mygtpcontroller.php:350
+#: ../mygtpcontroller.php:420
+msgid "View inventory"
+msgstr "Lihat inventori"
+
+#: ../mygtpcontroller.php:281 ../mygtpcontroller.php:351
+#: ../mygtpcontroller.php:421
+msgid "Add item to inventory"
+msgstr "Tambahkan item ke inventori"
+
+#: ../mygtpcontroller.php:282 ../mygtpcontroller.php:352
+#: ../mygtpcontroller.php:422
+msgid "Edit item in inventory"
+msgstr "Edit item dalam inventori"
+
+#: ../mygtpcontroller.php:285 ../mygtpcontroller.php:355
+#: ../mygtpcontroller.php:425
+msgid "Approve item"
+msgstr ""
+
+#: ../mygtpcontroller.php:288 ../mygtpcontroller.php:358
+#: ../mygtpcontroller.php:428
+msgid "Reporting management"
+msgstr ""
+
+#: ../mygtpcontroller.php:289 ../mygtpcontroller.php:359
+#: ../mygtpcontroller.php:429
+msgid "Commission Reporting"
+msgstr ""
+
+#: ../mygtpcontroller.php:290 ../mygtpcontroller.php:360
+#: ../mygtpcontroller.php:430
+msgid "Storage Fee Reporting"
+msgstr ""
+
+#: ../mygtpcontroller.php:291 ../mygtpcontroller.php:361
+#: ../mygtpcontroller.php:431
+msgid "Admin Fee Reporting"
+msgstr ""
+
+#: ../mygtpcontroller.php:292 ../mygtpcontroller.php:362
+#: ../mygtpcontroller.php:432
+msgid "Monthly Transaction Summary Reporting"
+msgstr ""
+
+#: ../mygtpcontroller.php:294 ../mygtpcontroller.php:364
+#: ../mygtpcontroller.php:434
+msgid "Account closure management"
+msgstr ""
+
+#: ../mygtpcontroller.php:295 ../mygtpcontroller.php:365
+#: ../mygtpcontroller.php:435
+msgid "View account closure"
+msgstr ""
+
+#: ../mygtpcontroller.php:297 ../mygtpcontroller.php:367
+#: ../mygtpcontroller.php:437
+msgid "Price alert management"
+msgstr ""
+
+#: ../mygtpcontroller.php:298 ../mygtpcontroller.php:368
+#: ../mygtpcontroller.php:438
+msgid "View price alert"
+msgstr ""
+
+#: ../mygtpcontroller.php:308
+msgid "Logistics management for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:309
+msgid "View logistics information for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:310
+msgid "Add logistics for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:311
+msgid "Edit logistics for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:312
+msgid "Delete logistics for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:313
+msgid "Complete logistics for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:378
+msgid "Logistics management for ONE"
+msgstr ""
+
+#: ../mygtpcontroller.php:379
+msgid "View logistics information for ONE"
+msgstr ""
+
+#: ../mygtpcontroller.php:380
+msgid "Add logistics for ONE"
+msgstr ""
+
+#: ../mygtpcontroller.php:381
+msgid "Edit logistics for ONE"
+msgstr ""
+
+#: ../mygtpcontroller.php:382
+msgid "Delete logistics for ONE"
+msgstr ""
+
+#: ../mygtpcontroller.php:383
+msgid "Complete logistics for ONE"
+msgstr ""
+
+#. End One Permissions
+#: ../mygtpcontroller.php:441
+msgid "Amla scan log"
+msgstr "Log imbasan AMLA"
+
+#: ../mygtpcontroller.php:446
+msgid "Approve an announcement"
+msgstr "Luluskan pengumuman"
+
+#: ../mygtpcontroller.php:447
+msgid "Add an announcement"
+msgstr "Tambahkan pengumuman"
+
+#: ../mygtpcontroller.php:448
+msgid "Edit an announcement"
+msgstr "Edit pengumuman"
+
+#: ../mygtpcontroller.php:449
+msgid "Disable an announcement"
+msgstr "Lumpuhkan pengumuman"
+
+#: ../mygtpcontroller.php:450
+msgid "Delete an announcement"
+msgstr "Padamkan pengumuman"
+
+#: ../mygtpcontroller.php:451
+msgid "Announcement theme management"
+msgstr "Pengurusan tema pengumuman"
+
+#: ../mygtpcontroller.php:452
+msgid "View announcement theme management"
+msgstr "Lihat pengurusan tema pengumuman"
+
+#: ../mygtpcontroller.php:453
+msgid "Add an announcement theme"
+msgstr "Tambahkan tema pengumuman"
+
+#: ../mygtpcontroller.php:454
+msgid "Edit an announcement theme"
+msgstr "Edit tema pengumuman"
+
+#: ../mygtpcontroller.php:455
+msgid "Delete an announcement theme"
+msgstr "Padamkan tema pengumuman"
+
+#: ../object/ApiGoldRequest.php:69 ../object/VaultLocation.php:73
+msgid "The partner ID field is mandatory"
+msgstr "Medan ID rakan kongsi adalah wajib"
+
+#: ../object/ApiGoldRequest.php:73
+msgid "The API version field is mandatory"
+msgstr "Medan versi API adalah wajib"
+
+#: ../object/ApiGoldRequest.php:77
+msgid "The quantity field is mandatory"
+msgstr "Medan kuantiti adalah wajib"
+
+#: ../object/ApiLogs.php:110 ../object/FtpLogs.php:89
+#: ../object/LogisticTracker.php:96
+msgid "The type field is mandatory"
+msgstr "Medan jenis adalah wajib"
+
+#: ../object/Attachment.php:89
+msgid "Invalid source type defined for the attachment"
+msgstr "Jenis sumber diberikan tidak sah untuk lampiran"
+
+#: ../object/EventMessage.php:294
+msgid "Direct debit"
+msgstr "Debit langsung"
+
+#: ../object/EventMessage.php:296
+msgid "Fund transfer"
+msgstr "Pemindahan dana"
+
+#: ../object/EventMessage.php:298
+msgid "Fundout"
+msgstr "Pengeluaran dana"
+
+#: ../object/EventMessage.php:300
+msgid "Settlement"
+msgstr "Pembayaran"
+
+#: ../object/EventMessage.php:302
+msgid "Fundout fail"
+msgstr "Pengeluaran dana gagal"
+
+#: ../object/EventMessage.php:304
+msgid "Fast fundout"
+msgstr "Pengeluaran dana pantas"
+
+#: ../object/EventMessage.php:306
+msgid "Fast settlement"
+msgstr "Pembayaran cepat"
+
+#: ../object/EventMessage.php:308
+msgid "Topup"
+msgstr "Tambah nilai"
+
+#: ../object/EventMessage.php:311 ../object/Logistic.php:249
+#: ../object/MyAccountClosure.php:105
+msgid "Unknown"
+msgstr "Tidak diketahui"
+
+#: ../object/IPRestriction.php:79
+msgid "Restrict type is required"
+msgstr "Jenis had diperlukan"
+
+#: ../object/IPRestriction.php:83
+msgid "IP Address is required"
+msgstr "Alamat IP diperlukan"
+
+#: ../object/IPRestriction.php:88
+msgid "Invalid IP Address"
+msgstr "Alamat IP Tidak Sah"
+
+#: ../object/IPRestriction.php:103
+msgid "Similar record already exists"
+msgstr "Rekod serupa sudah ada"
+
+#. Incoming request from MBB (eg: redemption)
+#. self::STATUS_CONFIRMED, // Confirmed the receiving of the order
+#: ../object/LogisticLog.php:72 ../object/Logistic.php:175
+#: ../object/Logistic.php:236
+##### Do not translate statuses by request from App team (July 2021)
+msgid "Processing"
+msgstr ""
+#msgstr "Memproses"
+
+#: ../object/LogisticLog.php:75
+msgid "Packing"
+msgstr ""
+
+#. Packing of order packages upon receiving delivery order from SAP
+#. self::STATUS_PACKING, // Salesman/ Courier depart from warehouse
+#: ../object/LogisticLog.php:78 ../object/Logistic.php:179
+##### Do not translate statuses by request from App team (July 2021)
+msgid "Packed"
+msgstr ""
+#msgstr "Dikemas"
+
+#. Salesman/ Courier depart from warehouse
+#: ../object/LogisticLog.php:81 ../object/Logistic.php:182
+#: ../object/Logistic.php:238
+##### Do not translate statuses by request from App team (July 2021)
+msgid "Collected"
+msgstr ""
+#msgstr "Dikumpulkan"
+
+#. Salesman/ Courier depart from warehouse
+#. self::STATUS_COLLECTED, // Salesman collected package from warehouse
+#: ../object/LogisticLog.php:84 ../object/Logistic.php:186
+#: ../object/Logistic.php:240
+##### Do not translate statuses by request from App team (July 2021)
+msgid "In Transit"
+msgstr ""
+#msgstr "Dalam Transit"
+
+#. Salesman/ Courier depart from warehouse
+#. self::STATUS_INTRANSIT, // Salesman/ Courier depart from warehouse
+#: ../object/LogisticLog.php:87 ../object/Logistic.php:190
+#: ../object/Logistic.php:243
+##### Do not translate statuses by request from App team (July 2021)
+msgid "Delivered"
+msgstr ""
+#msgstr "Dihantar"
+
+#. Package succesfully delivered
+#: ../object/LogisticLog.php:90 ../object/Logistic.php:192
+msgid "Completed"
+msgstr ""
+#msgstr "Selesai"
+
+#. Salesman/ Courier depart from warehouse
+#: ../object/LogisticLog.php:93 ../object/Logistic.php:194
+#: ../object/Logistic.php:245 ../object/MyAccountHolder.php:356
+#: ../object/MyGoldTransaction.php:203
+##### Do not translate statuses by request from App team (July 2021)
+msgid "Failed"
+msgstr ""
+#msgstr "Gagal"
+
+#. Salesman/ Courier depart from warehouse
+#: ../object/LogisticLog.php:96 ../object/Logistic.php:196
+#: ../object/Logistic.php:247
+msgid "Missing"
+msgstr ""
+#msgstr "Hilang"
+
+#: ../object/LogisticLog.php:99
+msgid "unknown"
+msgstr ""
+
+#: ../object/MbbApFund.php:105
+msgid "The orderid field is mandatory"
+msgstr "Medan orderid adalah wajib"
+
+#: ../object/MyAccountClosure.php:97
+msgid "Approved"
+msgstr ""
+
+#: ../object/MyAccountClosure.php:101
+msgid "Rejected"
+msgstr ""
+
+#: ../object/MyAccountClosure.php:103
+msgid "In Progress"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:288
+msgid "Active"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:291
+msgid "Inactive"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:294
+msgid "Suspended"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:297
+msgid "Blacklisted"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:300
+msgid "Closed"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:311
+msgid "Incomplete"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:319
+msgid "Fail"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:323
+msgid "AMLA Pending"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:327
+msgid "AMLA Failed"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:331
+msgid "PEP Pending"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:335
+msgid "PEP Failed"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:339 ../object/MyAccountHolder.php:353
+msgid "Passed"
+msgstr ""
+
+#: ../object/MyConversion.php:176 ../object/MyGoldTransaction.php:196
+msgid "Paid"
+msgstr ""
+
+#: ../object/MyConversion.php:178
+msgid "Expired"
+msgstr ""
+
+#: ../object/MyConversion.php:180
+msgid "Cancelled"
+msgstr ""
+
+#: ../object/MyConversion.php:182 ../object/MyGoldTransaction.php:201
+msgid "Reversed"
+msgstr ""
+
+#: ../object/MyDocumentation.php:120 ../object/PartnerBranchMap.php:104
+#: ../object/Partner.php:166
+#, php-format
+msgid "The code %s is already in use by another entry"
+msgstr "Kod %s sudah digunakan oleh entri lain"
+
+#: ../object/MyFee.php:217
+#, php-format
+msgid "The type %s is already in use"
+msgstr ""
+
+#: ../object/MyGoldTransaction.php:199
+msgid "Confirmed"
+msgstr ""
+
+#: ../object/PartnerBranchMap.php:91
+msgid "The partner field is mandatory"
+msgstr "Medan rakan kongsi adalah wajib"
+
+#: ../object/PartnerBranchMap.php:95
+msgid "The Code field is mandatory"
+msgstr "Medan Kod adalah wajib"
+
+#: ../object/PartnerBranchMap.php:109 ../object/PartnerBranchMap.php:113
+msgid "The field is mandatory"
+msgstr "Medan ini adalah wajib"
+
+#: ../object/Partner.php:155
+msgid "Code is required"
+msgstr "Kod diperlukan"
+
+#: ../object/Partner.php:157
+msgid "Length of the code field can not be more than 10 characters"
+msgstr "Panjang medan kod tidak boleh melebihi 10 aksara"
+
+#: ../object/PartnerService.php:128
+#, php-format
+msgid "The product (%s) register for service is not active."
+msgstr "Produk (%s) untuk perkhidmatan tidak aktif."
+
+#: ../object/PartnerService.php:141
+#, php-format
+msgid "Unable to add 2 identifical product service to the same merchant"
+msgstr ""
+"Tidak dapat menambahkan 2 perkhidmatan produk yang sama pada pedagang yang "
+"sama"
+
+#: ../object/PriceProvider.php:118
+msgid "The class does not exists"
+msgstr "Kelas tidak wujud"
+
+#: ../object/PriceProvider.php:123
+msgid "The future order matching strategy provided is invalid."
+msgstr "Strategi pemadanan pesanan masa depan yang diberikan tidak sah."
+
+#: ../object/SnapObject.php:371
+#, php-format
+msgid "Field %s is required"
+msgstr "Medan %s diperlukan"
+
+#: ../object/TagLink.php:83
+msgid "Invalid source type defined for the taglink object"
+msgstr "Jenis sumber tidak sah untuk objek taglink"
+
+#: ../object/Tag.php:87
+msgid "The tag code provided is already available in the system"
+msgstr "Kod tag yang diberikan sudah ada di sistem"
+
+#: ../object/Tag.php:92
+msgid "Tag category is Mandatory."
+msgstr "Kategori tag adalah Wajib."
+
+#: ../object/Tag.php:97
+msgid "Tag code is Mandatory."
+msgstr "Kod tag adalah Wajib."
+
+#: ../object/Tag.php:102
+msgid "Tag value is Mandatory."
+msgstr "Nilai tag adalah Wajib."
+
+#: ../object/User.php:169 ../object/User.php:215
+#, php-format
+msgid "Field (%s) must not be less than %d or more than %d characters"
+msgstr ""
+"Medan (%s) tidak boleh kurang daripada %d atau lebih daripada %d aksara"
+
+#: ../object/User.php:175
+#, php-format
+msgid ""
+"Field (%s) must begin with an alphabet letter followed by only alphabet, "
+"number and/or underscore characters"
+msgstr ""
+"Medan (%s) mesti dimulakan dengan huruf abjad diikuti dengan huruf, nombor "
+"dan / atau garis bawah sahaja"
+
+#: ../object/User.php:198
+#, php-format
+msgid ""
+"The value chosen for field (%s) already exists. Please choose another one"
+msgstr "Nilai yang dipilih untuk medan (%s) sudah ada. Sila pilih yang lain"
+
+#: ../object/User.php:215
+msgid "password"
+msgstr "kata laluan"
+
+#: ../object/User.php:220
+msgid "Password must contain both letters and numbers only"
+msgstr "Kata laluan mesti mengandungi huruf dan nombor sahaja"
+
+#: ../object/VaultItem.php:110
+msgid "The weight field is mandatory"
+msgstr "Medan berat adalah wajib"
+
+#: ../object/VaultItem.php:114
+msgid "serialno is required"
+msgstr "Nombor siri diperlukan"
+
+#: ../object/VaultItem.php:116
+msgid "Length of the serialno field can not be more than 36 characters"
+msgstr "Panjang medan nombor siri tidak boleh melebihi 36 aksara"
+
+#: ../object/VaultItem.php:125
+#, php-format
+msgid "The serialno %s is already in use by another entry"
+msgstr "Nombor siri %s sudah digunakan oleh entri lain"
+
+#: ../object/VaultLocation.php:76
+msgid "The name field is mandatory"
+msgstr "Medan nama adalah wajib"
+
+#: ../object/VaultLocation.php:79
+msgid "The default location field is mandatory"
+msgstr "Medan lokasi default adalah wajib"
+
+#: ../store/cachedatastore.php:219 ../store/cachedatastore.php:283
+#: ../store/cachedatastore.php:333 ../store/redisdatastore.php:218
+#: ../store/redisdatastore.php:282 ../store/redisdatastore.php:332
+msgid "Object must support id field"
+msgstr ""
+
+#: ../store/cachedatastore.php:222 ../store/cachedatastore.php:286
+#: ../store/dbdatastore.php:234 ../store/redisdatastore.php:221
+#: ../store/redisdatastore.php:285
+msgid "Some field values has been left empty of is incorrect"
+msgstr ""
+
+#: ../store/dbdatastore.php:256
+#, fuzzy
+msgid ""
+"You are attempting to save an old or outdated version of the record.  Please "
+"refresh to get latest version and try again."
+msgstr "."
+
+#~ msgid "Previous account closure request is still in progress"
+#~ msgstr "Permintaan penutupan akaun sebelum ini masih dalam proses"
+
+#~ msgid "The API extractor unable to find {param} from the data provided."
+#~ msgstr ""
+#~ "Pengekstrak API tidak dapat mencari {param} dari data yang diberikan."
+
+#~ msgid "Access not permitted."
+#~ msgstr "Akses tidak dibenarkan."
+
+#~ msgid ""
+#~ "The request parameter ({param}) with branch code ({value}) is not found, "
+#~ "invalid or not active."
+#~ msgstr ""
+#~ "Parameter ({param}) dengan kod cawangan ({value}) tidak dijumpai, tidak "
+#~ "sah atau tidak aktif."
+
+#~ msgid ""
+#~ "The request parameter ({param}) with data ({value}) does not match the "
+#~ "confirmation."
+#~ msgstr ""
+#~ "Parameter ({param}) dengan data ({value}) tidak sepadan dengan pengesahan."
+
+#~ msgid ""
+#~ "The request parameter ({param}) with currency code ({value}) is not "
+#~ "found, invalid or not active."
+#~ msgstr ""
+#~ "Parameter ({param}) dengan kod mata wang ({value}) tidak dijumpai, tidak "
+#~ "sah atau tidak aktif."
+
+#~ msgid "The request parameter ({param}) is invalid. {message}"
+#~ msgstr "Parameter ({param}) tidak sah. {message}"
+
+#~ msgid ""
+#~ "The request parameter ({param}) with data ({value}) is not a valid email "
+#~ "address."
+#~ msgstr ""
+#~ "Parameter ({param}) dengan data ({value}) bukan alamat e-mel yang sah."
+
+#~ msgid "Grant type ({type}) provided is invalid."
+#~ msgstr "Jenis geran ({type}) yang diberikan tidak sah."
+
+#~ msgid ""
+#~ "The request parameter ({param}) data {value} has invalid datetime "
+#~ "format.  Please use YYYY-MM-DD HH:ii:SS format"
+#~ msgstr ""
+#~ "Parameter ({param}) dengan data {value} mempunyai format waktu masa yang "
+#~ "tidak sah. Sila gunakan format YYYY-MM-DD HH:ii:SS"
+
+#~ msgid "The request parameter ({param}) is expected to be true/false."
+#~ msgstr "Parameter ({param}) dijangka benar / salah."
+
+#~ msgid "The request parameter ({param}) is expected to be a number value."
+#~ msgstr "Parameter ({param}) diharapkan menjadi nilai nombor."
+
+#~ msgid ""
+#~ "The request parameter ({param}) value of {value} is not one of the "
+#~ "selection option available [{options]}]"
+#~ msgstr ""
+#~ "Nilai parameter ({param}) {value} bukan salah satu pilihan yang "
+#~ "disediakan [{options]}]"
+
+#~ msgid ""
+#~ "The request parameter {param} ({value}) is not found, invalid or does not "
+#~ "support API access."
+#~ msgstr ""
+#~ "Parameter {param} ({value}) tidak dijumpai, tidak sah atau tidak "
+#~ "menyokong akses API."
+
+#~ msgid ""
+#~ "The request parameter ({param}) with data ({value}) is not a valid phone "
+#~ "number or not accepted."
+#~ msgstr ""
+#~ "Parameter ({param}) dengan data ({value}) bukan nombor telefon yang sah "
+#~ "atau tidak diterima."
+
+#~ msgid ""
+#~ "The request parameter ({param}) with product code ({value}) is not found, "
+#~ "invalid or not active."
+#~ msgstr ""
+#~ "Parameter ({param}) dengan kod produk ({value}) tidak dijumpai, tidak sah "
+#~ "atau tidak aktif."
+
+#~ msgid "The {param} with value ({value}) record could not be found."
+#~ msgstr "Rekod {param} dengan nilai ({value}) tidak dapat dijumpai."
+
+#~ msgid "The {param} ({value}) is not available for the request."
+#~ msgstr "{param} ({value}) tidak tersedia untuk permintaan tersebut."
+
+#~ msgid "The request parameter ({param}) can not be empty or ommited."
+#~ msgstr "Parameter ({param}) tidak boleh kosong."
+
+#~ msgid "Field {param} contains disallowed characters. ({value})"
+#~ msgstr ""
+#~ "Parameter {param} mengandungi karakter yang tidak dibenarkan. ({nilai})"
+
+#~ msgid ""
+#~ "The request parameter ({param}) with data ({value}) must be a string with "
+#~ "length {desc}."
+#~ msgstr ""
+#~ "Parameter permintaan ({param}) dengan data ({value}) mestilah mempunyai "
+#~ "panjang {desc}."
+
+#~ msgid ""
+#~ "The action ({action_type}) requested can not be processed by "
+#~ "{processor_class}."
+#~ msgstr ""
+#~ "Permintaan ({action_type}) tidak dapat diproses oleh {processor_class}."
+
+#~ msgid "Invalid credentials provided."
+#~ msgstr "Maklumat yang diberikan tidak sah."
+
+#~ msgid ""
+#~ "The content of the document ({code}) is empty for selected language "
+#~ "({language})"
+#~ msgstr ""
+#~ "Kandungan dokumen ({code}) kosong untuk bahasa yang dipilih ({language})"
+
+#~ msgid "Unable to find the document for the provided code ({code})"
+#~ msgstr "Tidak dapat mencari dokumen untuk kod yang diberikan ({code})"
+
+#~ msgid "E-KYC verification was already completed"
+#~ msgstr "Pengesahan E-KYC sudah selesai"
+
+#~ msgid "E-KYC verification is still in progress"
+#~ msgstr "Pengesahan E-KYC sedang diproses"
+
+#~ msgid "Submitted document(s) are invalid. {message}"
+#~ msgstr "Dokumen yang dihantar tidak sah. {message}"
+
+#~ msgid "Account with email address ({email}) could not be found."
+#~ msgstr "Akaun dengan alamat e-mel ({email}) tidak dapat dijumpai."
+
+#~ msgid "The email address {email} for merchant {code} is already taken."
+#~ msgstr "Alamat e-mel {email} untuk pedagang {code} telah digunakan."
+
+#~ msgid ""
+#~ "The future order reference ({futureorderref} provided is not valid or "
+#~ "mismatched."
+#~ msgstr ""
+#~ "Rujukan pesanan masa depan ({futureorderref} yang diberikan tidak sah "
+#~ "atau tidak sesuai."
+
+#~ msgid "No initial investment has been made"
+#~ msgstr "Pelaburan awal belum dibuat"
+
+#~ msgid ""
+#~ "This ip has reached the maximum number of retries. Please wait for "
+#~ "{seconds} seconds before trying again."
+#~ msgstr ""
+#~ "IP ini telah mencapai jumlah percubaan maksimum. Sila tunggu selama "
+#~ "{saat} saat sebelum mencuba lagi."
+
+#~ msgid "Invalid {action} {message}"
+#~ msgstr "{action} tidak sah {message}"
+
+#~ msgid "Unable to find the bank record for the provided id ({value})"
+#~ msgstr "Tidak dapat mencari rekod bank untuk id yang diberikan ({value})"
+
+#~ msgid "The close reason id ({value}) provided is invalid"
+#~ msgstr "Alasan penutupan dengan id ({value}) yang diberikan tidak sah"
+
+#~ msgid "NRIC ({mykadno}) already exists."
+#~ msgstr "Nombor Kad Pengenalan ({mykadno}) telah wujud."
+
+#~ msgid "Pin code not set."
+#~ msgstr "Kod pin tidak ditetapkan."
+
+#~ msgid "Gold balance insufficient, unable to perform transaction."
+#~ msgstr "Baki emas tidak mencukupi, tidak dapat melakukan transaksi."
+
+#~ msgid "User does not exist."
+#~ msgstr "Pengguna tidak wujud."
+
+#~ msgid "Wrong pin code entered."
+#~ msgstr "Kod pin yang dimasukkan salah."
+
+#~ msgid "Action is not permitted. {message}"
+#~ msgstr "Tindakan tidak dibenarkan. {mesej}"
+
+#~ msgid "Unable to create FPX transaction for gold transaction"
+#~ msgstr "Tidak dapat membuat transaksi FPX untuk transaksi emas"
+
+#~ msgid ""
+#~ "Settlement method ({settlementmethod}) not allowed for transaction "
+#~ "{refno}."
+#~ msgstr ""
+#~ "Kaedah pembayaran ({settlementmethod}) tidak dibenarkan untuk transaksi "
+#~ "{refno}."
+
+#~ msgid "Invalid questionnaire answer. {extra_message}"
+#~ msgstr "Jawapan soal selidik tidak sah. {extra_message}"
+
+#~ msgid "Invalid start date given. {extra_message}"
+#~ msgstr "Tarikh mula yang diberikan tidak sah. {extra_message}"
+
+#~ msgid "Price reference not valid."
+#~ msgstr "Rujukan harga tidak sah."
+
+#~ msgid "Product {code} is not available for this partner."
+#~ msgstr "Tiada produk {code} untuk rakan kongsi ini."
+
+#~ msgid ""
+#~ "Statement records from date {start} to {end} is not available for this "
+#~ "account holder."
+#~ msgstr ""
+#~ "Tiada rekod penyata dari tarikh {start} hingga {end} untuk pemegang akaun "
+#~ "ini."
+
+#~ msgid "Invalid verification code."
+#~ msgstr "Kod pengesahan tidak sah."
+
+#~ msgid "Unable to find the occupation category for the provided id ({value})"
+#~ msgstr ""
+#~ "Tidak dapat mencari kategori pekerjaan untuk id yang diberikan ({value})"
+
+#~ msgid "Unable to find {type} API for partner {code}"
+#~ msgstr "Tidak dapat mencari {type} API untuk rakan kongsi {code}"
+
+#~ msgid "The price alert with id ({value}) could not be found."
+#~ msgstr "Makluman harga dengan id ({value}) tidak dapat dijumpai."
+
+#~ msgid "Order amount could not denoted by - {productDenomination}"
+#~ msgstr ""
+#~ "Jumlah pesanan tidak boleh ditandakan dengan - {productDenomination}"
+
+#~ msgid ""
+#~ "The order reference id ({partnerrefid}) for merchant {code} is "
+#~ "duplicated.  There is already existing order with the reference"
+#~ msgstr ""
+#~ "Id rujukan pesanan ({partnerrefid}) untuk pedagang {code} telah wujud. "
+#~ "Pesanan telah wujud untuk rujukan tersebut"
+
+#~ msgid "Unable to perform requested action {action} for order {orderno}"
+#~ msgstr "Tidak dapat melaksanakan {action} untuk pesanan {orderno}"
+
+#~ msgid ""
+#~ "The price data reference ({priceid}) provided by {code} has expired at "
+#~ "{expiryDate}."
+#~ msgstr ""
+#~ "Rujukan data harga ({priceid}) yang diberikan oleh {code} telah tamat "
+#~ "pada {expiryDate}."
+
+#~ msgid ""
+#~ "The price data reference id provided ({priceid}) provided by {code} is "
+#~ "invalid."
+#~ msgstr ""
+#~ "Id rujukan data harga ({priceid}) yang diberikan oleh {code} tidak sah."
+
+#~ msgid ""
+#~ "Unable to continue due to merchant ({code}) transaction limit for "
+#~ "{product} exceeded."
+#~ msgstr ""
+#~ "Tidak dapat meneruskan kerana had transaksi rakan kongsi ({code}) untuk "
+#~ "{product} melebihi had."
+
+#~ msgid "The order transaction type ({trxType}) is not valid."
+#~ msgstr "Jenis transaksi pesanan ({trxType}) tidak sah."
+
+#~ msgid ""
+#~ "The branch code ({code}) provided is not found, invalid or not active."
+#~ msgstr ""
+#~ "Kod cawangan ({code}) yang diberikan tidak dijumpai, tidak sah atau tidak "
+#~ "aktif."
+
+#~ msgid ""
+#~ "The partner code ({partnercode}) can not perform required transaction "
+#~ "with product ({$productCode})."
+#~ msgstr ""
+#~ "Kod rakan kongsi ({partnercode}) tidak dapat melakukan transaksi yang "
+#~ "diperlukan dengan produk ({$productCode})."
+
+#~ msgid ""
+#~ "The partner ({code} [{id}]) provided for {type} {xrefno} ({id}) is not "
+#~ "active"
+#~ msgstr ""
+#~ "Rakan kongsi ({code} [{id}]) yang disediakan untuk {type} {xrefno} ({id}) "
+#~ "tidak aktif"
+
+#~ msgid ""
+#~ "The partner ({code} [{id}]) does not have the required ordering mode to "
+#~ "book order"
+#~ msgstr ""
+#~ "Rakan kongsi ({code} [{id}]) tidak mempunyai mod pesanan yang diperlukan "
+#~ "untuk membuat pesanan"
+
+#~ msgid "The partner code ({code}) can not be found."
+#~ msgstr "Kod rakan kongsi ({code}) tidak dapat dijumpai."
+
+#~ msgid ""
+#~ "Failed to identify the price provider ({id}) with provided URL ({url})"
+#~ msgstr ""
+#~ "Gagal mengenal pasti penyedia harga ({id}) dengan URL yang disediakan "
+#~ "({url})"
+
+#~ msgid "The price provider API is not in an active status"
+#~ msgstr "API penyedia harga tidak dalam status aktif"
+
+#~ msgid ""
+#~ "Uable to find price provider that matches pricesourceid {pricesourceid} "
+#~ "and categoryid {categoryid}"
+#~ msgstr ""
+#~ "Tidak dapat mencari pembekal harga yang sepadan dengan id sumber harga "
+#~ "{pricesourceid} dan id kategori {categoryid}"
+
+#~ msgid "The latest price data for {code} is stale."
+#~ msgstr "Data harga terkini untuk {code} telah luput."
+
+#~ msgid "Unable to create price validation from pricestream id {id}"
+#~ msgstr "Tidak dapat membuat pengesahan harga dari id pricestream {id}"
+
+#~ msgid ""
+#~ "The {action} reference id ({partnerrefno}) for merchant {code} is "
+#~ "duplicated.  There is already existing {action} with the reference"
+#~ msgstr ""
+#~ "{action} id rujukan ({partnerrefno}) untuk pedagang {code} telah wujud. "
+#~ "Sudah ada {action} dengan rujukan"
+
+#~ msgid "Reset token provided invalid."
+#~ msgstr "Token reset yang diberikan tidak sah."
+
+#~ msgid "The trading hours for merchant ({code}) is currently not active"
+#~ msgstr "Waktu dagangan untuk peniaga ({code}) pada masa ini tidak aktif"
+
+#~ msgid "Unable to get quantity of requested, availability = {available}"
+#~ msgstr ""
+#~ "Tidak dapat memperoleh kuantiti yang diminta, ketersediaan = {available}"
+
+#~ msgid "Unable to perform requested action {action}"
+#~ msgstr "Tidak dapat melakukan tindakan yang diminta {action}"
+
+#~ msgid "Unable to get vault item. {refno}"
+#~ msgstr "Tidak dapat mendapatkan item peti besi. {refno}"

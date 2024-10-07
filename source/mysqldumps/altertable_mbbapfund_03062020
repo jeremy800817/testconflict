@@ -1,0 +1,9 @@
+ALTER TABLE `mbbapfund` 
+ADD COLUMN `apf_createdon` bigint(20),
+ADD COLUMN `apf_createdby` datetime,
+ADD COLUMN `apf_modifiedon` bigint(20),
+ADD COLUMN `apf_modifiedby` datetime
+;
+
+ALTER TABLE `mbbapfund` 
+MODIFY COLUMN `apf_operationtype` ENUM('OrderConfirm', 'OrderReverse');

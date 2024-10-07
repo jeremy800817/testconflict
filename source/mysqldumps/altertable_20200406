@@ -1,0 +1,11 @@
+ALTER TABLE `vaultitem` ADD `sti_allocated` SMALLINT NOT NULL AFTER `sti_serialno`, ADD `sti_allocatedon` DATETIME NOT NULL AFTER `sti_allocated`, ADD `sti_movetovaultlocationid` BIGINT(20) NOT NULL AFTER `sti_allocatedon`, ADD `sti_moverequestedon` DATETIME NOT NULL AFTER `sti_movetovaultlocationid`, ADD `sti_movecompletedon` DATETIME NOT NULL AFTER `sti_moverequestedon`, ADD `sti_returnedon` DATETIME NOT NULL AFTER `sti_movecompletedon`;
+
+Alter table `vaultitem` drop `sti_goldrequestid`;
+
+ALTER TABLE `vaultlocation` CHANGE `stl_owner` `stl_type` ENUM('Start','Intermediate','End','') NULL DEFAULT NULL COMMENT 'Location type’; 
+
+ALTER TABLE `vaultlocation` CHANGE `sti_status` `stl_status` SMALLINT(6) NOT NULL;
+
+ALTER TABLE `order` ADD `ord_reconciled` SMALLINT NOT NULL AFTER `ord_notifyurl`, ADD `ord_reconciledon` DATETIME NOT NULL AFTER `ord_reconciled`, ADD `ord_reconciledby` BIGINT(20) NOT NULL AFTER `ord_reconciledon`;
+
+ALTER TABLE `order_queue` ADD `orq_reconciled` SMALLINT NOT NULL AFTER `orq_successnotifyurl`, ADD `orq_reconciledon` DATETIME NOT NULL AFTER `orq_reconciled`, ADD `orq_reconciledby` BIGINT(20) NOT NULL AFTER `orq_reconciledon`;

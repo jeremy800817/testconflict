@@ -1,0 +1,110 @@
+<style>
+    table {
+        table-layout: fixed;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        border-collapse: collapse;
+    }
+
+    .no-padding {
+        padding: 0;
+    }
+
+    .no-border td,
+    .no-border th {
+        border: 0;
+    }
+
+    page {
+        margin: 0;
+        font-family: arial, sans-serif;
+
+    }
+
+
+</style>
+
+<page>
+    <page_footer>
+        <p style="text-align: center;">Powered by ACE Capital Growth Sdn Bhd</p>
+    </page_footer>
+    <div style="text-align:center">
+        <img src="##RESOURCEPATH##/image/GoGold/logo.png" style="height: 50px; width: auto; text-align: center;">
+    </div>
+    <table class="no-border" style="width:100%">
+        <tr style="width:100%">
+            <td><strong>A/C Code: </strong>##ACCOUNTHOLDERCODE##</td>
+        </tr>
+        <tr style="width:100%">
+            <td><strong>Full Name:</strong> ##ACCOUNTHOLDERNAME##</td>
+        </tr>
+        <tr style="width:100%">
+            <td><strong>NRIC:</strong> ##ACCOUNTHOLDERNRIC##</td>
+        </tr>
+        <tr style="width:100%">
+            <td><strong>##STATEMENTDATE##:</strong></td>
+        </tr>
+    </table>
+
+    <table style="width:100%">
+        <tr style="width:100%">
+            <th style="width:15%;vertical-align:top;padding-bottom:0">Ref. No.</th>
+            <th style="width:13%;vertical-align:top;padding-bottom:0">Date</th>
+            <th style="width:14%;vertical-align:top;padding-bottom:0">Type</th>
+            <th style="width:8%;vertical-align:top;padding-bottom:0">Gold Price (RM/g)</th>
+            <th style="width:8%;vertical-align:top;padding-bottom:0">In (XAU)</th>
+            <th style="width:8%;vertical-align:top;padding-bottom:0">Out (XAU)</th>
+            <th style="width:8%;vertical-align:top;padding-bottom:0">Balance (XAU)</th>
+            <th style="width:8%;vertical-align:top;padding-bottom:0">In (RM)</th>
+            <th style="width:8%;vertical-align:top;padding-bottom:0">Out (RM)</th>
+            <th style="width:8%;vertical-align:top;padding-bottom:0">Remarks</th>
+        </tr>
+        ##BLOCKSTART##
+        <tr>
+            <td>##REFNO##</td>
+            <td>##DATE##</td>
+            <td>##TYPE##</td>
+            <td>##GOLDPRICE##</td>
+            <td>##XAUOUT##</td>
+            <td>##XAUIN##</td>
+            <td>##XAUBALANCE##</td>
+            <td>##AMOUNTOUT##</td>
+            <td>##AMOUNTIN##</td>
+            <td>##REMARKS##</td>
+        </tr>
+        ##BLOCKEND##
+        <tr>
+            <td colspan="4"></td>
+            <td>##TOTALXAUOUT##</td>
+            <td>##TOTALXAUIN##</td>
+            <td>##TOTALXAUBALANCE##</td>
+            <td>##TOTALAMOUNTOUT##</td>
+            <td>##TOTALAMOUNTIN##</td>
+            <td></td>
+        </tr>
+        ##EMPTYSTART##
+        <tr>
+            <td colspan="10">##EMPTYPLACEHOLDER##</td>
+        </tr>
+        ##EMPTYEND##
+    </table>
+
+    ##FOOTERSTART##
+    <table class="no-border" style="width:100%">
+        <tr style="width:100%">
+            <td><strong>Previous Xau Balance:</strong> ##PREVIOUSXAUBALANCE##</td>
+        </tr>
+        <tr style="width:100%">
+            <td><strong>Current Xau Balance:</strong> ##TOTALXAUBALANCE##</td>
+        </tr>
+    </table>
+    ##FOOTEREND##
+</page>

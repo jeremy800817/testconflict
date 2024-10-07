@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Close Account | GoGold</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/nice-select.css">
+<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style-mcash.css">
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+<body class="gogold">
+	<div id="faq-switcher" class="faq-switcher">
+		<ul>
+			<li>
+				<a href="FAQ.php" rel="noopener noreferrer"><?php echo $lang['FAQ'] ?></a>
+			</li>
+      		<li>
+				<a href="pdpa.php">PDPA</a>
+			</li>
+    		<li>
+				<a href="Tnc.php"><?php echo $lang['Terms_and_Conditions'] ?></a>
+			</li>
+     		<!-- <li id="deliveryrefundpolicies">
+				<a href="DeliveryRefundPolicies.php"><?php echo $lang['RefundPolicy'] ?></a>
+			</li> -->
+     		<li>
+				<a href="productDisclosure.php"><?php echo $lang['ProductDisclosure_HEADER'] ?></a>
+			</li>
+			<li id="resetsecuritypintop">
+				<a href="dashboard-pin.php"><?php echo $lang['ResetPin'] ?></a>
+			</li>
+			<li id="editprofiletop">
+				<a href="edit-profile.php" rel="noopener noreferrer"><?php echo $lang['EditProfile'] ?></a>
+			</li>
+			<li id="editbankaccounttop">
+				<a  href="edit-bank.php" rel="noopener noreferrer"><?php echo $lang['EditBankAccount'] ?></a>
+			</li>
+			<!-- <li id="closeaccount">
+				<a href="close-account.php" rel="noopener noreferrer"><php echo $lang['CloseAccount'] ?></a>
+			</li> -->
+		</ul>
+	</div>
+	<div id="faq-switcher-small" class="navbar">
+		<div class="dropdown">
+			<button class="dropbtn">
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="FAQ.php"><?php echo $lang['FAQ'] ?></a>
+				<a href="pdpa.php">PDPA</a>
+				<a href="Tnc.php"><?php echo $lang['Terms_and_Conditions'] ?></a>
+       			<!-- <a href="DeliveryRefundPolicies.php"><?php echo $lang['RefundPolicy'] ?></a> -->
+        		<a href="productDisclosure.php"><?php echo $lang['ProductDisclosure_HEADER'] ?></a>
+				<a id="resetsecurity" href="dashboard-pin.php"><?php echo $lang['ResetPin'] ?></a>
+				<a id="editprofile" href="edit-profile.php" rel="noopener noreferrer"><?php echo $lang['EditProfile'] ?></a>
+				<a id="editbankaccount" href="edit-bank.php" rel="noopener noreferrer"><?php echo $lang['EditBankAccount'] ?></a>
+				<!-- <a id="closeaccount" href="close-account.php" rel="noopener noreferrer"><php echo $lang['CloseAccount'] ?></a> -->
+			</div>
+		</div>
+	</div>
+	<div class="language-switcher"> 
+		<ul>
+		<li class="active">Hi JOHN DOE</li>
+		<li id="language-en" class="active"><a href="index.php?lang=en">Eng</a></li>
+		<li id="language-bm" class=""><a href="index.php?lang=bm">BM</a></li>	
+		</ul>
+	</div>
+	<div class="header">
+		<div class="hero">
+			<div class="client-logo"></div>
+			<div class="main-logo"></div>
+		</div>
+	</div>
+	
+	<div class="header-inside">
+		<div class="inside-title">Close Account</div>
+		<a class="back">Back</a>
+	</div>
+	
+	<div class="page-content">
+		
+		<div class="page-content-box">
+			<div class="main-widget">
+				
+				<div class="size18 center bold margin-top-single margin-bottom-half">
+					Are you sure you want to close your account?
+				</div>
+				
+				<p class="center limit-width">
+					If your account is closed, you will not be able to  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id leo porttitor, pulvinar nisl viverra, semper est.
+				</p>
+				
+				<div class="form-row tnc">
+					<div class="form-col center">
+						<span class="checkbox"><input type="checkbox" checked /><span></span></span>
+						<span class="label">Yes, I confirm</span>
+					</div>
+				</div>
+				
+				<div class="form-capitalize-title center">
+					Security PIN
+				</div>
+				<div class="form-row center">
+					<div class="form-col">
+						<div class="verify-box">
+							<input type="password" maxlength="1" class="verify1" value="1" />
+							<input type="password" maxlength="1" class="verify2" value="1" />
+							<input type="password" maxlength="1" class="verify3" value="2" />
+							<input type="password" maxlength="1" class="verify4" />
+							<input type="password" maxlength="1" class="verify5" />
+							<input type="password" maxlength="1" class="verify6" />
+						</div>
+						<div class="error"></div>
+					</div>
+				</div>
+				
+				<div class="form-row submit">
+					<div class="form-col">
+						<input type="submit" class="btn" value="Submit" />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

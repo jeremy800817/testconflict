@@ -1,0 +1,424 @@
+<%
+function render_table(data, key = 'table name', custom_field = ['partner_id'], linktab = null, binddata = null){
+    html = `
+    <div class="tab-pane fade" id="v-pills-`+key+`" role="tabpanel">
+        <table class="table table-sm table-hover" data-bind='`+JSON.stringify(binddata)+`'>
+            <thead>
+                <tr>
+                <th scope="col">#auto_id</th>
+                <!-- <th scope="col">refid / null</th> -->
+                `+
+                custom_field.map((field, index)=>{
+                    return `
+                        <th scope="col">`+ field +`</th>
+                    `
+                }).join('')
+                +`
+                <th scope="col">Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                `+
+                data.map((list, index)=>{
+                    return `
+                    <tr class="ef" data-a='`+JSON.stringify(list)+`'>
+                        <th scope="row">`+ (index+1) +`</th>
+                        <!-- <td>`+ list.refid +`</td> -->
+                        `+
+                        custom_field.map((field, index)=>{
+                            return `
+                                <td>`+ list[field] +`</td>
+                            `
+                        }).join('')
+                        +`
+                        <td>`+ list.timestamp +`</td>
+                    </tr>
+                    `
+                }).join('')
+                +`
+            </tbody>
+        </table>
+    </div>
+    `
+    <!-- html = html.replace(',','') -->
+    return html
+}
+
+
+function render_input_object_array(val, main_key){
+    if (Object.prototype.toString.call(val) == '[object Object]'){
+      // example of delivery_info
+      html = `
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">`+main_key+`</label>
+        <div class="col-sm-10">
+      `
+      Object.entries(val).map(([key, val], index) => {  
+        html += `
+        <div class="wrap_objarr obj" data-scheme="`+main_key+`" data-index="`+index+`">
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">`+key+`</label>
+          <div class="col-sm-10">
+          <input type="text" name="`+main_key+`[`+key+`]" value="`+val+`" class="form-control-plaintext" >
+          </div>
+        </div>
+        </div>
+        `;
+      })
+      html += `</div></div>` 
+    }
+    if (Object.prototype.toString.call(val) == '[object Array]'){
+      // example of redemption items
+      html = `
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">`+main_key+`</label>
+        <div class="col-sm-10">
+      `
+      if (val[0] && typeof(val[0]) == 'string'){
+        html += 
+        `<select class="form-control">`
+            val.map((x) => {
+                html += `<option value="`+x+`">`+x+`</option>`
+            })
+        html += `</select>`;
+      }else{
+
+        val.map((x, index1) => {  
+        html += 
+        `
+        <div class="wrap_objarr arrobj" data-scheme="`+main_key+`" data-index="`+index1+`">
+        `
+        Object.entries(x).map(([key, val], index2) => {
+            html += `
+            <div class="form-group row">
+            <label class="col-sm-2 col-form-label">`+key+`</label>
+            <div class="col-sm-10">
+            <input type="text" name="`+main_key+`[`+index1+`][`+key+`]" value="`+val+`" class="form-control-plaintext" >
+            </div>
+            </div>
+            `;
+        })
+        html += `</div>`
+        }).join('')
+      }
+
+      html += `</div></div>`
+    } 
+    return html;
+}
+%>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GTP - <%= locals.title %></title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+
+::-webkit-scrollbar {
+  height: 8px;             
+  width: 4px;               
+  /* border: 1px solid rgba(0,0,0,0.3); */
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.1);
+}
+    @media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  /* overflow-x: auto; */
+  color: rgba(255, 255, 255, .75);
+  text-align: center;
+  white-space: nowrap;
+  /* -webkit-overflow-scrolling: touch; */
+  /* overflow-x: auto; */
+}
+
+.nav-underline .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #6c757d;
+}
+.wrap_objarr{
+    /* border: 1px solid grey; */
+    padding: 0.25rem 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 1px rgba(0,0,0,0.4);
+    border-radius: 4px;
+}
+.nav-link.active{
+    background-color: rgb(233, 230, 73);
+}
+input{
+    padding: .25rem;
+    border: none;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    margin: 0.25rem;
+}
+tr{
+    cursor: pointer;
+}
+.resmsg{
+    font-size: 1rem;
+}
+.resmsg.success{
+    color: green;
+}
+.resmsg.error{
+    color: red;
+}
+.resmsg.serv_error_msg{
+    color: red;
+}
+</style>
+<body class="">
+    <div class="container">
+        <div class="nav-scroller bg-white shadow-sm">
+        <nav class="nav nav-underline" id="style-1">
+            <% locals.buttons.forEach((item) => { %>
+                <a class="nav-link <%= item.active %>" href="/?action=<%= item.action_name %>"><%= item.action_name %></a>
+            <% }) %>
+        </nav>
+    </div>
+    <% if (locals.price) { locals.price.forEach((item) => { %>
+        <%= item.priceid %>
+    <% })} %>
+        <div class="d-flex bd-highlight">
+            <% if (locals.time) { %>
+            <div class="p-2 flex-grow-1 bd-highlight"><h5>TIME: <%= locals.time %></h5></div>
+            <% } %>
+            <div class="p-2 ml-auto bd-highlight">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                    config
+                </button>
+            </div>
+        </div>
+    <% if (locals.ip) { %>
+        <h5>public ip: <%= locals.ip %></h5>
+    <% } %>
+    <div>
+        <h5>PARAMS:</h5>
+        <pre>
+<%=  (locals.params) ? JSON.stringify(locals.params, undefined, 4) : '' %>
+        </pre>
+    </div>
+    <div>
+        <h4>REQUEST:</h4>
+        <form action="/" method="POST" class="form-horizontal">
+        
+        <% if(locals.request){ Object.entries(locals.request).map(([key, val], index) =>{  %>
+            <% if (typeof(val) == 'object'){ %>
+
+                <%- render_input_object_array(val, key) %>
+            
+            
+            <% }else{ %>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label"><%= key %></label>
+                <div class="col-sm-10">
+                <input type="text" name="<%= key %>" id="<%= key %>" value="<%= val %>" class="form-control-plaintext" >
+                </div>
+            </div>
+            <% } %>
+        <% }) } %>
+        <div class="form-group row">
+            <div class="col-auto ml-auto">
+            <button type="submit" class="btn btn-primary ">Submit</button>
+
+            </div>    
+        </div>
+        </form>
+    </div>
+    <div>
+        <h4>RESPONSE: <%- (locals.response_status) ? "<span class='resmsg  "+response_status+"'>"+response_status+"</span>" : ""; %></h4>
+        <pre>
+            <% console.log(locals.response,'local_response'); %>
+<%= (locals.response) ? JSON.stringify(locals.response, undefined, 4) : '' %>
+<%= (locals.response == "serv_error_msg") ? locals.response : '' %>
+        </pre>
+    </div>
+
+
+    <div class="row">
+        <div class="col-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <% if (locals.data){ Object.entries(locals.data).map(key => {  %>
+                <a class="nav-link" id="v-<%= key[0] %>" data-toggle="pill" href="#v-pills-<%= key[0] %>" role="tab" aria-controls="v-<%= key[0] %>" aria-selected="true"><%= key[0] %></a>
+                <% }) } %>
+               
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+                <% if (locals.data && ('orders' in locals.data)){ %>
+                <%-  render_table(data.orders, 'orders', ['action_requested','confirmation_price','order_id','weight','amount']) %>
+                <% } %>
+                <% if (locals.data && ('price_stream' in locals.data)){ 
+                    var binddata = {}
+                    binddata.price_request_id = 'price_request_id';
+                    binddata.total_price = 'total_price';
+                    %>
+                <%-  render_table(data.price_stream, 'price_stream', ['action_requested','price_request_id', 'total_price'], '', binddata) %>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form action="/config" method="POST" class="form-horizontal">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Config</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                
+                <% if (locals.config.envs){ %>
+                    <% locals.config.envs.forEach(function(env, index){ 
+                        checked = '';
+                        if (env.env_use == 'on'){
+                            checked = 'checked'
+                        }
+                        %>
+                    <div class="form-group row">
+                        
+                        <label class="col-sm-1 col-form-label"></label>
+                        <div class="float-right custom-control custom-radio custom-control-inline ">
+                            <input type="radio" id="customRadioInline<%= index+1 %>" name="env_check" value="<%= index %>" class="custom-control-input" <%= checked %>>
+                            <label class="custom-control-label" for="customRadioInline<%= index+1 %>"><b>USE Environment<%= index + 1 %></b> </label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">URL</label>
+                        <div class="col-sm-10">
+                        <input type="text" name="env[<%= index %>][gtp_url]" value="<%= env.gtp_url %>" class="form-control-plaintext" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">merchant ID</label>
+                        <div class="col-sm-10">
+                        <input type="text" name="env[<%= index %>][merchant_id]" value="<%= env.merchant_id %>" class="form-control-plaintext" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">merchant secret key</label>
+                        <div class="col-sm-10">
+                        <input type="text" name="env[<%= index %>][merchant_key]" value="<%= env.merchant_key %>" class="form-control-plaintext" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">version</label>
+                        <div class="col-sm-10">
+                        <input type="text" name="env[<%= index %>][version]" value="<%= env.version %>" class="form-control-plaintext" >
+                        </div>
+                    </div>
+                    <!-- <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">USE</label>
+                        <div class="col-sm-10">
+                        <input type="radio" name="env_use" value="env_<%= index+1 %>" class="form-check-input" >
+                        </div>
+                    </div> -->
+                    
+                    <% }) %> 
+                <% } %>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Confirm</button>
+            </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cash/7.0.1/cash.min.js"></script>
+<script>
+    $(".wrap_objarr").each(function(){
+        x = $(this);
+        scheme = x.data("scheme");
+        index = x.data("index");
+    })
+    function append_child(scheme, index){
+        if (scheme)
+        html = `
+
+        `;
+    }
+    $(".ef").on("click", function(){
+        data = $(this).data().a
+        binding = $(this).parents("table").data().bind;
+
+        Object.entries(binding).map(([key,val])=>{
+            console.log(val,data[key])
+            $("#" + val).val(data[key])
+            $("#" + val).css("font-weight","bold")
+        })
+        window.scrollTo(0,100);
+        
+    })
+        // $('#v-orders').tab('show')
+</script>
+
+</body>
+</html>

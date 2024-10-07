@@ -1,0 +1,18 @@
+
+DROP TABLE IF EXISTS `exportlogs`;
+
+CREATE TABLE `exportlogs` (
+  `exg_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `exg_table` varchar(255) DEFAULT NULL,
+  `exg_select` text,
+  `exg_where` text,
+  `exg_datestart` datetime NOT NULL,
+  `exg_dateend` datetime NOT NULL,
+  `exg_outputcount` bigint(20) NOT NULL,
+  `exg_createdon` datetime NOT NULL,
+  `exg_createdby` bigint(20) NOT NULL,
+  `exg_modifiedon` datetime NOT NULL,
+  `exg_modifiedby` bigint(20) NOT NULL,
+  `exg_status` smallint(6) DEFAULT NULL,
+  PRIMARY KEY (`exg_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

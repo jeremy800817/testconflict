@@ -1,0 +1,148 @@
+<style>
+    table {
+        table-layout: fixed;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        border: 0;
+        width: 100%;
+    }
+
+    tr:nth-child(even) {
+        background-color: #9EC4FE;
+    }
+
+    tr {
+        background-color: #F3F3F2;
+    }
+
+    td,
+    th {
+        border-right: 0;
+        border-left: 0;
+        border-color: #FFF;
+        /* border-bottom: 4px solid #FFF; */
+        padding: 13px;
+        border-collapse: collapse;
+        width: 33.3%;
+        text-align: center;
+    }
+
+    th {
+        font-size: 16px;
+        background-color: #062173;
+        color: #FFF;
+    }
+
+    .divisor {
+        padding: 0;
+        height: 3px; 
+        background-color: #FFF;
+    }
+
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+    page {
+        margin: 0;
+        font-family: arial, sans-serif;
+
+    }
+
+    .even-row {
+        background-color: #9EC4FE;
+    }
+</style>
+
+##FIRSTPAGE##
+<page backtop="0">
+    <page_header>
+        <img class="responsive" src="##IMAGE##" style="margin:0" />
+    </page_header>
+
+
+    <div style="margin-top: 7%; padding: 50px">
+        <p style="text-align: right; display: block; font-size: 12px;">##DATE##</p>
+    </div>
+    <!--Start Display Customer Holding Balance-->
+    <div style="margin: 0 10%;padding:15px 0 0 0">
+        <h4>Total Customer Holdings</h4>
+
+        <div style="margin: 3% 5% 0 5%;">
+            <table>
+                <tr>
+                    <th>BMMB Vault (g)</th>
+                    <th>Total Customer Holding (g)</th>
+                    <th>Balance (g)</th>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="divisor"></td>
+                </tr>
+                <tr>
+                    <td cellspacing="0">##VAULTAMOUNTBMMB##</td>
+                    <td cellspacing="0">##TOTALCUSTOMERHOLDINGBMMB##</td>
+                    <td cellspacing="0">##TOTALBALANCEBMMB##</td>
+                </tr>
+            
+            </table>
+
+        </div>
+    </div>
+    <!--End Display Customer Holding Balance -->
+    <div style="margin: 0 10%;padding:0 0 0 0">
+        <h4>List of kilobar held by EasiGold in Secured Vault</h4>
+
+        <div style="margin: 3% 5% 5% 5%;">
+            <table>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Weight</th>
+                    <th>Purity</th>
+                </tr>
+                ##ROW##
+                <tr>
+                    <td colspan="3" class="divisor"></td>
+                </tr>
+                <tr class="##EVEN##">
+                    <td cellspacing="0">##SERIALNO##</td>
+                    <td cellspacing="0">1 kg</td>
+                    <td cellspacing="0">999.9</td>
+                </tr>
+                ##ENDROW##
+            </table>
+
+        </div>
+    </div>
+</page>
+##ENDFIRSTPAGE##
+##SUBSEQUENTPAGE##
+<page backtop="0">
+    <page_header>
+        <img class="responsive" src="##IMAGE##" style="margin:0" />
+    </page_header>
+
+    <div style="margin: 10% 10%;padding:65px 0 0 0">
+        <div style="margin: 2% 5% 5% 5%;">
+            <table>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Weight</th>
+                    <th>Purity</th>
+                </tr>
+                ##ROW##
+                <tr>
+                    <td colspan="3" class="divisor"></td>
+                </tr>
+                <tr class="##EVEN##">
+                    <td cellspacing="0">##SERIALNO##</td>
+                    <td cellspacing="0">1 kg</td>
+                    <td cellspacing="0">999.9</td>
+                </tr>
+                ##ENDROW##
+            </table>
+
+        </div>
+    </div>
+</page>
+##ENDSUBSEQUENTPAGE##

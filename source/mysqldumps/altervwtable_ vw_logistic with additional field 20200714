@@ -1,0 +1,10 @@
+DROP VIEW  IF EXISTS `vw_logistic`;
+CREATE VIEW `vw_logistic`  AS  select `logistic`.*,
+(select `user`.`usr_name` from `user` where (`user`.`usr_id` = `logistic`.`lgs_senderid`)) AS `lgs_sendername`,
+(select `user`.`usr_name` from `user` where (`user`.`usr_id` = `logistic`.`lgs_sentby`)) AS `lgs_sentbyname`,
+(select `user`.`usr_name` from `user` where (`user`.`usr_id` = `logistic`.`lgs_deliveredby`)) AS `lgs_deliveredbyname`,
+(select `user`.`usr_name` from `user` where (`user`.`usr_id` = `logistic`.`lgs_createdby`)) AS `lgs_createdbyname`,
+(select `user`.`usr_name` from `user` where (`user`.`usr_id` = `logistic`.`lgs_modifiedby`)) AS `lgs_modifiedbyname`,
+(select `tag`.`tag_value` from `tag` where (`tag`.`tag_id` = `logistic`.`lgs_vendorid`)) AS `lgs_vendorvalue`,
+(select `tag`.`tag_description` from `tag` where (`tag`.`tag_id` = `logistic`.`lgs_vendorid`)) AS `lgs_vendordescription`
+from `logistic` ;

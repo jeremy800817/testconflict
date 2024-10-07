@@ -1,0 +1,30 @@
+Ext.define('snap.model.MintedGoldbarInventory', {
+    extend: 'snap.model.Base',
+    fields: [
+        	{type: 'string', name: 'bin'},
+        	{type: 'string', name: 'branch'},
+        	{type: 'string', name: '1_gram'},
+        	{type: 'string', name: '5_gram'},
+        	{type: 'string', name: '10_gram'},
+        	{type: 'string', name: '50_gram'},
+        	{type: 'string', name: '100_gram'},
+        	{type: 'string', name: '1000_gram'},
+        	/* {type: 'string', name: 'docDate'},
+        	{type: 'string', name: 'cardCode'},
+        	{type: 'string', name: 'docEntry'},
+        	{type: 'int', name: 'lineNum'},
+        	{type: 'string', name: 'itemCode'},
+        	{type: 'string', name: 'dscription'},
+        	{type: 'int', name: 'quantity'},
+        	{type: 'int', name: 'openQty'},
+        	{type: 'int', name: 'draftQty'},
+        	{type: 'int', name: 'opndraft'},
+        	{type: 'string', name: 'price'},
+        	{type: 'string', name: 'docTotal'},
+        	{type: 'int', name: 'vatSum'},
+        	{type: 'string', name: 'docTotalAmt'},
+        	{type: 'string', name: 'draftGRN'},
+        	{type: 'string', name: 'u_GTPREFNO'},
+        	{type: 'string', name: 'comments'}, */
+    ]
+});

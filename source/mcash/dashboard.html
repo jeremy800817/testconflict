@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dashboard Registered | GoGold</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/nice-select.css">
+<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style-mcash.css">
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+<body class="gogold">
+	<div id="faq-switcher" class="faq-switcher">
+		<ul>
+			<li>
+				<a href="FAQ.php" rel="noopener noreferrer">FAQ</a>
+			</li>
+			<li>
+				<a id="resetsecuritypintop" href="resetpin.php">Reset Security Pin</a>
+			</li>
+			<li>
+				<a id="editprofiletop" href="editprofile.php" rel="noopener noreferrer">Edit Profile</a>
+			</li>
+			<li>
+				<a id="editbankaccounttop" href="editbankaccountnumber-page.php" rel="noopener noreferrer">Edit Bank Account</a>
+			</li>
+			<li>
+				<a id="closeaccount" href="" rel="noopener noreferrer">Close Account</a>
+			</li>
+		</ul>
+	</div>
+	<div id="faq-switcher-small" class="navbar">
+		<div class="dropdown">
+			<button class="dropbtn">
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="FAQ.php">FAQ</a>
+				<a href="pdpa.php">PDPA</a>
+				<a href="Tnc.php">Terms and Conditions</a>
+				<a id="resetsecurity" href="resetpin.php">Reset Security Pin</a>
+				<a id="editprofile" href="editprofile.php" rel="noopener noreferrer">Edit Profile</a>
+				<a id="editbankaccount" href="editbankaccountnumber-page.php" rel="noopener noreferrer">Edit Bank Account</a>
+				<a id="closeaccount" href="" rel="noopener noreferrer">Close Account</a>
+			</div>
+		</div>
+	</div>
+	<div class="language-switcher"> 
+		<ul>
+		<li class="active">Hi JOHN DOE</li>
+		<li id="language-en" class="active"><a href="index.php?lang=en">Eng</a></li>
+		<li id="language-bm" class=""><a href="index.php?lang=bm">BM</a></li>	
+		</ul>
+	</div>
+	<div class="header">
+		<div class="hero">
+			<div class="client-logo"></div>
+			<div class="main-logo"></div>
+		</div>
+	</div>
+	
+	<div class="page-content">
+		
+		<div class="page-content-box">
+			
+			<div class="main-widget">
+				<div class="balance-row balance-row2">
+					<label>My Gold 999.99</label>
+					<div class="balance-value">
+						<div class="num">1,999.00</div>
+						<div class="unit">Gram</div>
+					</div>
+					<div class="col">
+						<div class="unit">Avg Purchase Price</div>
+						<div class="num">RM242.18/g</div>
+					</div>
+					<div class="col">
+						<div class="unit">Total Purchased</div>
+						<div class="num">RM2000.00</div>
+					</div>
+					<div class="col current">
+						<div class="unit">Current Gold Value</div>
+						<div class="num-box">
+							<div class="trend">↑ 0.49%</div>
+							<div class="num">RM2000.00</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="buy-sell-row">
+					<div class="col">
+						<div class="action-title">Customer Buy</div>
+						<div class="current-value up">
+							<div class="icon"></div>
+							<div class="num">224.00</div>
+						</div>
+						<div class="unit">per gram</div>
+					</div>
+					<div class="col">
+						<div class="action-title">Customer Sell</div>
+						<div class="current-value down">
+							<div class="icon"></div>
+							<div class="num">224.00</div>
+						</div>
+						<div class="unit">per gram</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="widget-grid icon-actions">
+				<div class="row col2">
+					<a class="col">
+						<div class="icon">
+							<img src="img/icon/icon-buy-gold-mcash.svg" />
+						</div>
+						<div class="title">Buy Gold</div>
+					</a>
+					<a class="col">
+						<div class="icon">
+							<img src="img/icon/icon-sell-gold-mcash.svg" />
+						</div>
+						<div class="title">Sell Gold</div>
+					</a>
+				</div>
+				<div class="row col2">
+					<a class="col">
+						<div class="icon">
+							<img src="img/icon/icon-convert-mcash.svg" />
+						</div>
+						<div class="title">Convert Gold</div>
+					</a>
+					<a class="col">
+						<div class="icon">
+							<img src="img/icon/icon-transfer-mcash.svg" />
+						</div>
+						<div class="title">Transfer Gold</div>
+					</a>
+				</div>
+				<div class="row col2">
+					<a class="col">
+						<div class="icon">
+							<img src="img/icon/icon-price-mcash.svg" />
+						</div>
+						<div class="title">Price Alert</div>
+					</a>
+					<a class="col">
+						<div class="icon">
+							<img src="img/icon/icon-history-mcash.svg" />
+						</div>
+						<div class="title">Transaction</div>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id="wrapper">
+			
+		</div>
+		
+		<footer>
+			<p id="open" styly="">Status: Open ✅</p>
+			<p id="close" style="display: none;">Status: Close ⛔</p>
+			<p>Powered by ACE Capital Growth Sdn Bhd</p>
+			<p>Operation hours : 830am till 1159pm daily</p>
+			<div class="footer-links">
+				<ul>
+					<li>
+						<a rel="noopener noreferrer" href="pdpa.php">PDPA</a>
+					</li>
+					<li>
+						<a href="Tnc.php" rel="noopener noreferrer">Terms and Conditions</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,15 @@
+CREATE TABLE `mymemberupload` (
+  `mem_id` int NOT NULL AUTO_INCREMENT,
+  `mem_partnerid` int DEFAULT NULL,
+  `mem_memberuniqueid` varchar(45) DEFAULT NULL,
+  `mem_name` varchar(100) NOT NULL,
+  `mem_ic` varchar(50) NOT NULL,
+  `mem_contact` varchar(45) DEFAULT NULL,
+  `mem_email` varchar(50) DEFAULT NULL,
+  `mem_status` smallint(6) NOT NULL,
+  `mem_createdon` datetime NOT NULL,
+  `mem_createdby` bigint(20) NOT NULL,
+  `mem_modifiedon` datetime NOT NULL,
+  `mem_modifiedby` bigint(20) NOT NULL,
+   PRIMARY KEY (`mem_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

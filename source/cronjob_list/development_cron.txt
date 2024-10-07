@@ -1,0 +1,39 @@
+######################################
+##  git pull
+##
+*/5 * * * * cd /var/www/html/gtp2/;git pull
+*/5 * * * * cd /usr/local/nginx/html/gtp2api/source/;git pull
+1-59/5 * * * * cd /usr/local/nginx/html/gtp2bo/source/;git pull
+1-59/5 * * * * cd /usr/local/nginx/html/gtp2mobile/source/;git pull
+
+######################################
+##  GTP PriceCollectionJob checkalive all 
+##
+* * * * * php /usr/local/nginx/html/gtp2bo/source/snaplib/cli.php -f /usr/local/nginx/html/gtp2bo/source/snaplib/job/PriceCollectionJob.php -c /usr/local/nginx/html/gtp2bo/source/snapapp/config.ini -p "keepalivecheck=1" &> /dev/null
+
+######################################
+##  GTP FutureOrderPriceMatchCheckJob mode all - To actually match prices incoming with FO 
+##
+* * * * * php /usr/local/nginx/html/gtp2bo/source/snaplib/cli.php -f /usr/local/nginx/html/gtp2bo/source/snaplib/job/FutureOrderPriceMatchCheckJob.php -c /usr/local/nginx/html/gtp2bo/source/snapapp/config.ini -p "mode=ALL"
+
+######################################
+##  GTP FutureOrderScheduledMatchingJob 
+##
+* * * * * php /usr/local/nginx/html/gtp2bo/source/snaplib/cli.php -f /usr/local/nginx/html/gtp2bo/source/snaplib/job/FutureOrderScheduledMatchingJob.php -c /usr/local/nginx/html/gtp2bo/source/snapapp/config.ini -p "mode=ALL"
+
+######################################
+##  GTP ProcessMatchedFutureOrderJob 
+##
+* * * * * php /usr/local/nginx/html/gtp2bo/source/snaplib/cli.php -f /usr/local/nginx/html/gtp2bo/source/snaplib/job/ProcessMatchedFutureOrderJob.php -c /usr/local/nginx/html/gtp2bo/source/snapapp/config.ini -p "mode=loop&alivetime=60"
+
+######################################
+##  GTP ProcessOrderExpireJob 
+##  daily / 12am
+##
+0 16 * * * php /usr/local/nginx/html/gtp2bo/source/snaplib/cli.php -f /usr/local/nginx/html/gtp2bo/source/snaplib/job/ProcessOrderExpireJob.php -c source/snapapp/config.ini -p ""
+
+######################################
+##  GTP ProcessFutureOrderExpireJob
+##  daily / 12am
+##
+0 16 * * * * php /usr/local/nginx/html/gtp2bo/source/snaplib/cli.php -f /usr/local/nginx/html/gtp2bo/source/snaplib/job/ProcessFutureOrderExpireJob.php -c source/snapapp/config.ini -p ""

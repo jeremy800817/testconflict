@@ -1,0 +1,18 @@
+Ext.define('snap.view.mycommission.MyCommissionMbsbNonPeak', {
+    extend: 'snap.view.mycommission.MyCommissionMbsb',
+    xtype: 'mymbsbcommissionnonpeakview',
+    partnercode: 'MBSB',
+    nonpeak: true,
+    permissionRoot: '/root/mbsb/report/commission',
+    store: {
+        type: 'MyCommission', proxy: {
+            type: 'ajax',
+            url: 'index.php?hdl=mycommission&action=list&partnercode=MBSB&nonpeak=true',
+            reader: {
+                type: 'json',
+                rootProperty: 'records',
+            }
+        },
+    },
+
+});

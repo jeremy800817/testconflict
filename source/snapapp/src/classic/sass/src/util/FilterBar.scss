@@ -1,0 +1,123 @@
+
+.add {
+    background-image: url(images/filterbar/add.png);
+}
+.edit {
+    background-image: url(images/filterbar/edit.png);
+}
+.delete {
+    background-image: url(images/filterbar/delete.png);
+}
+.activate {
+    background-image: url(images/filterbar/activate.png);
+}
+.inactivate {
+    background-image: url(images/filterbar/inactivate.png);
+}
+.filter {
+    background-image: url(images/filterbar/filter.png);
+}
+.clear-filters {
+    background-image: url(images/filterbar/clear-filters.png);
+}
+.x-action-col-cell img {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+.x-action-col-img-noaction {
+    cursor: default !important;
+}
+.x-operator-button {
+    width: 16px;
+    height: 16px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -moz-user-focus: ignore;
+    /* https://developer.mozilla.org/en/CSS/-moz-user-focus */
+    cursor: pointer;
+    /* https://developer.mozilla.org/en/CSS/-moz-user-focus */
+    position: absolute;
+    overflow: hidden;
+    /* IE 6 :-( */
+    background-color: white;
+}
+.x-operator-button-equal {
+    background-image: url(images/filterbar/operator-equal.gif);
+}
+.x-operator-button-not-equal {
+    background-image: url(images/filterbar/operator-not-equal.gif);
+}
+.x-operator-button-great-than {
+    background-image: url(images/filterbar/operator-great-than.gif);
+}
+.x-operator-button-less-than {
+    background-image: url(images/filterbar/operator-less-than.gif);
+}
+.x-operator-button-great-than-equal {
+    background-image: url(images/filterbar/operator-great-than-equal.gif);
+}
+.x-operator-button-less-than-equal {
+    background-image: url(images/filterbar/operator-less-than-equal.gif);
+}
+.x-grid-header-ct .x-column-filtered .x-column-header-inner .x-column-header-text {
+    /*.ext-ux-operatorbutton-mouse-over-input {
+    background-position: 0 0px;
+}
+
+.ext-ux-operatorbutton-mouse-over-button {
+    background-position: 0 -24px;
+}
+
+.ext-ux-operatorbutton-mouse-down {
+    background-position: 0 -36px;
+}
+*/
+    font-weight: bold;
+    font-style: italic;
+    color: green;
+}
+.ext-ux-clearbutton {
+    width: 12px;
+    height: 12px;
+    background-image: url(images/filterbar/clear-text-icon.gif);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -moz-user-focus: ignore;
+    /* https://developer.mozilla.org/en/CSS/-moz-user-focus */
+    cursor: pointer;
+    /* https://developer.mozilla.org/en/CSS/-moz-user-focus */
+    position: absolute;
+    overflow: hidden;
+    /* IE 6 :-( */
+    background-color: white;
+}
+.ext-ux-clearbutton-mouse-over-input {
+    background-position: 0 -12px;
+}
+.ext-ux-clearbutton-mouse-over-button {
+    background-position: 0 -24px;
+}
+.ext-ux-clearbutton-mouse-down {
+    background-position: 0 -36px;
+}
+.ext-ux-clearbutton-on {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.35s linear;
+    -webkit-transition: opacity 0.35s linear;
+    -moz-transition: opacity 0.35s linear;
+    -o-transition: opacity 0.35s linear;
+    -ms-transition: opacity 0.35s linear;
+    -khtml-transition: opacity 0.35s linear;
+}
+.ext-ux-clearbutton-off {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s linear, visibility 0s linear 0.35s;
+    -webkit-transition: opacity 0.35s linear, visibility 0s linear 0.35s;
+    -moz-transition: opacity 0.35s linear, visibility 0s linear 0.35s;
+    -o-transition: opacity 0.35s linear, visibility 0s linear 0.35s;
+    -ms-transition: opacity 0.35s linear, visibility 0s linear 0.35s;
+    -khtml-transition: opacity 0.35s linear, visibility 0s linear 0.35s;
+}

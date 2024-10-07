@@ -1,0 +1,8 @@
+CREATE OR REPLACE VIEW `vw_mypaymentdetail` AS 
+select 
+`mypaymentdetail`.*,
+`myaccountholder`.`ach_fullname` AS `pdt_accountholdername`,
+`myaccountholder`.`ach_accountholdercode` AS `pdt_accountholdercode`,
+`createdby`.`usr_name` AS `pdt_createdbyname`,
+`modifiedby`.`usr_name` AS `pdt_modifiedbyname` 
+from (((`mypaymentdetail` left join `myaccountholder` on((`myaccountholder`.`ach_id` = `mypaymentdetail`.`pdt_accountholderid`))) left join `user` `createdby` on((`createdby`.`usr_id` = `mypaymentdetail`.`pdt_createdby`))) left join `user` `modifiedby` on((`modifiedby`.`usr_id` = `mypaymentdetail`.`pdt_modifiedby`)))

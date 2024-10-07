@@ -1,0 +1,17 @@
+2020-05-27 10:37:08
+
+[Input] : 
+{"version":"1.0m","merchant_id":"MBISMY@DEV","action":"price_acebuy","product":"DG-999-9","currency":"MYR","reference":"","timestamp":"2020-05-27 10:36:42","digest":"8246bfb705848b2ef1c65f81880bfb8454420fbee71be0f00366b42e8d46b60d"}
+
+[Output] : 
+{
+    "version": "1.0m",
+    "action_requested": "price_acebuy",
+    "product_requested": "DG-999-9",
+    "status": "1",
+    "price_request_id": "PVMV00000001ef",
+    "product_price": "238.01400",
+    "timestamp": "2020-05-27 10:37:07",
+    "digest": "FD818EF4657047F909AF1917E8DD09BD14BF9F25AF0016C129A086DDF2293D06"
+}
+

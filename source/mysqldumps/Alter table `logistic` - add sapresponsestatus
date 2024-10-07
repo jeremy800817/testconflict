@@ -1,0 +1,5 @@
+Alter table `replenishment` ADD `rpm_sapresponsestatus` smallint(2) DEFAULT NULL COMMENT '1 if sap already verify replenishmentcompleted,0 if there is any error' AFTER `rpm_status`;
+Alter table `replenishment` ADD `rpm_sapresponseon` datetime NOT NULL AFTER `rpm_sapresponsestatus`;
+
+
+

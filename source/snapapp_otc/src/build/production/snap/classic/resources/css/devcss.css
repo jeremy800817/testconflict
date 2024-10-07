@@ -1,0 +1,79 @@
+/* .main-logo{
+    background-color: #00be00!important;
+}
+
+.loginbody{
+    background-color: #25aaa6!important;
+}
+
+.x-treelist-navigation .x-treelist-item-expanded {
+    background-color: #10660b!important;
+}
+
+.x-treelist-navigation {
+    background-color: #094a01!important;
+}
+
+.x-treelist-navigation .x-treelist-item-text {
+    color: #ffffff!important;
+} 
+*/
+.loginbody{
+    /*
+    background: -webkit-linear-gradient(271deg, rgb(5 65 164), #1aa06894 80%)!important; 
+    background: -webkit-linear-gradient(271deg, rgb(0 189 248), rgb(0 189 248) 80%)!important;*/
+}
+.login_container:before {
+    content: 'DEMO'!important;
+    font-size: 1.5rem!important;
+}
+.login_submit{
+    /* background-color: #eeff64!important;*/
+    color: #000!important;
+}
+.main-logo{
+    background: linear-gradient(to right, rgb(79 247 111 / 85%), rgba(20, 196, 251, 0.85))!important;
+}
+.sencha-dash-dash-footerbar{
+    /* background: linear-gradient(to right, rgb(79 247 111 / 85%), rgba(20, 196, 251, 0.85))!important; */
+    /* color: #000!important; */
+
+
+    /* background: linear-gradient(89deg, #4ff76f, #14c4fb);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite; */
+
+    background: linear-gradient(135deg, rgb(79 247 111 / 85%), rgba(20, 196, 251, 0.85));
+	background-size: 200% 600%;
+	animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

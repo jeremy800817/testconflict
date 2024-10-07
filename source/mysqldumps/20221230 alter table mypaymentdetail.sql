@@ -1,0 +1,1 @@
+ALTER TABLE `mypaymentdetail` ADD COLUMN `pdt_priceuuid` VARCHAR(40) AFTER `pdt_verifiedamount`;

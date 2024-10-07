@@ -1,0 +1,28 @@
+Ext.define('snap.model.MyRegistration', {
+    extend: 'snap.model.Base',
+    fields: [
+        {type: 'int', name: 'id'},
+        {type: 'string', name: 'partnercode'},
+        {type: 'string', name: 'partnername'},
+        {type: 'string', name: 'accountholdercode'},
+        {type: 'string', name: 'fullname'},
+        {type: 'string', name: 'email'},
+        {type: 'string', name: 'mykadno'},                
+        {type: 'string', name: 'phoneno'},
+        {type: 'string', name: 'occupationcategory'},
+        {type: 'string', name: 'occupationsubcategory'},
+        {type: 'int', name: 'ispep'},
+        {type: 'int', name: 'pepstatus'},
+        {type: 'int', name: 'kycstatus'},
+        {type: 'int', name: 'amlastatus'},
+        {type: 'string', name: 'statusremarks'},
+        {type: 'string', name: 'amlasourcetype'},
+        {type: 'string', name: 'kycremarks'},
+        {type: 'string', name: 'addressline1' },
+        {type: 'string', name: 'addressline2' },
+        {type: 'string', name: 'addresscity' },
+        {type: 'string', name: 'addresspostcode' },
+        {type: 'string', name: 'addressstate' },
+        {type: 'date', name: 'createdon'},    
+    ]
+});

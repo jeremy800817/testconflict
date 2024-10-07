@@ -1,0 +1,5 @@
+ALTER TABLE `mymemberupload` 
+	ADD `mem_address_line1` VARCHAR(255) NULL DEFAULT NULL AFTER `mem_email`, 
+	ADD `mem_address_line2` VARCHAR(255) NULL DEFAULT NULL AFTER `mem_address_line1`, 
+	ADD `mem_postcode` VARCHAR(10) NULL DEFAULT NULL AFTER `mem_address_line2`, 
+	ADD `mem_state` VARCHAR(255) NULL DEFAULT NULL AFTER `mem_postcode`;

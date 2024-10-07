@@ -1,0 +1,195 @@
+{
+  "gtp_url": "http://migasit.ace2u.com/mbbgtp.php",
+  "merchant_id": "MBISMY@SIT",
+  "merchant_key": "*nz!+x4fk(7i*TLe@ReYBjAb",
+  "version": "1.0M",
+  "envs": [
+    {
+      "gtp_url": "http://migasit.ace2u.com/mbbgtp.php",
+      "merchant_id": "MBISMY@SIT",
+      "merchant_key": "*nz!+x4fk(7i*TLe@ReYBjAb",
+      "version": "1.0M",
+      "env_use": "on"
+    },
+    {
+      "gtp_url": "http://api.gtp.development/mbbgtp.php",
+      "merchant_id": "MBISMY@DEV",
+      "merchant_key": "*nz!+x4fk(7i*TLe@ReY",
+      "version": "1.0m"
+    },
+    {
+      "gtp_url": "localhost/gtp/source/snapapp/mbbgtp.php",
+      "merchant_id": "id",
+      "merchant_key": "key2",
+      "version": "1.0m"
+    }
+  ],
+  "actions": [
+    {
+      "name": "goldbar_allocation",
+      "params": {
+        "ref_id": "",
+        "quantity": 1,
+        "reference": "_GOLD_ALLOC_REF"
+      }
+    },
+    {
+      "name": "price_acebuy",
+      "params": {
+        "product": "DG-999-9",
+        "currency": "MYR",
+        "reference": "_TRANS_INC_NUM"
+      }
+    },
+    {
+      "name": "price_acesell",
+      "params": {
+        "product": "DG-999-9",
+        "currency": "MYR",
+        "reference": "_TRANS_INC_NUM"
+      }
+    },
+    {
+      "name": "spot_acebuy",
+      "params": {
+        "ref_id": "",
+        "price_request_id": "",
+        "future_ref_id": "",
+        "total_price": "",
+        "product": "DG-999-9",
+        "order_type": "weight",
+        "weight": "10",
+        "amount": "2434.00",
+        "reference": "requested_id"
+      }
+    },
+    {
+      "name": "spot_acesell",
+      "params": {
+        "ref_id": "",
+        "price_request_id": "",
+        "future_ref_id": "",
+        "total_price": "",
+        "product": "DG-999-9",
+        "order_type": [
+          "amount",
+          "weight"
+        ],
+        "weight": "10",
+        "amount": "",
+        "reference": "requested_id"
+      }
+    },
+    {
+      "name": "reverse_order",
+      "params": {
+        "ref_id": "",
+        "reference": "_REVERSE_ORD_REF"
+      }
+    },
+    {
+      "name": "future_acebuy",
+      "params": {
+        "future_ref_id": "value",
+        "expected_matching_price": "",
+        "product": "DG-999-9",
+        "order_type": [
+          "amount",
+          "weight"
+        ],
+        "weight": "",
+        "amount": "500",
+        "future_order_expiry": "2020-05-30 00:00:00",
+        "success_notify_url": "http://return",
+        "reference": "_FUTURE_ACEBUY_REF"
+      }
+    },
+    {
+      "name": "future_acesell",
+      "params": {
+        "future_ref_id": "future_ref_",
+        "expected_matching_price": "250.00",
+        "product": "DG-999-9",
+        "order_type": [
+          "amount",
+          "weight"
+        ],
+        "weight": "",
+        "amount": "500",
+        "future_order_expiry": "2020-05-30 00:00:00",
+        "success_notify_url": "http://return",
+        "reference": "_FUTURE_ACESELL_REF"
+      }
+    },
+    {
+      "name": "cancel_future_order",
+      "params": {
+        "ref_id": "",
+        "reference": "_CANCEL_FUTURE_ORD_REF"
+      }
+    },
+    {
+      "name": "redemption",
+      "params": {
+        "ref_id": "value",
+        "type": ["branch", "delivery", "special_delivery", "pre_appointment"],
+        "redeem_gram": "6",
+        "branch_id": "17",
+        "items": [
+          {
+            "quantity": 1,
+            "denomination": "1g",
+            "serialno": ""
+          },
+          {
+            "quantity": 1,
+            "denomination": "5g",
+            "serialno": ""
+          }
+        ],
+        "delivery_info": {
+          "contactname1": "contactname 1",
+          "contactname2": "",
+          "contact_mobile1": "0128888888",
+          "contact_mobile2": "",
+          "address1": "address1",
+          "address2": "address2",
+          "city": "city",
+          "postcode": "postcode",
+          "state": "state",
+          "country": "country"
+        },
+        "schedule_info": {
+          "branchid": "",
+          "datetime": "2020-12-31T13:00:00"
+        },
+        "reference": "_REDEMPTION_REF"
+      }
+    },
+    {
+      "name": "buyback",
+      "params": {
+        "ref_id": "",
+        "branch_id": "17",
+        "price_request_id": "",
+        "buyback_gram": "6",
+        "buyback_goldprice": "",
+        "buyback_fee": "",
+        "buyback_total_price": "",
+        "buyback_quantity": "2",
+        "item": [
+          {
+            "serialno": "",
+            "denomination": "1g"
+          },
+          {
+            "serialno": "",
+            "denomination": "5g"
+          }
+        ],
+        "reference": "_BUYBACK_REF"
+      }
+    }
+  ],
+  "ip": "211.24.117.213"
+}

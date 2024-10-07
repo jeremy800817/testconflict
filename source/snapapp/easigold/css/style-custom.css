@@ -1,0 +1,130 @@
+a {
+	color: #E5001C;
+}
+.nice-select:after {
+	border-color: #E5001C;
+}
+.gogold .header {
+	background: transparent url(../img/bg/easigold-logo-banner.png) center bottom/auto 100% no-repeat;
+	padding-top: 20px;
+	background-size: cover;      
+}
+.gogold .header .hero {
+	background-image: none;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	background: transparent;
+	background-position-y: -15px;
+}
+.gogold .header .hero .client-logo {
+	width: 110px;
+	height: 100%;
+	/* background: transparent url(../img/icon/icon-logo-onecall.png) center center/contain no-repeat; */
+}
+.gogold .header .hero .main-logo {
+	width: 170px;
+	height: 100%;
+	/* background: transparent url(../img/icon/icon-logo-onegold.png) center center/contain no-repeat; */
+}
+.language-switcher,
+.language-switcher ul li a,
+.language-switcher ul li.active a {
+	color: #ffffff;
+}
+.faq-switcher,
+.faq-switcher ul li a,
+.faq-switcher ul li.active a {
+	color: #ffffff;
+}
+#faq-switcher-small .fa {
+	color: #ffffff;
+}
+.signup-navi > .step.active .num {
+	background-color: #E5001C;
+}
+.form-row .btn,
+.form-row input.btn {
+	border-radius: 12px;
+	background-color: #E5001C;
+}
+.form-row .btn.primary,
+.form-row input.btn.primary {
+	background-color: #E5001C;
+}
+.form-row input.btn.secondary {
+	background-color: #222222;
+}
+.table-row.total .value,
+.table-row .value.highlight {
+	color: #E5001C;
+}
+.page-action input.btn {
+	border-radius: 12px;
+	background-color: #E5001C;
+}
+.wait-counter {
+	background-color: #E5001C;
+}
+.trans-navi > .step.active .num {
+	background-color: #E5001C;
+}
+.swal2-styled.swal2-confirm {
+	background-color: #E5001C !important;
+}
+.select-weight-row a.selected {
+    border-color: #d3a817;
+    background-color: #;
+    color: #fff;
+}
+
+.verify-box input {
+    text-align: center;
+    width: 3em!important;
+    color: #E5001C;
+}
+
+
+@media only screen and (max-width: 880px) {
+	#submitbt {
+		border-radius: 12px;
+		background-color: #FAD304;
+		color: #070707;
+		width: 100%;
+		cursor: pointer;
+	}
+	
+	#cancelbt {
+		border: 1px solid #C9C9C9;
+		border-radius: 12px;
+		background-color: #fff;
+		color: #C9C9C9;
+		width: 100%;
+		text-align: center;
+		cursor: pointer;
+	}
+}
+
+@media only screen and (min-width: 881px) {
+
+	#submitbt {
+		border-radius: 12px;
+		background-color: #FAD304;
+		color: #070707;
+		width: 30%;
+		cursor: pointer;
+	}
+	
+	#cancelbt {
+		border: 1px solid #C9C9C9;
+		border-radius: 12px;
+		background-color: #fff;
+		color: #C9C9C9;
+		width: 30%;
+		text-align: center;
+		display: flex;
+		margin: auto;
+		margin-top: 10px;
+		cursor: pointer;
+	}
+}

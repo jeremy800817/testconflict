@@ -1,0 +1,58 @@
+$partner-color: #550476;
+
+.x-treelist-navigation {
+    background-color: #F9F9F9 !important;
+    background-position: 24px 0%;
+    padding: 0 0 0 0;
+}
+
+.x-treelist-navigation .x-treelist-item-text {
+    color: #929292 !important;
+}
+
+.x-treelist-navigation .x-treelist-item-icon, .x-treelist-navigation .x-treelist-item-tool {
+    color: #adb3b8;
+    font-size: 18px;
+    width: 24px;
+}
+
+// Treelist dropdown
+.x-treelist-navigation .x-treelist-item-expanded {
+    background-color: #f4f4f4 !important;
+}
+
+.x-treelist-navigation .x-treelist-item-expander {
+    color: $partner-color !important;
+    font-size: 16px;
+    width: 24px;
+}
+
+// treelist hover
+.x-treelist-navigation .x-treelist-row-over > * > .x-treelist-item-icon {
+    color: $partner-color !important;
+}
+
+.x-treelist-navigation .x-treelist-row-over > * > .x-treelist-item-text {
+    color: $partner-color !important;
+}
+
+// Role tab color 
+.x-tree-icon-parent {
+    color: $partner-color !important;
+}
+
+.x-tree-elbow-plus, .x-tree-elbow-end-plus {
+    color: $partner-color !important;
+}
+
+// toolbar above
+.x-toolbar-navigation {
+    background: rgba(255, 255, 255, 0.8);
+    background: #F3F3F3 !important;
+}
+
+.main-logo {
+    background: #f9f9f9;
+}
+
+// 

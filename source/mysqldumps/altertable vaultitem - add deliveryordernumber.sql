@@ -1,0 +1,1 @@
+ALTER TABLE `vaultitem` ADD `sti_deliveryordernumber` varchar(50) NOT NULL AFTER `sti_newvaultlocationid`;

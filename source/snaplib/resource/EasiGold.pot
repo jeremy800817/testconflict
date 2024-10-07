@@ -1,0 +1,1862 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-03 14:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:271
+msgid "Email sent successfully"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:580
+msgid "Account registration success"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:643
+msgid "Password reset code sent to the phone number."
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:644
+msgid "Password reset code sent to the email address."
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:689
+msgid "Password has been reset successfully."
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:738
+msgid "Pin has been reset successfully."
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:810
+msgid "Successfully updated pin"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:826
+msgid "Successfully updated password"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:861
+msgid "Successfully updated profile"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:878
+msgid "Successfully updated bank account information"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:895
+msgid "Successfully changed the language"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:913
+msgid "Successfully uploaded images"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:929
+msgid "Successfully logged out"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:1303
+#: ../handler/myvaultitemhandler.php:105
+msgid "Unable to get partner vault"
+msgstr ""
+
+#: ../api/mygtp/MyGtpApiProcessor1_0my.php:1539 ../object/LogisticLog.php:69
+#: ../object/Logistic.php:171 ../object/Logistic.php:232
+#: ../object/MyAccountClosure.php:99 ../object/MyAccountHolder.php:315
+#: ../object/MyAccountHolder.php:350 ../object/MyAccountHolder.php:359
+#: ../object/MyConversion.php:174 ../object/MyGoldTransaction.php:193
+msgid "Pending"
+msgstr ""
+
+#: ../app.php:256
+#, php-format
+msgid "Failed to open configure file at %s"
+msgstr ""
+
+#: ../app.php:690
+#, php-format
+msgid "Failed to create log path directory %s"
+msgstr ""
+
+#: ../controller.php:257
+msgid "System management module"
+msgstr ""
+
+#: ../controller.php:258
+msgid "User management module"
+msgstr ""
+
+#: ../controller.php:259
+msgid "View user"
+msgstr ""
+
+#: ../controller.php:260
+msgid "Add user"
+msgstr ""
+
+#: ../controller.php:261
+msgid "Edit user"
+msgstr ""
+
+#: ../controller.php:262
+msgid "Reset password for all"
+msgstr ""
+
+#: ../controller.php:263
+msgid "Suspend user"
+msgstr ""
+
+#: ../controller.php:264
+msgid "Role management module"
+msgstr ""
+
+#: ../controller.php:265
+msgid "View role"
+msgstr ""
+
+#: ../controller.php:266
+msgid "Add role"
+msgstr ""
+
+#: ../controller.php:267
+msgid "Edit role"
+msgstr ""
+
+#: ../controller.php:268
+msgid "Delete role"
+msgstr ""
+
+#: ../controller.php:269
+msgid "IP restriction module"
+msgstr ""
+
+#: ../controller.php:270
+msgid "View IP restriction"
+msgstr ""
+
+#: ../controller.php:271
+msgid "Add IP restriction"
+msgstr ""
+
+#: ../controller.php:272
+msgid "Update IP restriction"
+msgstr ""
+
+#: ../controller.php:273
+msgid "Delete IP restriction"
+msgstr ""
+
+#: ../controller.php:274
+msgid "Event logs"
+msgstr ""
+
+#: ../controller.php:275 ../gtpcontroller.php:359
+msgid "Event Subscription"
+msgstr ""
+
+#: ../controller.php:276 ../gtpcontroller.php:354
+msgid "Event Message"
+msgstr ""
+
+#: ../controller.php:277
+msgid "Event trigger"
+msgstr ""
+
+#: ../gtpcontroller.php:175
+msgid "Developer access only modules"
+msgstr ""
+
+#: ../gtpcontroller.php:176
+msgid "Tag Editing access only modules"
+msgstr ""
+
+#: ../gtpcontroller.php:177
+msgid "Operator special access modules"
+msgstr ""
+
+#: ../gtpcontroller.php:179
+msgid "GTP Modules"
+msgstr ""
+
+#: ../gtpcontroller.php:180
+msgid "MIB Modules"
+msgstr ""
+
+#: ../gtpcontroller.php:181
+msgid "Order management for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:182
+msgid "View order for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:183
+msgid "Add order for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:184
+msgid "Edit order for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:185
+msgid "Cancel order for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:186
+msgid "Confirm order for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:187
+msgid "Order management for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:188
+msgid "View order for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:189
+msgid "Add order for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:190
+msgid "Edit order for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:191
+msgid "Cancel order for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:192
+msgid "Confirm order for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:193
+msgid "Export order for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:194
+msgid "Future order management for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:195
+msgid "View future order for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:196
+msgid "Add future order for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:197
+msgid "Edit future order for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:198
+msgid "Cancel future order for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:199
+msgid "Confirm future order for GTP"
+msgstr ""
+
+#. "/root/gtp/ftrordercancel" => gettext("Cancelled future order management for GTP"),
+#. "/root/gtp/ftrordercancel/list" => gettext("View cancelled future order for GTP"),
+#: ../gtpcontroller.php:202
+msgid "Future order management for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:203
+msgid "View future order for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:204
+msgid "Add future order for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:205
+msgid "Edit future order for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:206
+msgid "Cancel future order for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:207
+msgid "Confirm future order for MBB"
+msgstr ""
+
+#: ../gtpcontroller.php:208
+msgid "Export future order for MBB"
+msgstr ""
+
+#. "/root/mbb/ftrordercancel" => gettext("Cancelled future order management for MBB"),
+#. "/root/mbb/ftrordercancel/list" => gettext("View cancelled future order for MBB"),
+#: ../gtpcontroller.php:212
+msgid "Daily Limit for partner"
+msgstr ""
+
+#: ../gtpcontroller.php:214
+msgid "Salesman Trading"
+msgstr ""
+
+#. "/root/gtp/sale/trade" => gettext("Sales Trade"),
+#. "/root/gtp/sale/list" => gettext("View sales trade"),
+#. "/root/gtp/sale/edit" => gettext("Edit sales trade"),
+#. "/root/gtp/sale/confirm" => gettext("Confirm sales trade"),
+#: ../gtpcontroller.php:220
+msgid "Customer Trading"
+msgstr ""
+
+#. "/root/gtp/cust/trade" => gettext("Customer Trade"),
+#. "/root/gtp/cust/list" => gettext("View Customer Trade"),
+#. "/root/gtp/cust/edit" => gettext("Edit Customer Trade"),
+#. "/root/gtp/cust/confirm" => gettext("Confirm Customer Trade"),
+#: ../gtpcontroller.php:226
+msgid "Collection"
+msgstr ""
+
+#: ../gtpcontroller.php:227
+msgid "View Collection"
+msgstr ""
+
+#: ../gtpcontroller.php:228
+msgid "Add Collection"
+msgstr ""
+
+#: ../gtpcontroller.php:229
+msgid "Edit Collection"
+msgstr ""
+
+#: ../gtpcontroller.php:230
+msgid "Confirm Collection"
+msgstr ""
+
+#: ../gtpcontroller.php:232
+msgid "Unfulfilled PO"
+msgstr ""
+
+#. "/root/gtp/unfulfilledorder/list" => gettext("View Unfulfilled Order"),
+#. "/root/gtp/unfulfilledorder/edit" => gettext("Edit unfulfilled order"),
+#. "/root/gtp/unfulfilledorder/confirm" => gettext("Confirm unfulfilled order"),
+#. "/root/gtp/salescommission" => gettext("Sales commission management"),
+#. "/root/gtp/salescommission/list" => gettext("View sales commission"),
+#: ../gtpcontroller.php:240
+msgid "Logistics management for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:241
+msgid "View logistics information for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:242
+msgid "Add logistics for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:243
+msgid "Edit logistics for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:244
+msgid "Delete logistics for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:245
+msgid "Complete logistics for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:247
+msgid "Buyback management for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:248
+msgid "View buyback for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:249
+msgid "Add buyback for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:250
+msgid "Edit buyback for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:251
+msgid "Complete buyback for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:252
+msgid "Export buyback for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:255
+msgid "Redemption management for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:256
+msgid "View redemption for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:257
+msgid "Add redemption for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:258
+msgid "Edit redemption for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:259
+msgid "Complete redemption for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:260
+msgid "Export redemption for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:261
+msgid "Replenishment management for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:262
+msgid "View replenishment for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:263
+msgid "Add replenishment for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:264
+msgid "Edit replenishment for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:265
+msgid "Complete replenishment for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:266
+msgid "Export replenishment for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:268
+msgid "Logistics management for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:269
+msgid "View logistics information for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:270
+msgid "Add logistics for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:271
+msgid "Edit logistics for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:272
+msgid "Delete logistics for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:273
+msgid "Complete logistics for Mib"
+msgstr ""
+
+#: ../gtpcontroller.php:275
+msgid "Bank vault management"
+msgstr ""
+
+#: ../gtpcontroller.php:276
+msgid "View item"
+msgstr ""
+
+#: ../gtpcontroller.php:277
+msgid "Add item"
+msgstr ""
+
+#: ../gtpcontroller.php:278
+msgid "Edit item"
+msgstr ""
+
+#: ../gtpcontroller.php:279 ../mygtpcontroller.php:283
+#: ../mygtpcontroller.php:353 ../mygtpcontroller.php:423
+msgid "Return item"
+msgstr ""
+
+#: ../gtpcontroller.php:280 ../mygtpcontroller.php:284
+#: ../mygtpcontroller.php:354 ../mygtpcontroller.php:424
+msgid "Transfer item"
+msgstr ""
+
+#: ../gtpcontroller.php:282
+msgid "A&P Pool"
+msgstr ""
+
+#: ../gtpcontroller.php:283
+msgid "View A&P Pool"
+msgstr ""
+
+#: ../gtpcontroller.php:284
+msgid "Export A&P Pool"
+msgstr ""
+
+#: ../gtpcontroller.php:286
+msgid "Gold Bar Status"
+msgstr ""
+
+#: ../gtpcontroller.php:287
+msgid "View Gold Bar Status"
+msgstr ""
+
+#: ../gtpcontroller.php:289
+msgid "Buyback management for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:290
+msgid "View buyback for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:291
+msgid "Add buyback for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:292
+msgid "Edit buyback for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:293
+msgid "Complete buyback for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:294
+msgid "Export buyback for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:295
+msgid "Tender management for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:296
+msgid "View tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:297
+msgid "Add tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:298
+msgid "Edit tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:299
+msgid "Complete tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:300
+msgid "Export tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:301
+msgid "Import tender for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:302
+msgid "Collection management for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:303
+msgid "View collection for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:304
+msgid "Add collection for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:305
+msgid "Edit collection for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:306
+msgid "Complete collection for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:307
+msgid "Export collection for Pos"
+msgstr ""
+
+#: ../gtpcontroller.php:309
+msgid "System  setup related modules"
+msgstr ""
+
+#: ../gtpcontroller.php:310
+msgid "Partner management"
+msgstr ""
+
+#: ../gtpcontroller.php:311
+msgid "View partner information"
+msgstr ""
+
+#: ../gtpcontroller.php:312
+msgid "Add partner"
+msgstr ""
+
+#: ../gtpcontroller.php:313
+msgid "Edit partner"
+msgstr ""
+
+#: ../gtpcontroller.php:314
+msgid "Delete partner"
+msgstr ""
+
+#: ../gtpcontroller.php:315
+msgid "Product management"
+msgstr ""
+
+#: ../gtpcontroller.php:316
+msgid "View product information"
+msgstr ""
+
+#: ../gtpcontroller.php:317
+msgid "Add product"
+msgstr ""
+
+#: ../gtpcontroller.php:318
+msgid "Edit product"
+msgstr ""
+
+#: ../gtpcontroller.php:319
+msgid "Delete product"
+msgstr ""
+
+#: ../gtpcontroller.php:320
+msgid "Price source management"
+msgstr ""
+
+#: ../gtpcontroller.php:321
+msgid "View price source"
+msgstr ""
+
+#: ../gtpcontroller.php:322
+msgid "Add price source"
+msgstr ""
+
+#: ../gtpcontroller.php:323
+msgid "Edit price source"
+msgstr ""
+
+#: ../gtpcontroller.php:324
+msgid "Delete asset type"
+msgstr ""
+
+#: ../gtpcontroller.php:325
+msgid "Trading schedule management"
+msgstr ""
+
+#: ../gtpcontroller.php:326
+msgid "View trading schedule"
+msgstr ""
+
+#: ../gtpcontroller.php:327
+msgid "Add trading schedule"
+msgstr ""
+
+#: ../gtpcontroller.php:328
+msgid "Edit trading schedule"
+msgstr ""
+
+#: ../gtpcontroller.php:329
+msgid "Delete inventory type"
+msgstr ""
+
+#: ../gtpcontroller.php:331
+msgid "Trader management"
+msgstr ""
+
+#: ../gtpcontroller.php:332
+msgid "View trader management"
+msgstr ""
+
+#: ../gtpcontroller.php:333
+msgid "Add trader management"
+msgstr ""
+
+#: ../gtpcontroller.php:334
+msgid "Edit trader management"
+msgstr ""
+
+#: ../gtpcontroller.php:335
+msgid "Cancel trader management"
+msgstr ""
+
+#: ../gtpcontroller.php:336
+msgid "Confirm trader management"
+msgstr ""
+
+#: ../gtpcontroller.php:338
+msgid "Priceadjuster management"
+msgstr ""
+
+#: ../gtpcontroller.php:339
+msgid "View priceadjuster management"
+msgstr ""
+
+#: ../gtpcontroller.php:340
+msgid "Add priceadjuster management"
+msgstr ""
+
+#: ../gtpcontroller.php:341
+msgid "Edit priceadjuster management"
+msgstr ""
+
+#: ../gtpcontroller.php:342
+msgid "Cancel priceadjuster management"
+msgstr ""
+
+#: ../gtpcontroller.php:343
+msgid "Confirm priceadjuster management"
+msgstr ""
+
+#: ../gtpcontroller.php:345 ../mygtpcontroller.php:444
+msgid "Announcement management"
+msgstr ""
+
+#: ../gtpcontroller.php:346 ../mygtpcontroller.php:445
+msgid "View announcement management"
+msgstr ""
+
+#: ../gtpcontroller.php:347
+msgid "Add announcement management"
+msgstr ""
+
+#: ../gtpcontroller.php:348
+msgid "Edit announcement management"
+msgstr ""
+
+#: ../gtpcontroller.php:349
+msgid "Cancel announcement management"
+msgstr ""
+
+#: ../gtpcontroller.php:350
+msgid "Confirm announcement management"
+msgstr ""
+
+#: ../gtpcontroller.php:351
+msgid "Delete announcement"
+msgstr ""
+
+#: ../gtpcontroller.php:352
+msgid "Api Logs management"
+msgstr ""
+
+#: ../gtpcontroller.php:353
+msgid "View Api logs"
+msgstr ""
+
+#: ../gtpcontroller.php:355
+msgid "View Event Message"
+msgstr ""
+
+#: ../gtpcontroller.php:356
+msgid "Add Event Message"
+msgstr ""
+
+#: ../gtpcontroller.php:357
+msgid "Edit Event Message"
+msgstr ""
+
+#: ../gtpcontroller.php:358
+msgid "Delete Event Message"
+msgstr ""
+
+#: ../gtpcontroller.php:360
+msgid "View Event Subscription"
+msgstr ""
+
+#: ../gtpcontroller.php:361
+msgid "Add Event Subscription"
+msgstr ""
+
+#: ../gtpcontroller.php:362
+msgid "Edit Event Subscription"
+msgstr ""
+
+#: ../gtpcontroller.php:363
+msgid "Delete Event Subscription"
+msgstr ""
+
+#: ../gtpcontroller.php:364
+msgid "Event Log"
+msgstr ""
+
+#: ../gtpcontroller.php:365
+msgid "View Event Log"
+msgstr ""
+
+#: ../gtpcontroller.php:366
+msgid "Audit Trail for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:367
+msgid "View Audit Trail for GTP"
+msgstr ""
+
+#: ../gtpcontroller.php:369
+msgid "Price stream management"
+msgstr ""
+
+#: ../gtpcontroller.php:370
+msgid "View price streams"
+msgstr ""
+
+#: ../gtpcontroller.php:371
+msgid "Add price streams"
+msgstr ""
+
+#: ../gtpcontroller.php:372
+msgid "Price validation management"
+msgstr ""
+
+#: ../gtpcontroller.php:373
+msgid "View price validations"
+msgstr ""
+
+#: ../gtpcontroller.php:374
+msgid "Add price validations"
+msgstr ""
+
+#: ../gtpcontroller.php:375
+msgid "Sales commission management"
+msgstr ""
+
+#: ../gtpcontroller.php:376
+msgid "View sales commission"
+msgstr ""
+
+#: ../gtpcontroller.php:377
+msgid "Add sales commission"
+msgstr ""
+
+#: ../gtpcontroller.php:378
+msgid "Edit sales commission"
+msgstr ""
+
+#: ../gtpcontroller.php:379
+msgid "Delete sales commission"
+msgstr ""
+
+#: ../gtpcontroller.php:380
+msgid "MBB AP Fund pool management"
+msgstr ""
+
+#: ../gtpcontroller.php:381
+msgid "View MBB AP Fund pool management"
+msgstr ""
+
+#: ../gtpcontroller.php:383
+msgid "Redemption management"
+msgstr ""
+
+#: ../gtpcontroller.php:384
+msgid "View redemption"
+msgstr ""
+
+#: ../gtpcontroller.php:385
+msgid "Add redemption"
+msgstr ""
+
+#: ../gtpcontroller.php:386
+msgid "Edit redemption"
+msgstr ""
+
+#: ../gtpcontroller.php:387
+msgid "Replenishment management"
+msgstr ""
+
+#: ../gtpcontroller.php:388
+msgid "View replenishment"
+msgstr ""
+
+#: ../gtpcontroller.php:389
+msgid "Add replenishment"
+msgstr ""
+
+#: ../gtpcontroller.php:390
+msgid "Edit replenishment"
+msgstr ""
+
+#: ../handler/buybackhandler.php:273 ../handler/redemptionhandler.php:308
+#: ../handler/replenishmenthandler.php:184
+msgid "sorry, no permission"
+msgstr ""
+
+#: ../handler/defaultloginhandler.php:44 ../handlerext7/gtploginhandler.php:72
+#: ../handler/gtploginhandler.php:72
+msgid "Invalid username or password"
+msgstr ""
+
+#: ../handler/defaultloginhandler.php:47 ../handlerext7/gtploginhandler.php:97
+#: ../handlerext7/gtploginhandler.php:123
+#: ../handlerext7/gtploginhandler.php:124
+#: ../handlerext7/gtploginhandler.php:125
+#: ../handlerext7/gtploginhandler.php:126
+#: ../handlerext7/gtploginhandler.php:127
+#: ../handlerext7/gtploginhandler.php:128 ../handler/gtploginhandler.php:97
+#: ../handler/gtploginhandler.php:123 ../handler/gtploginhandler.php:124
+#: ../handler/gtploginhandler.php:125 ../handler/gtploginhandler.php:126
+#: ../handler/gtploginhandler.php:127 ../handler/gtploginhandler.php:128
+msgid "Username"
+msgstr ""
+
+#: ../handler/defaultloginhandler.php:47 ../handlerext7/gtploginhandler.php:97
+#: ../handlerext7/gtploginhandler.php:123
+#: ../handlerext7/gtploginhandler.php:124
+#: ../handlerext7/gtploginhandler.php:125
+#: ../handlerext7/gtploginhandler.php:126
+#: ../handlerext7/gtploginhandler.php:127
+#: ../handlerext7/gtploginhandler.php:128 ../handler/gtploginhandler.php:97
+#: ../handler/gtploginhandler.php:123 ../handler/gtploginhandler.php:124
+#: ../handler/gtploginhandler.php:125 ../handler/gtploginhandler.php:126
+#: ../handler/gtploginhandler.php:127 ../handler/gtploginhandler.php:128
+msgid "Password"
+msgstr ""
+
+#: ../handler/defaultloginhandler.php:47 ../handlerext7/gtploginhandler.php:97
+#: ../handler/gtploginhandler.php:97
+msgid "Login"
+msgstr ""
+
+#: ../handler/defaultloginhandler.php:47
+msgid "Forgot Password ?"
+msgstr ""
+
+#: ../handlerext7/gtploginhandler.php:96 ../handler/gtploginhandler.php:96
+msgid "Signing-in, please wait..."
+msgstr ""
+
+#: ../handlerext7/gtploginhandler.php:97 ../handler/gtploginhandler.php:97
+msgid "Captcha"
+msgstr ""
+
+#: ../handlerext7/gtploginhandler.php:98 ../handlerext7/gtploginhandler.php:125
+#: ../handlerext7/gtploginhandler.php:126
+#: ../handlerext7/gtploginhandler.php:127
+#: ../handlerext7/gtploginhandler.php:128 ../handler/gtploginhandler.php:98
+#: ../handler/gtploginhandler.php:125 ../handler/gtploginhandler.php:126
+#: ../handler/gtploginhandler.php:127 ../handler/gtploginhandler.php:128
+msgid "Code"
+msgstr ""
+
+#: ../handlerext7/gtploginhandler.php:99 ../handler/gtploginhandler.php:99
+msgid "Partner Login"
+msgstr ""
+
+#: ../handlerext7/gtploginhandler.php:101 ../handler/gtploginhandler.php:101
+msgid "Online Payment Made Simple"
+msgstr ""
+
+#: ../handlerext7/gtploginhandler.php:153 ../handler/gtploginhandler.php:153
+msgid "Operator"
+msgstr ""
+
+#: ../handlerext7/gtploginhandler.php:154 ../handler/gtploginhandler.php:154
+msgid "Gateway"
+msgstr ""
+
+#: ../handlerext7/gtploginhandler.php:155
+#: ../handlerext7/gtploginhandler.php:156
+#: ../handlerext7/gtploginhandler.php:168 ../handler/gtploginhandler.php:155
+#: ../handler/gtploginhandler.php:156 ../handler/gtploginhandler.php:168
+msgid "Merchant"
+msgstr ""
+
+#: ../handlerext7/gtploginhandler.php:157 ../handler/gtploginhandler.php:157
+msgid "Referral"
+msgstr ""
+
+#: ../handlerext7/gtploginhandler.php:158 ../handler/gtploginhandler.php:158
+msgid "Agent"
+msgstr ""
+
+#: ../handlerext7/mainhandler.php:101 ../handler/mainhandler.php:101
+msgid "Loading, please wait..."
+msgstr ""
+
+#: ../handler/mycifhandler.php:77
+msgid "Yes"
+msgstr ""
+
+#: ../handler/mycifhandler.php:77
+msgid "No"
+msgstr ""
+
+#: ../handler/mydocumentationhandler.php:129
+msgid "Content of uploaded file is not valid"
+msgstr ""
+
+#: ../handler/mypepsearchresulthandler.php:166
+msgid "Remarks is required for rejection"
+msgstr ""
+
+#: ../handler/orderdashboardhandler.php:800
+#: ../handler/orderdashboardhandler.php:819 ../handler/partnerhandler.php:360
+#: ../handler/partnerhandler.php:379
+msgid "Sorry, no permission"
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:605
+msgid "Sub category field is empty"
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:610
+#: ../manager/MyGtpAccountManager.php:1434
+msgid "Main category does not match with the main category of sub occupation."
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:619
+#: ../manager/MyGtpAccountManager.php:1442
+msgid "This main category selected does not contain sub category."
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:1455
+msgid "Not allowed to update sales person code."
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:1534
+#: ../manager/MyGtpTransactionManager.php:980
+msgid "Account name/number not set"
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:1558
+msgid "Account is not active"
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:1664
+#: ../manager/MyGtpAccountManager.php:1737
+msgid "Unable to perform requested action due to invalid status"
+msgstr ""
+
+#: ../manager/MyGtpAccountManager.php:2012
+#: ../manager/MyGtpAccountManager.php:2051
+msgid "Unable to perform requested action due to invalid account holder status"
+msgstr ""
+
+#: ../manager/MyGtpAnnouncementManager.php:338
+msgid "No announcement at the moment"
+msgstr ""
+
+#: ../manager/MyGtpConversionManager.php:216
+msgid "Unable to create conversion, please contact customer service."
+msgstr ""
+
+#: ../manager/MyGtpConversionManager.php:744
+#: ../manager/MyGtpTransactionManager.php:998
+msgid "Please complete or cancel existing FPX transactions before proceeding."
+msgstr ""
+
+#: ../manager/MyGtpPriceAlertManager.php:91
+#: ../manager/MyGtpTransactionManager.php:549
+msgid "Product not found"
+msgstr ""
+
+#: ../manager/MyGtpStatementManager.php:359
+msgid "No record at the moment"
+msgstr ""
+
+#: ../manager/MyGtpTokenManager.php:307
+msgid "Unable to generate access token."
+msgstr ""
+
+#: ../manager/MyGtpTransactionManager.php:707
+msgid "Partner Payment Provider API not found."
+msgstr ""
+
+#: ../manager/MyGtpTransactionManager.php:934
+msgid "No valid settlement method was provided"
+msgstr ""
+
+#: ../manager/MyGtpTransactionManager.php:964
+#, php-format
+msgid "Minimum initial investment of %s grams not met."
+msgstr ""
+
+#: ../manager/PriceManager.php:162 ../manager/PriceManager.php:208
+msgid "Unable to connect to price engine to update the adjusted price"
+msgstr ""
+
+#: ../mygtpcontroller.php:211
+msgid "BMMB Modules"
+msgstr ""
+
+#: ../mygtpcontroller.php:212
+msgid "GO Modules"
+msgstr ""
+
+#: ../mygtpcontroller.php:213
+msgid "ONE Modules"
+msgstr ""
+
+#: ../mygtpcontroller.php:215
+msgid "Push notification management"
+msgstr ""
+
+#: ../mygtpcontroller.php:216
+msgid "View push notification management"
+msgstr ""
+
+#: ../mygtpcontroller.php:217
+msgid "Add push notification management"
+msgstr ""
+
+#: ../mygtpcontroller.php:218
+msgid "Edit push notification management"
+msgstr ""
+
+#. "/root/bmmb/pushnotification/cancel" => gettext("Cancel push notification"),
+#. "/root/bmmb/pushnotification/confirm" => gettext("Confirm push notification"),
+#: ../mygtpcontroller.php:221
+msgid "Delete push notification"
+msgstr ""
+
+#. GO permissions
+#. End GO permissions
+#. One Permissions
+#: ../mygtpcontroller.php:223 ../mygtpcontroller.php:302
+#: ../mygtpcontroller.php:372
+msgid "Conversion management"
+msgstr ""
+
+#: ../mygtpcontroller.php:224 ../mygtpcontroller.php:303
+#: ../mygtpcontroller.php:373
+msgid "View conversion"
+msgstr ""
+
+#: ../mygtpcontroller.php:225 ../mygtpcontroller.php:304
+#: ../mygtpcontroller.php:374
+msgid "Add conversion"
+msgstr ""
+
+#: ../mygtpcontroller.php:226 ../mygtpcontroller.php:305
+#: ../mygtpcontroller.php:375
+msgid "Edit conversion"
+msgstr ""
+
+#: ../mygtpcontroller.php:227 ../mygtpcontroller.php:306
+#: ../mygtpcontroller.php:376
+msgid "Export conversion"
+msgstr ""
+
+#: ../mygtpcontroller.php:229
+msgid "Logistics management for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:230
+msgid "View logistics information for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:231
+msgid "Add logistics for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:232
+msgid "Edit logistics for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:233
+msgid "Delete logistics for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:234
+msgid "Complete logistics for BMMB"
+msgstr ""
+
+#: ../mygtpcontroller.php:236 ../mygtpcontroller.php:315
+#: ../mygtpcontroller.php:385
+msgid "Disbursement management"
+msgstr ""
+
+#: ../mygtpcontroller.php:237 ../mygtpcontroller.php:316
+#: ../mygtpcontroller.php:386
+msgid "View disbursement"
+msgstr ""
+
+#: ../mygtpcontroller.php:238 ../mygtpcontroller.php:317
+#: ../mygtpcontroller.php:387
+msgid "Add disbursement"
+msgstr ""
+
+#: ../mygtpcontroller.php:239 ../mygtpcontroller.php:318
+#: ../mygtpcontroller.php:388
+msgid "Edit disbursement"
+msgstr ""
+
+#: ../mygtpcontroller.php:241
+msgid "Documentation management"
+msgstr ""
+
+#: ../mygtpcontroller.php:242
+msgid "View documentation"
+msgstr ""
+
+#: ../mygtpcontroller.php:243
+msgid "Add documentation"
+msgstr ""
+
+#: ../mygtpcontroller.php:244
+msgid "Edit documentation"
+msgstr ""
+
+#: ../mygtpcontroller.php:246 ../mygtpcontroller.php:320
+#: ../mygtpcontroller.php:390
+msgid "Account holder profile management"
+msgstr ""
+
+#: ../mygtpcontroller.php:247 ../mygtpcontroller.php:321
+#: ../mygtpcontroller.php:391
+msgid "View user profile"
+msgstr ""
+
+#: ../mygtpcontroller.php:248 ../mygtpcontroller.php:322
+#: ../mygtpcontroller.php:392
+msgid "Add user profile"
+msgstr ""
+
+#: ../mygtpcontroller.php:249 ../mygtpcontroller.php:323
+#: ../mygtpcontroller.php:393
+msgid "Edit user profile"
+msgstr ""
+
+#: ../mygtpcontroller.php:250 ../mygtpcontroller.php:324
+#: ../mygtpcontroller.php:394
+msgid "Suspend account holder"
+msgstr ""
+
+#: ../mygtpcontroller.php:251 ../mygtpcontroller.php:325
+#: ../mygtpcontroller.php:395
+msgid "Unsuspend account holder"
+msgstr ""
+
+#: ../mygtpcontroller.php:253 ../mygtpcontroller.php:327
+#: ../mygtpcontroller.php:397
+msgid "PEP approval management"
+msgstr ""
+
+#: ../mygtpcontroller.php:254 ../mygtpcontroller.php:328
+#: ../mygtpcontroller.php:398
+msgid "View PEP"
+msgstr ""
+
+#: ../mygtpcontroller.php:255 ../mygtpcontroller.php:329
+#: ../mygtpcontroller.php:399
+msgid "Approve or reject PEP"
+msgstr ""
+
+#: ../mygtpcontroller.php:257 ../mygtpcontroller.php:331
+#: ../mygtpcontroller.php:401
+msgid "FPX management"
+msgstr ""
+
+#: ../mygtpcontroller.php:258 ../mygtpcontroller.php:332
+#: ../mygtpcontroller.php:402
+msgid "View FPX"
+msgstr ""
+
+#: ../mygtpcontroller.php:260 ../mygtpcontroller.php:334
+#: ../mygtpcontroller.php:404
+msgid "eKYC management"
+msgstr ""
+
+#: ../mygtpcontroller.php:261 ../mygtpcontroller.php:335
+#: ../mygtpcontroller.php:405
+msgid "View eKYC"
+msgstr ""
+
+#: ../mygtpcontroller.php:263
+msgid "AMLA management"
+msgstr ""
+
+#: ../mygtpcontroller.php:264
+msgid "View amla"
+msgstr ""
+
+#: ../mygtpcontroller.php:265
+msgid "Permission to import amla"
+msgstr ""
+
+#: ../mygtpcontroller.php:267 ../mygtpcontroller.php:337
+#: ../mygtpcontroller.php:407
+msgid "Gold transaction management"
+msgstr ""
+
+#: ../mygtpcontroller.php:268 ../mygtpcontroller.php:338
+#: ../mygtpcontroller.php:408
+msgid "View gold transaction"
+msgstr ""
+
+#: ../mygtpcontroller.php:269 ../mygtpcontroller.php:339
+#: ../mygtpcontroller.php:409
+msgid "Export gold transaction statement"
+msgstr ""
+
+#: ../mygtpcontroller.php:271 ../mygtpcontroller.php:341
+#: ../mygtpcontroller.php:411
+msgid "Storage Fee management"
+msgstr ""
+
+#: ../mygtpcontroller.php:272 ../mygtpcontroller.php:342
+#: ../mygtpcontroller.php:412
+msgid "View storage fee"
+msgstr ""
+
+#: ../mygtpcontroller.php:273 ../mygtpcontroller.php:343
+#: ../mygtpcontroller.php:413
+msgid "Fee management"
+msgstr ""
+
+#: ../mygtpcontroller.php:274 ../mygtpcontroller.php:344
+#: ../mygtpcontroller.php:414
+msgid "View fee management"
+msgstr ""
+
+#: ../mygtpcontroller.php:275 ../mygtpcontroller.php:345
+#: ../mygtpcontroller.php:415
+msgid "Add fee"
+msgstr ""
+
+#: ../mygtpcontroller.php:276 ../mygtpcontroller.php:346
+#: ../mygtpcontroller.php:416
+msgid "Edit fee"
+msgstr ""
+
+#: ../mygtpcontroller.php:279 ../mygtpcontroller.php:349
+#: ../mygtpcontroller.php:419
+msgid "Inventory management"
+msgstr ""
+
+#: ../mygtpcontroller.php:280 ../mygtpcontroller.php:350
+#: ../mygtpcontroller.php:420
+msgid "View inventory"
+msgstr ""
+
+#: ../mygtpcontroller.php:281 ../mygtpcontroller.php:351
+#: ../mygtpcontroller.php:421
+msgid "Add item to inventory"
+msgstr ""
+
+#: ../mygtpcontroller.php:282 ../mygtpcontroller.php:352
+#: ../mygtpcontroller.php:422
+msgid "Edit item in inventory"
+msgstr ""
+
+#: ../mygtpcontroller.php:285 ../mygtpcontroller.php:355
+#: ../mygtpcontroller.php:425
+msgid "Approve item"
+msgstr ""
+
+#: ../mygtpcontroller.php:288 ../mygtpcontroller.php:358
+#: ../mygtpcontroller.php:428
+msgid "Reporting management"
+msgstr ""
+
+#: ../mygtpcontroller.php:289 ../mygtpcontroller.php:359
+#: ../mygtpcontroller.php:429
+msgid "Commission Reporting"
+msgstr ""
+
+#: ../mygtpcontroller.php:290 ../mygtpcontroller.php:360
+#: ../mygtpcontroller.php:430
+msgid "Storage Fee Reporting"
+msgstr ""
+
+#: ../mygtpcontroller.php:291 ../mygtpcontroller.php:361
+#: ../mygtpcontroller.php:431
+msgid "Admin Fee Reporting"
+msgstr ""
+
+#: ../mygtpcontroller.php:292 ../mygtpcontroller.php:362
+#: ../mygtpcontroller.php:432
+msgid "Monthly Transaction Summary Reporting"
+msgstr ""
+
+#: ../mygtpcontroller.php:294 ../mygtpcontroller.php:364
+#: ../mygtpcontroller.php:434
+msgid "Account closure management"
+msgstr ""
+
+#: ../mygtpcontroller.php:295 ../mygtpcontroller.php:365
+#: ../mygtpcontroller.php:435
+msgid "View account closure"
+msgstr ""
+
+#: ../mygtpcontroller.php:297 ../mygtpcontroller.php:367
+#: ../mygtpcontroller.php:437
+msgid "Price alert management"
+msgstr ""
+
+#: ../mygtpcontroller.php:298 ../mygtpcontroller.php:368
+#: ../mygtpcontroller.php:438
+msgid "View price alert"
+msgstr ""
+
+#: ../mygtpcontroller.php:308
+msgid "Logistics management for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:309
+msgid "View logistics information for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:310
+msgid "Add logistics for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:311
+msgid "Edit logistics for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:312
+msgid "Delete logistics for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:313
+msgid "Complete logistics for GO"
+msgstr ""
+
+#: ../mygtpcontroller.php:378
+msgid "Logistics management for ONE"
+msgstr ""
+
+#: ../mygtpcontroller.php:379
+msgid "View logistics information for ONE"
+msgstr ""
+
+#: ../mygtpcontroller.php:380
+msgid "Add logistics for ONE"
+msgstr ""
+
+#: ../mygtpcontroller.php:381
+msgid "Edit logistics for ONE"
+msgstr ""
+
+#: ../mygtpcontroller.php:382
+msgid "Delete logistics for ONE"
+msgstr ""
+
+#: ../mygtpcontroller.php:383
+msgid "Complete logistics for ONE"
+msgstr ""
+
+#. End One Permissions
+#: ../mygtpcontroller.php:441
+msgid "Amla scan log"
+msgstr ""
+
+#: ../mygtpcontroller.php:446
+msgid "Approve an announcement"
+msgstr ""
+
+#: ../mygtpcontroller.php:447
+msgid "Add an announcement"
+msgstr ""
+
+#: ../mygtpcontroller.php:448
+msgid "Edit an announcement"
+msgstr ""
+
+#: ../mygtpcontroller.php:449
+msgid "Disable an announcement"
+msgstr ""
+
+#: ../mygtpcontroller.php:450
+msgid "Delete an announcement"
+msgstr ""
+
+#: ../mygtpcontroller.php:451
+msgid "Announcement theme management"
+msgstr ""
+
+#: ../mygtpcontroller.php:452
+msgid "View announcement theme management"
+msgstr ""
+
+#: ../mygtpcontroller.php:453
+msgid "Add an announcement theme"
+msgstr ""
+
+#: ../mygtpcontroller.php:454
+msgid "Edit an announcement theme"
+msgstr ""
+
+#: ../mygtpcontroller.php:455
+msgid "Delete an announcement theme"
+msgstr ""
+
+#: ../object/ApiGoldRequest.php:69 ../object/VaultLocation.php:73
+msgid "The partner ID field is mandatory"
+msgstr ""
+
+#: ../object/ApiGoldRequest.php:73
+msgid "The API version field is mandatory"
+msgstr ""
+
+#: ../object/ApiGoldRequest.php:77
+msgid "The quantity field is mandatory"
+msgstr ""
+
+#: ../object/ApiLogs.php:110 ../object/FtpLogs.php:89
+#: ../object/LogisticTracker.php:96
+msgid "The type field is mandatory"
+msgstr ""
+
+#: ../object/Attachment.php:89
+msgid "Invalid source type defined for the attachment"
+msgstr ""
+
+#: ../object/EventMessage.php:294
+msgid "Direct debit"
+msgstr ""
+
+#: ../object/EventMessage.php:296
+msgid "Fund transfer"
+msgstr ""
+
+#: ../object/EventMessage.php:298
+msgid "Fundout"
+msgstr ""
+
+#: ../object/EventMessage.php:300
+msgid "Settlement"
+msgstr ""
+
+#: ../object/EventMessage.php:302
+msgid "Fundout fail"
+msgstr ""
+
+#: ../object/EventMessage.php:304
+msgid "Fast fundout"
+msgstr ""
+
+#: ../object/EventMessage.php:306
+msgid "Fast settlement"
+msgstr ""
+
+#: ../object/EventMessage.php:308
+msgid "Topup"
+msgstr ""
+
+#: ../object/EventMessage.php:311 ../object/Logistic.php:249
+#: ../object/MyAccountClosure.php:105
+msgid "Unknown"
+msgstr ""
+
+#: ../object/IPRestriction.php:79
+msgid "Restrict type is required"
+msgstr ""
+
+#: ../object/IPRestriction.php:83
+msgid "IP Address is required"
+msgstr ""
+
+#: ../object/IPRestriction.php:88
+msgid "Invalid IP Address"
+msgstr ""
+
+#: ../object/IPRestriction.php:103
+msgid "Similar record already exists"
+msgstr ""
+
+#. Incoming request from MBB (eg: redemption)
+#. self::STATUS_CONFIRMED, // Confirmed the receiving of the order
+#: ../object/LogisticLog.php:72 ../object/Logistic.php:175
+#: ../object/Logistic.php:236
+msgid "Processing"
+msgstr ""
+
+#: ../object/LogisticLog.php:75
+msgid "Packing"
+msgstr ""
+
+#. Packing of order packages upon receiving delivery order from SAP
+#. self::STATUS_PACKING, // Salesman/ Courier depart from warehouse
+#: ../object/LogisticLog.php:78 ../object/Logistic.php:179
+msgid "Packed"
+msgstr ""
+
+#. Salesman/ Courier depart from warehouse
+#: ../object/LogisticLog.php:81 ../object/Logistic.php:182
+#: ../object/Logistic.php:238
+msgid "Collected"
+msgstr ""
+
+#. Salesman/ Courier depart from warehouse
+#. self::STATUS_COLLECTED, // Salesman collected package from warehouse
+#: ../object/LogisticLog.php:84 ../object/Logistic.php:186
+#: ../object/Logistic.php:240
+msgid "In Transit"
+msgstr ""
+
+#. Salesman/ Courier depart from warehouse
+#. self::STATUS_INTRANSIT, // Salesman/ Courier depart from warehouse
+#: ../object/LogisticLog.php:87 ../object/Logistic.php:190
+#: ../object/Logistic.php:243
+msgid "Delivered"
+msgstr ""
+
+#. Package succesfully delivered
+#: ../object/LogisticLog.php:90 ../object/Logistic.php:192
+msgid "Completed"
+msgstr ""
+
+#. Salesman/ Courier depart from warehouse
+#: ../object/LogisticLog.php:93 ../object/Logistic.php:194
+#: ../object/Logistic.php:245 ../object/MyAccountHolder.php:356
+#: ../object/MyGoldTransaction.php:203
+msgid "Failed"
+msgstr ""
+
+#. Salesman/ Courier depart from warehouse
+#: ../object/LogisticLog.php:96 ../object/Logistic.php:196
+#: ../object/Logistic.php:247
+msgid "Missing"
+msgstr ""
+
+#: ../object/LogisticLog.php:99
+msgid "unknown"
+msgstr ""
+
+#: ../object/MbbApFund.php:105
+msgid "The orderid field is mandatory"
+msgstr ""
+
+#: ../object/MyAccountClosure.php:97
+msgid "Approved"
+msgstr ""
+
+#: ../object/MyAccountClosure.php:101
+msgid "Rejected"
+msgstr ""
+
+#: ../object/MyAccountClosure.php:103
+msgid "In Progress"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:288
+msgid "Active"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:291
+msgid "Inactive"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:294
+msgid "Suspended"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:297
+msgid "Blacklisted"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:300
+msgid "Closed"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:311
+msgid "Incomplete"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:319
+msgid "Fail"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:323
+msgid "AMLA Pending"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:327
+msgid "AMLA Failed"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:331
+msgid "PEP Pending"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:335
+msgid "PEP Failed"
+msgstr ""
+
+#: ../object/MyAccountHolder.php:339 ../object/MyAccountHolder.php:353
+msgid "Passed"
+msgstr ""
+
+#: ../object/MyConversion.php:176 ../object/MyGoldTransaction.php:196
+msgid "Paid"
+msgstr ""
+
+#: ../object/MyConversion.php:178
+msgid "Expired"
+msgstr ""
+
+#: ../object/MyConversion.php:180
+msgid "Cancelled"
+msgstr ""
+
+#: ../object/MyConversion.php:182 ../object/MyGoldTransaction.php:201
+msgid "Reversed"
+msgstr ""
+
+#: ../object/MyDocumentation.php:120 ../object/PartnerBranchMap.php:104
+#: ../object/Partner.php:166
+#, php-format
+msgid "The code %s is already in use by another entry"
+msgstr ""
+
+#: ../object/MyFee.php:217
+#, php-format
+msgid "The type %s is already in use"
+msgstr ""
+
+#: ../object/MyGoldTransaction.php:199
+msgid "Confirmed"
+msgstr ""
+
+#: ../object/PartnerBranchMap.php:91
+msgid "The partner field is mandatory"
+msgstr ""
+
+#: ../object/PartnerBranchMap.php:95
+msgid "The Code field is mandatory"
+msgstr ""
+
+#: ../object/PartnerBranchMap.php:109 ../object/PartnerBranchMap.php:113
+msgid "The field is mandatory"
+msgstr ""
+
+#: ../object/Partner.php:155
+msgid "Code is required"
+msgstr ""
+
+#: ../object/Partner.php:157
+msgid "Length of the code field can not be more than 10 characters"
+msgstr ""
+
+#: ../object/PartnerService.php:128
+#, php-format
+msgid "The product (%s) register for service is not active."
+msgstr ""
+
+#: ../object/PartnerService.php:141
+#, php-format
+msgid "Unable to add 2 identifical product service to the same merchant"
+msgstr ""
+
+#: ../object/PriceProvider.php:118
+msgid "The class does not exists"
+msgstr ""
+
+#: ../object/PriceProvider.php:123
+msgid "The future order matching strategy provided is invalid."
+msgstr ""
+
+#: ../object/SnapObject.php:371
+#, php-format
+msgid "Field %s is required"
+msgstr ""
+
+#: ../object/TagLink.php:83
+msgid "Invalid source type defined for the taglink object"
+msgstr ""
+
+#: ../object/Tag.php:87
+msgid "The tag code provided is already available in the system"
+msgstr ""
+
+#: ../object/Tag.php:92
+msgid "Tag category is Mandatory."
+msgstr ""
+
+#: ../object/Tag.php:97
+msgid "Tag code is Mandatory."
+msgstr ""
+
+#: ../object/Tag.php:102
+msgid "Tag value is Mandatory."
+msgstr ""
+
+#: ../object/User.php:169 ../object/User.php:215
+#, php-format
+msgid "Field (%s) must not be less than %d or more than %d characters"
+msgstr ""
+
+#: ../object/User.php:175
+#, php-format
+msgid ""
+"Field (%s) must begin with an alphabet letter followed by only alphabet, "
+"number and/or underscore characters"
+msgstr ""
+
+#: ../object/User.php:198
+#, php-format
+msgid ""
+"The value chosen for field (%s) already exists. Please choose another one"
+msgstr ""
+
+#: ../object/User.php:215
+msgid "password"
+msgstr ""
+
+#: ../object/User.php:220
+msgid "Password must contain both letters and numbers only"
+msgstr ""
+
+#: ../object/VaultItem.php:110
+msgid "The weight field is mandatory"
+msgstr ""
+
+#: ../object/VaultItem.php:114
+msgid "serialno is required"
+msgstr ""
+
+#: ../object/VaultItem.php:116
+msgid "Length of the serialno field can not be more than 36 characters"
+msgstr ""
+
+#: ../object/VaultItem.php:125
+#, php-format
+msgid "The serialno %s is already in use by another entry"
+msgstr ""
+
+#: ../object/VaultLocation.php:76
+msgid "The name field is mandatory"
+msgstr ""
+
+#: ../object/VaultLocation.php:79
+msgid "The default location field is mandatory"
+msgstr ""
+
+#: ../store/cachedatastore.php:219 ../store/cachedatastore.php:283
+#: ../store/cachedatastore.php:333 ../store/redisdatastore.php:218
+#: ../store/redisdatastore.php:282 ../store/redisdatastore.php:332
+msgid "Object must support id field"
+msgstr ""
+
+#: ../store/cachedatastore.php:222 ../store/cachedatastore.php:286
+#: ../store/dbdatastore.php:234 ../store/redisdatastore.php:221
+#: ../store/redisdatastore.php:285
+msgid "Some field values has been left empty of is incorrect"
+msgstr ""
+
+#: ../store/dbdatastore.php:256
+msgid ""
+"You are attempting to save an old or outdated version of the record.  Please "
+"refresh to get latest version and try again."
+msgstr ""

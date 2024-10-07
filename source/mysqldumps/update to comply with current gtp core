@@ -1,0 +1,113 @@
+/*accordingly*/
+UPDATE `product`
+SET pdt_id = 11
+WHERE pdt_id = 6;
+
+UPDATE `product`
+SET pdt_id = 10
+WHERE pdt_id = 4;
+
+UPDATE `product`
+SET pdt_id = 8
+WHERE pdt_id = 3;
+
+UPDATE `product`
+SET pdt_id = 3
+WHERE pdt_id = 1;
+
+UPDATE `product`
+SET pdt_id = 1
+WHERE pdt_id = 7;
+
+UPDATE `product`
+SET pdt_id = 7
+WHERE pdt_id = 5;
+
+INSERT INTO `product` (`pdt_id`, `pdt_categoryid`, `pdt_code`, `pdt_name`, `pdt_weight`, `pdt_companycansell`, `pdt_companycanbuy`, `pdt_trxbyweight`, `pdt_trxbycurrency`, `pdt_deliverable`, `pdt_sapitemcode`, `pdt_createdon`, `pdt_createdby`, `pdt_modifiedon`, `pdt_modifiedby`, `pdt_status`) VALUES
+(4, 0, 'Jewel', 'Used Jewellery', NULL, 1, 1, 1, 1, 1, 'Used Jewellery', '2020-03-19 17:29:00', 1, '2020-07-16 09:33:00', 1, 1),
+(5, 3, 'Scrap', 'Scrap bar', NULL, 1, 1, 1, 1, 1, 'Scrap bar', '2020-03-19 17:29:00', 1, '2020-07-16 09:33:00', 1, 1),
+(6, 3, 'none', 'xxxxx', NULL, 0, 0, 0, 0, 0, '', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0, 0),
+(9, 3, 'GS-999-9-2.5g', '2.5g Minted Piece', '2.500000', 1, 1, 1, 1, 1, 'GS-999-9-2.5g', '2020-03-19 17:29:00', 1, '2020-03-19 17:29:00', 1, 1);
+
+UPDATE `order`
+SET ord_productid = 3
+WHERE ord_productid = 1;
+
+UPDATE `orderqueue`
+SET orq_productid = 3
+WHERE orq_productid = 1;
+
+/*accordingly*/
+UPDATE `partnerservice`
+SET pas_productid = 11
+WHERE pas_productid = 6;
+
+UPDATE `partnerservice`
+SET pas_productid = 10
+WHERE pas_productid = 4;
+
+UPDATE `partnerservice`
+SET pas_productid = 8
+WHERE pas_productid = 3;
+
+UPDATE `partnerservice`
+SET pas_productid = 3
+WHERE pas_productid = 1;
+
+UPDATE `partnerservice`
+SET pas_productid = 1
+WHERE pas_productid = 7;
+
+UPDATE `partnerservice`
+SET pas_productid = 7
+WHERE pas_productid = 5;
+
+/*accordingly*/
+UPDATE `replenishment`
+SET rpm_productid = 11
+WHERE rpm_productid = 6;
+
+UPDATE `replenishment`
+SET rpm_productid = 10
+WHERE rpm_productid = 4;
+
+UPDATE `replenishment`
+SET rpm_productid = 8
+WHERE rpm_productid = 3;
+
+UPDATE `replenishment`
+SET rpm_productid = 3
+WHERE rpm_productid = 1;
+
+UPDATE `replenishment`
+SET rpm_productid = 1
+WHERE rpm_productid = 7;
+
+UPDATE `replenishment`
+SET rpm_productid = 7
+WHERE rpm_productid = 5;
+
+/*accordingly*/
+UPDATE `vaultitem`
+SET sti_productid = 11
+WHERE sti_productid = 6;
+
+UPDATE `vaultitem`
+SET sti_productid = 10
+WHERE sti_productid = 4;
+
+UPDATE `vaultitem`
+SET sti_productid = 8
+WHERE sti_productid = 3;
+
+UPDATE `vaultitem`
+SET sti_productid = 3
+WHERE sti_productid = 1;
+
+UPDATE `vaultitem`
+SET sti_productid = 1
+WHERE sti_productid = 7;
+
+UPDATE `vaultitem`
+SET sti_productid = 7
+WHERE sti_productid = 5;

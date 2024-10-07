@@ -1,0 +1,106 @@
+.simple-source{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.tradeprice-window .x-form-display-field {
+    height: 12px;
+}
+.tradeprice-window .x-form-display-field-default{
+    min-height: 12px;
+    margin-top: 4px;
+}
+.tradeprice-window .largetext .x-form-display-field-body .x-form-display-field{
+    font-weight: bold;
+    font-size: 0.75em;
+}
+
+.tradeprice-window .x-window-header-default{
+    padding: 4px 10px;
+}
+
+
+
+.tradeprice-window .x-form-display-field:nth-last-child() {
+    height: 7px;
+}
+.tradeprice-window .x-form-display-field-default:nth-last-child() {
+    min-height: 7px;
+    margin-top: 1px;
+}
+
+// 2nd line of per unit
+.tradeprice-window .x-box-inner .x-box-target .x-box-item:last-child .x-form-item-body-default{
+    min-height: 7px!important;
+} 
+.tradeprice-window .x-box-inner .x-box-target .x-box-item:last-child .x-form-display-field-default{
+    height: 7px!important;
+} 
+.tradeprice-window .x-box-inner .x-box-target .x-box-item:last-child .x-form-display-field{
+    min-height: 7px!important;
+    margin-top: 1px!important;
+}
+// 2nd line of per unit end
+
+// .x-box-inner .x-box-target .x-box-item:first-child .x-form-display-field-body .x-form-display-field{
+//     font-size: 1.25rem!important;
+//     font-weight: bold;
+// } 
+
+// small table
+.tradeprice-window .shortertable .x-form-display-field-default{
+    height: 8px!important;
+}
+.tradeprice-window .shortertable .x-form-display-field {
+    min-height: 8px!important;
+    margin-top: 2px!important;
+}
+.tradeprice-window .shortertable .x-form-display-field-body .x-form-display-field {
+    font-size: 0.75rem!important;
+}
+// small table end
+
+.tradeprice-window{
+    border-color: transparent;
+    border-radius: 5px;
+}
+.background-gold .x-panelheader{
+    background-color: #e09e03 !important;
+    border-color: #e09e03;
+    margin-top:5px;
+}
+//x-body-el x-panel-body-el x-container-body-el x-component-body-el x-layout-auto x-noborder-rbl
+.background-gold .x-panel-body-el{
+    border:1px solid #e09e03 !important;
+}
+.background-blue .x-panelheader{
+    background-color: #0277bd !important;
+    border-color: #0277bd;
+    margin-top:5px;
+}
+.background-blue .x-panel-body-el{
+    border:1px solid  #0277bd !important;
+}
+.trader-list-item{
+    text-align: center !important;
+    border: 1px solid black !important;
+    font-size: 0.8rem !important;
+    padding:5px 0px 5px 0px !important;
+}
+.tradeprice-window .largetext .x-form-display-field-body .x-form-display-field{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.tradeprice-window .largetext{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.background-blue .x-window-header-default{
+    background-color: #0277bd;
+    border-color:  #0277bd;
+}
+
+.trader-panel .x-horizontal {
+    min-height: 32px !important; 
+}
